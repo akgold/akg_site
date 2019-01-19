@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conferences on Alex K Gold Blog</title>
+    <link>/categories/conferences/</link>
+    <description>Recent content in Conferences on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
+      <link>/2019/01/19/upgrading-to-r-1-excitement-skills/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/19/upgrading-to-r-1-excitement-skills/</guid>
+      <description>My first insight on upg</description>
+    </item>
+    
+    <item>
+      <title>Upgrading to R at RStudio::conf(2019)</title>
+      <link>/2019/01/19/upgrading-to-r-at-rstudio-conf-2019/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/19/upgrading-to-r-at-rstudio-conf-2019/</guid>
+      <description>A few months ago, I was beyond thrilled to be chosen to give an e-poster at RStudio::conf(2019) on the topic of Upgrading to R. I had such a blast talking to people who are trying to get their team to use more R, sharing some of the lessons I&amp;rsquo;ve learned over the last few years. My slides are available online, but I&amp;rsquo;d also like to share some of the things I spoke with people about, and a little on how I made the slides.</description>
+    </item>
+    
+  </channel>
+</rss>

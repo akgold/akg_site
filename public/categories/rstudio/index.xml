@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstudio on Alex K Gold Blog</title>
+    <link>/categories/rstudio/</link>
+    <description>Recent content in Rstudio on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
+      <link>/2019/01/19/upgrading-to-r-1-excitement-skills/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/19/upgrading-to-r-1-excitement-skills/</guid>
+      <description>My first insight on upg</description>
+    </item>
+    
+    <item>
+      <title>Upgrading to R at RStudio::conf(2019)</title>
+      <link>/2019/01/19/upgrading-to-r-at-rstudio-conf-2019/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/19/upgrading-to-r-at-rstudio-conf-2019/</guid>
+      <description>A few months ago, I was beyond thrilled to be chosen to give an e-poster at RStudio::conf(2019) on the topic of Upgrading to R. I had such a blast talking to people who are trying to get their team to use more R, sharing some of the lessons I&amp;rsquo;ve learned over the last few years. My slides are available online, but I&amp;rsquo;d also like to share some of the things I spoke with people about, and a little on how I made the slides.</description>
+    </item>
+    
+    <item>
+      <title>A Shareable R Workflow</title>
+      <link>/2017/12/20/a-shareable-r-workflow/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/20/a-shareable-r-workflow/</guid>
+      <description>If you, like me, work primarily in R, I bet you&amp;rsquo;ve pulled a colleague&amp;rsquo;s scripts, tried to load the data and, File Not Found Error.
+Argh!!
+Thanks to Jenny Bryan&amp;rsquo;s awesome blog post, I learned there&amp;rsquo;s a better solution that&amp;rsquo;s already made me overhaul my sharing workflow.
+Thanks to the combination of RStudio Projects in RStudio and the here package, my woes with manually setting directories are over.
+For a while, I&amp;rsquo;ve been using RStudio Projects since they&amp;rsquo;re a great way to keep work on different projects distinct.</description>
+    </item>
+    
+    <item>
+      <title>Fonts in ggplot2 on Windows and Mac</title>
+      <link>/2017/08/28/fonts-in-ggplot2-on-windows-and-mac/</link>
+      <pubDate>Mon, 28 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/08/28/fonts-in-ggplot2-on-windows-and-mac/</guid>
+      <description>A lot of things are great and easy to do in ggplot2&amp;hellip;but putting new fonts in can be a pain in the butt. I had to do this last week, so I decided to write down what I did (as much for me as for anyone else).
+ Get the package extrafont: install.packages(&#39;extrafont&#39;) Start extrafont: library(extrafont) Import system fonts to R (this can take a minute): font_import() Load fonts: loadfonts(device = &#39;win&#39;).</description>
+    </item>
+    
+  </channel>
+</rss>

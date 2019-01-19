@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World on Alex K Gold Blog</title>
+    <link>/categories/hello-world/</link>
+    <description>Recent content in Hello World on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>/2017/04/20/hello-world/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/20/hello-world/</guid>
+      <description>It&amp;rsquo;s my first post. I&amp;rsquo;ve got to name it Hello World, right?
+I just bought a new laptop &amp;ndash; a Macbook Pro to be precise. After years of being such a PC fanboy, I&amp;rsquo;ve gone over to the dark side. Expect a post in the next few days about how best to configure your new Mac as a data science professional.</description>
+    </item>
+    
+  </channel>
+</rss>

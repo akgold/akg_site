@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Alex K Gold Blog</title>
+    <link>/categories/github/</link>
+    <description>Recent content in Github on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Wedding?</title>
+      <link>/2017/05/01/wedding/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/05/01/wedding/</guid>
+      <description>If you know me personally, you know that aside from being a huge data nerd, I am totally crazy about my fiancee, Shoshana. Thus I&amp;rsquo;m SO happy that I get to build a wedding website for us from scratch.
+In order to not have to learn a totally new technology, I set it up as a github project page with a custom URL. A couple of interesting things I&amp;rsquo;ve learned: * When you&amp;rsquo;re setting up a website via github pages with a project page, it&amp;rsquo;s still really easy!</description>
+    </item>
+    
+  </channel>
+</rss>

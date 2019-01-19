@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packages on Alex K Gold Blog</title>
+    <link>/categories/packages/</link>
+    <description>Recent content in Packages on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/packages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Shareable R Workflow</title>
+      <link>/2017/12/20/a-shareable-r-workflow/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/12/20/a-shareable-r-workflow/</guid>
+      <description>If you, like me, work primarily in R, I bet you&amp;rsquo;ve pulled a colleague&amp;rsquo;s scripts, tried to load the data and, File Not Found Error.
+Argh!!
+Thanks to Jenny Bryan&amp;rsquo;s awesome blog post, I learned there&amp;rsquo;s a better solution that&amp;rsquo;s already made me overhaul my sharing workflow.
+Thanks to the combination of RStudio Projects in RStudio and the here package, my woes with manually setting directories are over.
+For a while, I&amp;rsquo;ve been using RStudio Projects since they&amp;rsquo;re a great way to keep work on different projects distinct.</description>
+    </item>
+    
+    <item>
+      <title>rvest is awesome for web scraping!</title>
+      <link>/2017/07/02/rvest-is-awesome-for-web-scraping/</link>
+      <pubDate>Sun, 02 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/02/rvest-is-awesome-for-web-scraping/</guid>
+      <description>The rvest package is awesome. No surprise there, it&amp;rsquo;s a Hadley Wickham jont. I&amp;rsquo;m in the early stages of a small project looking at goodreads quotes. I think I&amp;rsquo;m going to try to predict popular quotes. Then maybe I&amp;rsquo;ll build a neural network to generate quotes trained on these. Stay tuned.
+Anyway, I wanted to extract the top quotes on goodreads, and rvest made it super easy! I&amp;rsquo;d suggest this tutorial for anyone just getting started.</description>
+    </item>
+    
+  </channel>
+</rss>

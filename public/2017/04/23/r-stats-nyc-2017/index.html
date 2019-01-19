@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.53" />
+
+
+<title>R Stats NYC 2017 - Alex K Gold Blog</title>
+<meta property="og:title" content="R Stats NYC 2017 - Alex K Gold Blog">
+
+
+
+  
+  <meta property="description" content="R Stats NYC 2017">
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Alex K Gold</a></li>
+    
+    <li><a href="https://github.com/akgold">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/alexkgold">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">7 min read</span>
+    
+
+    <h1 class="article-title">R Stats NYC 2017</h1>
+
+    
+    <span class="article-date">2017/04/23</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Friday and Saturday of this weekend was the 2017 <a href="http://www.rstats.nyc/">RStatsNYC</a> conference. With the small exception of remarkably uncomfortable chairs, the conference was fantastic (and great food!). There was a remarkable variety in what the speakers covered &ndash; from deep thoughts on the ethics and philosophy of doing data science, to some super useful RStudio tips and tricks and everything in between. I decided to take my notes from the two days and post below in case there&rsquo;s things anyone else might find useful.</p>
+
+<p><em>See, really good food!</em>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Woah, great breakfast at <a href="https://twitter.com/hashtag/rstatsnyc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatsnyc</a> today!! <a href="https://t.co/OKx2Coo8pG">pic.twitter.com/OKx2Coo8pG</a></p>&mdash; Alex Gold (@alexkgold) <a href="https://twitter.com/alexkgold/status/855782617731518464?ref_src=twsrc%5Etfw">April 22, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+
+<p>One of the remarkable similarities between the speakers was the degree to which many talks focused on <em>process</em> of doing data science. It feels like there&rsquo;s a lot of room for growth in terms of understanding and standardizing best practices of doing data science.</p>
+
+<h2 id="deep-thoughts">Deep Thoughts</h2>
+
+<p>Many of the speakers shared some great nuggets of insight into doing data science that extended far beyond simple lessons about <code>R</code>. Some of my favorites below.</p>
+
+<h3 id="the-past-present-and-future-of-data-science">The Past, Present, and Future of Data Science</h3>
+
+<ul>
+<li>Statistics has gradually added different parts of the statistical process to the field — but many process points remain to be integrated. We don’t have a theory of a good statistical workflow. Meta-systematization is needed. We need to systematize how we systematize things.</li>
+<li>Why do we need theory? Theory is scalable. Simulations are not.</li>
+<li>We should be specifying priors about effect sizes along with research designs.</li>
+<li>Is having a core data science team at a company a good thing or a bad thing?</li>
+<li>The history of software engineering is a great guide for the future of data science.</li>
+<li>As data gets bigger, machine learning problems and questions will get bigger too. Our jobs are safe.</li>
+<li>The hardest job of a data scientist is turning open-ended problems in the real world into practical problem statements that are solvable using data. Defining success is essential.</li>
+<li>Software engineers build and grow software — the sky is the limit. Data scientists are <em>scientists</em> and are constrained by the real world.</li>
+</ul>
+
+<h3 id="data-science-as-business-intelligence-and-empathy">Data Science as Business Intelligence (and Empathy)</h3>
+
+<ul>
+<li>Analysis doesn’t end at result delivery — it ends at developing and proselytizing new business strategies and innovation.</li>
+<li>Automating Excel workflows can be a first step towards bringing <code>R</code> to a team.</li>
+<li>Agile development tells user stories as an empathy hack.
+<code>
+As a ______
+I want ______
+So I can ______ 
+</code></li>
+<li>Person-level stories (the near) are always more meaningful than data stories (the far). We need to balance both as Data Scientists.</li>
+<li>In development, we need to have an actual user in mind, rather than a theoretical user who wants everything.</li>
+</ul>
+
+<h3 id="how-to-live-tweet-an-event-a-great-aside">How to Live-Tweet an Event (a great aside)</h3>
+
+<ul>
+<li>Three important elements in live tweet of event: conference hashtag <code>#rstatsnyc</code>, @speaker (put . first so it’s viewable publicly), always include a pic.</li>
+<li>They can have one of a few purposes: intro person/topic, spread insight, link to resource, spread positivity!</li>
+</ul>
+
+<p><em>Live tweet: conference hashtag, @speaker, picture, positivity</em>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/FSchueuer?ref_src=twsrc%5Etfw">@FSchueuer</a> at <a href="https://twitter.com/hashtag/rstatsnyc?src=hash&amp;ref_src=twsrc%5Etfw">#rstatsnyc</a> future of data science can learn from past of software engineering. Brilliant talk. <a href="https://t.co/uTRjceMsp8">pic.twitter.com/uTRjceMsp8</a></p>&mdash; Alex Gold (@alexkgold) <a href="https://twitter.com/alexkgold/status/855792361527541760?ref_src=twsrc%5Etfw">April 22, 2017</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+
+<h3 id="how-to-hackathon">How to Hackathon</h3>
+
+<ul>
+<li>If you’re not at risk of failing a few days a quarter, you’re not pushing.</li>
+<li>Keys to focused hacking: rock solid infrastrure, minimize context switching (away messages), parallel work, strong and clear conversation, timeline accountability (detailed to the half-hour), positive team dynamic, time-boxing decisions.</li>
+<li>How to start an analysis:
+
+<ul>
+<li>Identify assumptions about a solution</li>
+<li>Rank assumptions by how critical they are</li>
+<li>Test assumptions with the simplest experiment possible</li>
+</ul></li>
+<li>Fail fast. The worst thing about spending a few months barking up the wrong tree isn’t the time or money lost — it’s team demoralization.</li>
+<li>Truths about data science:
+
+<ul>
+<li>Nerd != won’t engage with business</li>
+<li>Shiny tool != hard problem</li>
+<li>Shiny tool != being a smart data scientist
+<br /></li>
+</ul></li>
+</ul>
+
+<h3 id="open-source-and-package-building">Open Source and Package-Building</h3>
+
+<ul>
+<li>The hardest step in joining the open source community is going from 0 contributions to 1.</li>
+<li>Open source contributions: failing test with fix &gt; failing test &gt; bug report
+
+<ul>
+<li>Remember to include <code>sessionInfo()</code></li>
+</ul></li>
+<li>Package release ideas:
+
+<ul>
+<li>Release quickly, but also slowly — take time to fix dumb decisions</li>
+<li>Blaze new trails, but don’t reinvent the wheel</li>
+<li>Tell people about your package — then listen.</li>
+</ul></li>
+<li>Package design: documentation &gt; usability &gt; performance &gt; features</li>
+</ul>
+
+<h2 id="interesting-research">Interesting Research</h2>
+
+<p>There were only a few presentations of actual research projects — but the ones presented were really wonderful.</p>
+
+<ul>
+<li>Cell tower data can reveal interesting patterns in movement — in particular return to normal flow of people after natural disasters.</li>
+<li><a href="http://www.kaggle.com/stackoverflow">Stack Overflow</a> has a selection of data from stack overflow — can do text analysis on it. There’s also a jobs list and an <a href="http://www.api.stackoverflow.com">api</a>.</li>
+<li>It is possible to <a href="https://dssg.uchicago.edu/project/early-intervention-system-for-adverse-police-interactions/">predict</a> which officers in police departments will have adverse incidents with the public in order to arrange interventions. Nashville and Charlottesville are doing this. This work can save lives.</li>
+<li>ROpenSci does peer review for <code>R</code> packages. Many of their packages get data from scientific databases or interface with scientific equipment.</li>
+</ul>
+
+<h2 id="statistical-and-programming-tools">Statistical and Programming Tools</h2>
+
+<ul>
+<li>Convolutional Neural Net: used for image recognition</li>
+<li>VPNs are good privacy tools, we should probably all use one.</li>
+</ul>
+
+<h2 id="r-packages-to-investigate">R Packages to Investigate</h2>
+
+<p>There were so many neat R packages mentioned over the course of the conference. Here was a short list of ones I didn’t know and wanted to look into.</p>
+
+<ul>
+<li><code>packrat</code>: helps you create a package template file</li>
+<li><code>plumber</code>: allows you to easily turn regular R code into an API</li>
+<li><code>RXKCD</code>: add <a href="http://www.xkcd.com">XKCD</a> cartoons to stuff!</li>
+<li><code>trelliscope</code>: many-panel data vis</li>
+<li><code>compareGroups</code>: compare demographics and other aspects across groups</li>
+<li><code>htmlWidgets</code>: integrate <code>javascript</code> applets into <code>R</code> code. We want interactivity, and javascript is de-facto standard for everything having to do with interactivity.
+
+<ul>
+<li><code>ipywidgets</code>: similar for <code>python</code></li>
+</ul></li>
+<li><code>broom</code>: turn analytics output into tidy data frames</li>
+<li><code>goodpractice</code>: does a variety of checking for good package development practice
+
+<ul>
+<li><code>lintr</code>: helps check for good code style</li>
+<li><code>devtools::spellcheck()</code></li>
+</ul></li>
+<li><code>solidify</code>, <code>highcharts</code>: commonly used presentation packages</li>
+<li><code>tidytext</code>: help turn text into tidy data frames</li>
+</ul>
+
+<h2 id="generally-helpful-programming-hints-tips-and-tricks">Generally Helpful Programming Hints, tips, and tricks</h2>
+
+<ul>
+<li><code>rr-init</code>: ROpenSci package to create skeleton of project</li>
+<li>Run <code>R</code> script <code>myscript.R</code> from command line: <code>Rscript myscript.R</code></li>
+<li>RStudio Server runs on port 8787 by default</li>
+<li>Anaconda can be used to download a local R version</li>
+<li>Can install entire tidy verse at once: <code>install.packages(“tidyverse”)</code></li>
+<li>Always choose a license for your <a href="http://www.github.com">github</a> repo. MIT is the loosest.</li>
+<li>Can put an empty folder in a git repo by creating and adding a file to git <code>touch folder/.gitkeep</code></li>
+<li><code>make</code> bash — can create a makefile (<code>make.sh</code>) with assigned dependencies and will only run files that have been updated since last run</li>
+<li>Join <a href="http://www.r-project.org/mail.html">R mailing list</a></li>
+<li>Contributing to documentation (or improving unhelpful error messages) is a great way to get started on contributing to Open Source</li>
+<li>In R <code>save()</code> saves multiple objects with their names as <code>.Rda</code>. Using <code>load</code> restores them into the environment. <code>saveRds()</code> saves a single object without its name. Restoring requires assignment <code>a &lt;- readRds()</code>.</li>
+</ul>
+
+<h2 id="rstudio-hints-tips-tricks">RStudio Hints, Tips, Tricks</h2>
+
+<p>The RStudio folks gave a great presentation on some tricks and tips in RStudio. Some of my favorite takeaways:</p>
+
+<ul>
+<li>Realtime inline <code>TeX</code> previews in RNotebooks: <code>$EQN$</code></li>
+<li>Notebook preview — doesn’t re-run, just renders what’s been run</li>
+<li>Can include code chunks that run code other than R (SQL, Bash, Python). Instead of <code>{r}</code> in chunk header, put (e.g.) <code>{sql connection = con, output.var = ‘varname’}</code> and then can put <code>SELECT</code> statement in body that will be assigned to <code>varname</code></li>
+<li>If you want to include variables in SQL code, use <code>?varname</code> in code.</li>
+<li>RStudio git integration provides nice way to view diffs</li>
+<li>Tab autocomplete is fuzzy — just type unique letters in command and tab for rest</li>
+<li><code>Shift-Tab</code> to insert code snippets — there are built in (<code>tools &gt; global options &gt; code snippets</code>)</li>
+<li>Starting to type a command and then <code>cmd + arrow up</code> gives history of all times that command used</li>
+<li>Can easily go from history to console or script</li>
+<li><code>ctrl + .</code> search files, fns, etc</li>
+<li><code>CTRL + SHIFT + .</code> search among tabs</li>
+<li><code>ctrl + shift + f</code> (“or if that’s too hard to remember, ctrl capital F”) to customize where searching</li>
+<li><code>SHIFT + ALT + k</code> list keyboard shortcuts</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

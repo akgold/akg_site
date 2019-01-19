@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.53" />
+
+
+<title>rvest is awesome for web scraping! - Alex K Gold Blog</title>
+<meta property="og:title" content="rvest is awesome for web scraping! - Alex K Gold Blog">
+
+
+
+  
+  <meta property="description" content="rvest is awesome for web scraping!">
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Alex K Gold</a></li>
+    
+    <li><a href="https://github.com/akgold">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/alexkgold">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">rvest is awesome for web scraping!</h1>
+
+    
+    <span class="article-date">2017/07/02</span>
+    
+
+    <div class="article-content">
+      
+
+<p>The <a href="https://github.com/hadley/rvest">rvest</a> package is awesome. No surprise there, it&rsquo;s a Hadley Wickham jont. I&rsquo;m in the early stages of a small project looking at goodreads quotes. I think I&rsquo;m going to try to predict popular quotes. Then maybe I&rsquo;ll build a neural network to generate quotes trained on these. Stay tuned.</p>
+
+<p>Anyway, I wanted to extract the top quotes on goodreads, and <code>rvest</code> made it super easy! I&rsquo;d suggest <a href="https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/">this tutorial</a> for anyone just getting started.</p>
+
+<h3 id="minor-gripes">Minor Gripes</h3>
+
+<p>Just one complaint. Most tutorials suggest:</p>
+
+<pre><code class="language-r">url &lt;- &quot;myawesomeurl.com&quot;
+page &lt;- rvest::html(url)
+</code></pre>
+
+<p>To get a page loaded for scraping.</p>
+
+<p>If you do this now, you get a message saying that the <code>html</code> function has been deprecated and to use <code>read_html</code>. What it doesn&rsquo;t say is that <code>read_html</code> is from <code>xml2</code>, not <code>rvest</code>. Took me a little while of just saying f-it, I&rsquo;ll use the deprecated function before I found the secret of <code>read_html</code>. C&rsquo;mon Hadley, I know you&rsquo;re amazing, but at least tell me what package the function&rsquo;s in.</p>
+
+<h3 id="12-lines-of-code">12 Lines of Code</h3>
+
+<pre><code class="language-r">library(rvest)
+wd &lt;- &quot;~/Documents/goodreads/&quot;
+
+url_stub &lt;- &quot;https://www.goodreads.com/quotes?page=&quot;
+
+scrape_quotes &lt;- function(url_stub, what, i) {
+  print(paste0(&quot;Scraping page &quot;, i, &quot;.&quot;))
+  page &lt;- xml2::read_html(paste0(url_stub, i))
+  rvest::html_nodes(page, what) %&gt;% html_text()
+}
+quotes_raw &lt;- lapply(1:100, function(i) scrape_quotes(url_stub, '.quote', i)) %&gt;%
+  unlist()
+</code></pre>
+
+<p>Then I have to do a bunch of regex-ing to clean up the quotes.</p>
+
+<p>Note: It works fine if you just <code>library(rvest)</code> and then call <code>read_html()</code> without prefixing the function with a package at all. But that&rsquo;s bad form if you&rsquo;re writing a function.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+  </body>
+</html>
+

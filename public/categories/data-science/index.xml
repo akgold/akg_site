@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Alex K Gold Blog</title>
+    <link>/categories/data-science/</link>
+    <description>Recent content in Data Science on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Best Computer For Data Scientists</title>
+      <link>/2018/03/23/the-best-computer-for-data-scientists/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/03/23/the-best-computer-for-data-scientists/</guid>
+      <description>Is whatever you like! I am generally quite predisposed to using Macs for programming activities. The native shell support, easy access to SSH, git, and a built-in hotkey combination for screenshots (cmd+ctrl+shift+4 for a movable window you can position and paste from) are all killer features. That on top of the fact that Mac laptops are the only ones with touchpads good enough that I don&amp;rsquo;t crave a mouse, means that I&amp;rsquo;ve fully gone over to the cult of Mac.</description>
+    </item>
+    
+  </channel>
+</rss>
