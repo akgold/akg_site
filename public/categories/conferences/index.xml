@@ -6,18 +6,19 @@
     <description>Recent content in Conferences on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
-      <link>/2019/01/19/upgrading-to-r-1-excitement-skills/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      <link>/2019/01/20/upgrading-to-r-1-excitement-skills/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/01/19/upgrading-to-r-1-excitement-skills/</guid>
-      <description>My first insight on upg</description>
+      <guid>/2019/01/20/upgrading-to-r-1-excitement-skills/</guid>
+      <description>This is the first in a series of posts sharing some insights on upgrading to R. See the index post for others.
+Walking on to an R-less team on the first day is a daunting experience, made all the more so by not knowing whether you’ve got the right people. In my experience, there are a few factors that can help drive the team from here (a sadly R-less land) to the magical place where free range R code runs all day, the data is always clean, and syntax errors are nonexistent.</description>
     </item>
     
     <item>
