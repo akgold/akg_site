@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.width = 4)
 options(gganimate.start_pause = 15)
 ```
 
-Walking on to an R-less team on the first day is a daunting experience, made all the more so by not knowing whether you've got the right people. In my experience, there are a few factors that can help drive the team from here (a sadly R-less land) to the magical place where free range R code runs all day, the data is always clean, and syntax errors are nonexistent. 
+Whether you're a team leader trying to take your group to the next level, or an indvidual contributor just trying to use more R (or get your organization to do so), it's really important to find other people to join you on the journey. If you manage to find the right people, they'll become a crack R team (relatively) quickly or will help you upgrade your own skills. In my experience, there are a few factors that can help drive the team from here (a sadly R-less land) to the magical place where free range R code runs all day, the data is always clean, and syntax errors are nonexistent. 
 
 Here's my estimate of the effect sizes of some important factors:
 ```{r skills, echo = FALSE, messge = FALSE, warning =FALSE}
