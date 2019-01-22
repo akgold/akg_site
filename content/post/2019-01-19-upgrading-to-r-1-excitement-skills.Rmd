@@ -71,5 +71,5 @@ Beyond enthusiasm, there are a couple of things you can do to make it easier, wh
 * *Relentless R*: What you're doing isn't coding, it's organizational change. Writing code is easy. Changing hearts, minds, and workflows is _hard_. There are people who make whole careers out of this stuff. Don't get down if it's slow going. I'm skeptical it's possible to really transition a team to R in less than 12 months.
 * *Positive Learning Environment*: You're trying to make room for people to learn. That means it's important to make work a space where they won't feel stupid for asking questions. Hopefully this is already true for your workplace...but it's especially important if you're trying to get your team to do something new and hard.
 
-[^1] If you know R, and you're trying to get other people onboard, just pass along the good word.
+[^1]: If you know R, and you're trying to get other people onboard, just pass along the good word.
 
