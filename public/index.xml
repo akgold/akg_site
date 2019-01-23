@@ -154,5 +154,15 @@ I just bought a new laptop &amp;ndash; a Macbook Pro to be precise. After years 
 When not data nerd-ing, Alex loves spending time with his wife and dog, doing handstands, and cooking.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>This is the first in a series of posts sharing some insights on upgrading to R. See the index post for others.
+Walking on to an R-less team on the first day is a daunting experience, made all the more so by not knowing whether you’ve got the right people. In my experience, there are a few factors that can help drive the team from here (a sadly R-less land) to the magical place where free range R code runs all day, the data is always clean, and syntax errors are nonexistent.</description>
+    </item>
+    
   </channel>
 </rss>
