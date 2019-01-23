@@ -6,20 +6,10 @@
     <description>Recent content on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
-      <link>/2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/</link>
-      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/</guid>
-      <description>This is definitely the most personal, and the most painful of my upgrading to R lessons. But first, here’s a basic outline of something that many first-time managers go through. I can guarantee something like this will happen if you’re managing a team upgrading to R.
-options(gganimate.nframes = 400, gganimate.fps = 6, gganimate.end_pause = 10) morale &amp;lt;- c(2, 3, 4.5, 3, 3, 2.6, 2.0, 0.5, 1.3, 2, 3.5, 4.0) prod &amp;lt;- c(1, 2.</description>
-    </item>
     
     <item>
       <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
@@ -162,6 +152,16 @@ I just bought a new laptop &amp;ndash; a Macbook Pro to be precise. After years 
       <guid>/about/</guid>
       <description>Alex K Gold is a data scientist in Washington DC. He has worked in economic policy research, political campaigns, and healthcare. He is a proud economics PhD dropout.
 When not data nerd-ing, Alex loves spending time with his wife and dog, doing handstands, and cooking.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>This is the first in a series of posts sharing some insights on upgrading to R. See the index post for others.
+Walking on to an R-less team on the first day is a daunting experience, made all the more so by not knowing whether you’ve got the right people. In my experience, there are a few factors that can help drive the team from here (a sadly R-less land) to the magical place where free range R code runs all day, the data is always clean, and syntax errors are nonexistent.</description>
     </item>
     
   </channel>
