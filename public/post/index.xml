@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
+      <link>/2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/</guid>
+      <description>This is definitely the most personal, and the most painful of my upgrading to R lessons. But first, here’s a basic outline of something that many first-time managers go through. I can guarantee something like this will happen if you’re managing a team upgrading to R.
+options(gganimate.nframes = 400, gganimate.fps = 6, gganimate.end_pause = 10) morale &amp;lt;- c(2, 3, 4.5, 3, 3, 2.6, 2.0, 0.5, 1.3, 2, 3.5, 4.0) prod &amp;lt;- c(1, 2.</description>
+    </item>
     
     <item>
       <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
@@ -18,7 +28,7 @@
       
       <guid>/2019/01/20/upgrading-to-r-1-excitement-skills/</guid>
       <description>This is the first in a series of posts sharing some insights on upgrading to R. See the index post for others.
-Whether you’re a team leader trying to take your group to the next level, or an indvidual contributor just trying to use more R (or get your organization to do so), it’s really important to find other people to join you on the journey. If you manage to find the right people, they’ll become a crack R team (relatively) quickly or will help you upgrade your own skills.</description>
+Whether you’re a team leader trying to take your group to the next level, or an indvidual contributor just trying to infect your org with R love, finding companions is really important. Finding the right people will determine whether you end up part of a crack R team or fall back to whatever you’re doing now.</description>
     </item>
     
     <item>
