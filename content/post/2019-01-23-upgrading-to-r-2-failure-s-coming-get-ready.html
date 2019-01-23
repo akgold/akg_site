@@ -1,0 +1,97 @@
+---
+title: 'Upgrading to R #2: Failure’s Coming, Get Ready!'
+author: Alex K Gold
+date: '2019-01-23'
+slug: upgrading-to-r-2-failure-s-coming-get-ready
+categories:
+  - conferences
+  - R
+tags: []
+---
+
+
+
+<p>This is definitely the most personal, and the most painful of my upgrading to R lessons. But first, here’s a basic outline of something that many first-time managers go through. I can <strong>guarantee</strong> something like this will happen if you’re managing a team upgrading to R.</p>
+<pre class="r"><code>options(gganimate.nframes = 400,
+        gganimate.fps = 6,
+        gganimate.end_pause = 10)
+morale &lt;- c(2, 3, 4.5, 3, 3, 2.6, 2.0, 0.5, 1.3, 2, 3.5, 4.0)
+prod &lt;- c(1, 2.5, 4, 3.5, 4, 3.5, 1.5, 0.5, 0.7, 1.2, 2.5, 3.5)
+n &lt;- 7
+
+labs &lt;- c(&quot;First day, discovered team works exclusively in Excel.&quot;,
+          &quot;Began first R project: Codename Tidy&quot;,
+          &quot;Codename Tidy development completed and delivered!&quot;,
+          &quot;Revelation: Codename Tidy never really code reviewed.&quot;,
+          &quot;Work continues apace on other projects.&quot;,
+          &quot;Discovered: Mistake in Codename Tidy. Poop.&quot;,
+          &quot;Decision: Team leader will totally rewrite code himself.&quot;,
+          &quot;Decree from Team Leader: Merge requests every single day.&quot;,
+          &quot;Observation: No merge requests this week. Mutiny underway?&quot;,
+          &quot;Realization: Team leader may have overreacted.&quot;,
+          &quot;Team Meeting: Design code review strategy with team.&quot;,
+          &quot;Observation: Team members bought in.&quot;)
+
+days &lt;- c(0, 1, 23, 24, 25, 26, 26.5, 28, 29, 30, 31, 70)
+
+g &lt;- tibble(person = rep(seq(n), each = length(morale)),
+       time = rep(seq(length(morale)), n),
+       morale = morale + runif(n * length(morale)),
+       prod = prod + runif(n * length(prod)),
+       lab = rep(labs, n)) %&gt;%
+  mutate(lab = factor(lab, levels = labs, ordered = TRUE)) %&gt;%
+  ggplot() +
+  geom_point(aes(y = morale, x = prod, color = factor(person)),
+             size = 5,
+             alpha = 0.8) +
+  geom_line(aes(x = prod, y = morale, group = person),
+            color = &quot;lightgrey&quot;,
+            alpha = 0.3) +
+  ggtitle(&quot;Team&#39;s Log, Day {days[frame_along]} - {labs[frame_along]}&quot;) +
+  theme_rs() +
+  ylab(&quot;Individual Morale&quot;) +
+  xlab(&quot;Individual Productivity&quot;) +
+  guides(color = FALSE) +
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank()) +
+  ggthemes::scale_color_solarized() +
+  transition_reveal(time) +
+  enter_fade() +
+  exit_shrink() +
+  ease_aes(&#39;sine-in-out&#39;) +
+  labs(caption = &quot;Completely fake data.&quot;)
+animate(g, width = 450, height = 450)</code></pre>
+<p><img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/figure-html/fail-1.gif" /><!-- --></p>
+<p>In case you didn’t feel like sitting through that animation, here’s the bottom line: my team was doing great work upgrading to R, a mistake made it to a client, I <strong>WAY</strong> overreacted and burned a lot of goodwill that took a long time to get back.</p>
+<p>Here’s a checklist to figure out if you’re in a similar situation [] - You’re upgrading your team to a new technology (R). [] - You have to keep doing real work while that transition happens.</p>
+<p>That’s it. If you’re in that situation, mistakes are very likely to happen and likely to make it to someone who shouldn’t receive mistakes. You’ve got to prepare yourself and your team.</p>
+<div id="prepare-technically" class="section level1">
+<h1>Prepare Technically</h1>
+<p>This is the obvious kind of preparation. Make sure that you’re doing everything you can to avoid mistakes.</p>
+<div id="sanity-checks" class="section level3">
+<h3>Sanity Checks</h3>
+<p>Have workers turn their brains on</p>
+</div>
+<div id="share-more-context" class="section level3">
+<h3>Share More Context</h3>
+<p>Always worth it</p>
+</div>
+<div id="code-review" class="section level3">
+<h3>Code Review</h3>
+<p>Code review is great – but if you’re creating insight products, this is more-or-less your last resort. And even then, I think the primary purpose of code review is to trigger thinking by the person who wrote the code, not for them to be handed insight from on hgiht. Institute good code review practices as soon as you can. And remember, code review <strong>doesn’t have to be on github</strong>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Code review, no matter how low-tech is 1,000<em>x</em> better than code review that doesn’t happen because you want to see pretty green and red lines in git.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>This is actually harder than it sounds. Most of the tools we use were created for software engineers. Their main product is code. That is not true for most data science teams.</p>
+<p>Some produce scores, most produce insights, but there’s no forcing mechanism the way there is for software deployment.</p>
+<p>If you’re doing data science to create insights (as opposed to creating a score that will be used in some other contect), as most early-maturity data science teams are, there’s a huge difference between you and a software engineering team.</p>
+</div>
+</div>
+<div id="prepare-emotionally" class="section level1">
+<h1>Prepare Emotionally</h1>
+<p>More important Don’t overreact Blameless postmortems Radical Candor Rising Strong</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>You <em>should</em> also be adopting git, as will be in point 5…but don’t WAIT for git to do code review.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>In the spirit of literate programming, my favorite way to do code review for more than a few lines at a time is actually to print out the code and mark it up like an essay.<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
