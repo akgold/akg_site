@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.53" />
+
+
+<title>Upgrading to R #2: Failure’s Coming, Get Ready! - Alex K Gold Blog</title>
+<meta property="og:title" content="Upgrading to R #2: Failure’s Coming, Get Ready! - Alex K Gold Blog">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/akg_profile.jpg"
+         width="50"
+         height="50"
+         alt="It Me">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Alex K Gold</a></li>
+    
+    <li><a href="https://github.com/akgold">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/alexkgold">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">7 min read</span>
+    
+
+    <h1 class="article-title">Upgrading to R #2: Failure’s Coming, Get Ready!</h1>
+
+    
+    <span class="article-date">2019/02/07</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>Upgrading to R means doing something new, and something hard. As a general rule, new + hard ensures that some sort of mistake or failure is close behind. As a new manager working with my team of data scientists, I certainly was not immune. So I’ll share my story of screw up, and some of the (unexpected) things I do differently now and I wish I’d known ahead of time.</p>
+<p>To start, here’s an animation I made that describes <em>Alex’s big goof-up</em>:</p>
+<p><img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/figure-html/fail-1.gif" /><!-- --></p>
+<p><strong>TL;DR:</strong> my team was working hard onboarding themselves to R, a mistake made it to a client, and I overreacted with new policies that burned a lot of my team’s goodwill. Regaining the team’s trust required eating some words, retracting some policies, and a bunch of all-team discussions to figure out how to do better in the future.</p>
+<p>The overarching lesson was that <strong>my team’s goodwill was my most precious resource as a manager</strong>. Squandering it wasn’t a simple matter of <em>not being nice</em>, it (thankfully temporarily) damaged my ability to effectively lead and guide them, and diminished the likelihood that they would do their best work. In that spirit, I share some of the things I wish I’d done ahead of time below.</p>
+<div id="share-more-context" class="section level1">
+<h1>Share More Context</h1>
+<p><strong>Always share more context</strong> was my number 2 takeaway from this experience (keep reading for #1!). This was a high-context project, context that I hadn’t written down anywhere and hadn’t communicated clearly. As far as my teammate knew, they were given some data, a picture of a plot, and a request to re-create those plots in <code>ggplot</code>. As I’d learn soon enough, there were a multitude of ways my teammate could make totally sensible decisions that resulted in mistakes - mistakes that could’ve been avoided had I just <strong>shared more context</strong>.</p>
+<p>Here’s something like the plot we were making:</p>
+<pre><code>## Warning in as.POSIXlt.POSIXct(x, tz): unknown timezone &#39;zone/tz/2018i.1.0/
+## zoneinfo/America/New_York&#39;</code></pre>
+<p><img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The key piece of context I knew, but didn’t share, was that we couldn’t derive the colors ourselves, as they sometimes depended on other metrics in complicated ways.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Since I’d neglected to share, my teammate just calculated the color themselves. This totally reasonable choice, which resulted in mistakes the client noticed, could’ve totally been avoided had I spent a few more minutes <strong>sharing more context</strong>.</p>
+</div>
+<div id="prepare-emotionally" class="section level1">
+<h1>Prepare Emotionally</h1>
+<p>My number 1 takeaway from this experience was that the most important thing I could’ve done was to <strong>avoid overreacting</strong>.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> If I could’ve gone back to a week before we found our mistake, I wish I could’ve told myself that a mistake was coming, and that I should be ready to react - not unilaterally, but by rallying the team to fix the issue together.</p>
+<div class="figure">
+<img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/giphy%20(1).gif" alt="So many things I wish I could’ve told you…" />
+<p class="caption">So many things I wish I could’ve told you…</p>
+</div>
+<p>The project was important, and the client seeing a mistake was bad. But draconian new procedures and rules resulted in ill-will from my team that was ultimately way more costly.</p>
+<p>What eventually got us back on track was when we met as a team, and had a few meetings in the style of a <a href="https://landing.google.com/sre/sre-book/chapters/postmortem-culture/">blameless postmortem</a> where we blamelessly tried to figure out what had gone wrong and how we could avoid it next time. The guidelines we eventually generated and adopted as a group were actually pretty similar to the rules I’d introduced, but this time we were actually able to <em>stick to them</em>, because we’d generated them together.</p>
+</div>
+<div id="prepare-technically" class="section level1">
+<h1>Prepare Technically</h1>
+<p>Before this incident,I focused 100% of my mistake-avoiding attention on what I’d call technical prepartion - explicit error avoidance and checking. Since, I’ve come to believe that error checking of various sorts is an important part of the solution, but on a time like mine that primarily produces data insights, the number one way to avoid errors is to give analysts and data scientists the knowledge they need to find mistakes themselves.</p>
+<div id="sanity-checks" class="section level3">
+<h3>Sanity Checks</h3>
+<p>All data scientists know the horror of finishing an analysis, breathing a huge sigh of relief, sending it off, and then realizing that something just doesn’t add up. I’ve definitely had categories that add up to more than 100 percent, some 256 year-olds, and coefficents so big they could power a trip to the moon.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<div class="figure">
+<img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/giphy%20(3).gif" alt="Moon Landing: powered by coefficients!" />
+<p class="caption">Moon Landing: powered by coefficients!</p>
+</div>
+<p>Remembering to do these sanity checks <em>before</em> anything gets sent out is hard, especially since finding something might result in lots more work. This is especially true for junior team members, who might not have made all these mistakes before, and might not totally know what they’re looking for.</p>
+<p>One strategy that helped us was trying to remove some of the cognitive load of <em>what</em> to check. That meant building analysis templates that included sanity checks on results, checklists for things to check, and R packages that automated simple checks. Removing some of the cognitive load of remembering to do all these checks was relieving for junior and senior team members alike.</p>
+</div>
+<div id="code-review" class="section level3">
+<h3>Code Review</h3>
+<p>Code review is great. But it was easy to only believe in “real” code review, meaning leaving comments on pretty red and green diffs on <code>github</code>. More and more since then, I’ve come to think that the primary purpose of code review is to <strong>trigger thinking by the person who wrote the code</strong>. Given that the person who wrote a snippet of code is 100<em>x</em> more familiar with it (to a first approximation), we have found that code review that forces the writer to rethink what they’ve done catches many mistakes, and that the venue isn’t really important.</p>
+<p>Since this incident, the team has gotten better and more consistent at using git for code reviews, but we’ve also gotten better at doing low-tech code review. Any review, no matter how low-tech is <strong>1,000</strong><em>x</em> better than code review that didn’t happen because I was waiting for the team to “get up to speed with git”.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> Sometimes I even like to print out code, read through it, and mark it up like an essay. Decidedly low-tech, but really engages the mental compiler.</p>
+<div class="figure">
+<img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/giphy.gif" alt="Mental compiler &gt; real compiler" />
+<p class="caption">Mental compiler &gt; real compiler</p>
+</div>
+</div>
+</div>
+<div id="takeaways" class="section level1">
+<h1>Takeaways</h1>
+<p>So, here are the big lessons I took home from my moment of failure:</p>
+<ul>
+<li>Failure is coming and being emotionally ready is at least as importance as technical preparation and avoidance.</li>
+<li>Overreacting to a mistakes as a manager can cause a bigger problem than the mistake itself.</li>
+<li>Always share more context.</li>
+<li>Technical solutions like templates, checklists, packages, and code review are great, but mostly because they reduce cognitive load of remembering to do simple checks you might forget, or because they force the author to think closely about their code.</li>
+</ul>
+</div>
+<div id="a-coda-book-recs" class="section level1">
+<h1>A Coda: Book Recs</h1>
+<p>I can’t leave this blog post without sharing three book recommendations that really helped me. While the screw up I describe here is real, I wasn’t entirely without tools to cope, and these three books helped form my mental model for how we might think about recovery as a team.</p>
+<ul>
+<li><a href="https://www.amazon.com/dp/B00P5557G2/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">Rising Strong</a> by Brene Brown is a great exploration of failure and recovery, it provides some interesting perspectives on failure and resilience from both a personal and professional level.</li>
+<li><a href="https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">High Output Management</a> by Andy Grove is a pretty traditional “management” book, and his explanation of managing to task-relevant maturity has been a helpful way to think about helping the people I manage (or helping my managers help me) avoid potential mistakes and failures.</li>
+<li><a href="https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000">Checklist Manifesto</a> by Atul Gawande is one of my all time favorite books, and it really influenced the way I think about what should be automated vs checklisted vs left up to humans.</li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>To be precise, whether the difference between the metric and the threshold was statistically significant, which we didn’t have the data to compute ourselves.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Especially if you’re the team lead, but really no matter what.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Or more likely 999 year-olds. <strong>Missing data should never have numeric codes</strong>, amirite?!?<a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>Talking to you, past Alex!<a href="#fnref4">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-133127514-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+

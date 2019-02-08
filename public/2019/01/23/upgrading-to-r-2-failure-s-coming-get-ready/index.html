@@ -19,11 +19,6 @@
 
 
 
-
-<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
-
-
-
 <link rel="stylesheet" href="/css/fonts.css" media="all">
 <link rel="stylesheet" href="/css/main.css" media="all">
 
@@ -59,7 +54,7 @@
 
   <article class="article">
     
-    <span class="article-duration">4 min read</span>
+    <span class="article-duration">6 min read</span>
     
 
     <h1 class="article-title">Upgrading to R #2: Failure’s Coming, Get Ready!</h1>
@@ -73,55 +68,6 @@
 
 
 <p>This is definitely the most personal, and the most painful of my upgrading to R lessons. But first, here’s a basic outline of something that many first-time managers go through. I can <strong>guarantee</strong> something like this will happen if you’re managing a team upgrading to R.</p>
-<pre class="r"><code>options(gganimate.nframes = 400,
-        gganimate.fps = 6,
-        gganimate.end_pause = 10)
-morale &lt;- c(2, 3, 4.5, 3, 3, 2.6, 2.0, 0.5, 1.3, 2, 3.5, 4.0)
-prod &lt;- c(1, 2.5, 4, 3.5, 4, 3.5, 1.5, 0.5, 0.7, 1.2, 2.5, 3.5)
-n &lt;- 7
-
-labs &lt;- c(&quot;First day, discovered team works exclusively in Excel.&quot;,
-          &quot;Began first R project: Codename Tidy&quot;,
-          &quot;Codename Tidy development completed and delivered!&quot;,
-          &quot;Revelation: Codename Tidy never really code reviewed.&quot;,
-          &quot;Work continues apace on other projects.&quot;,
-          &quot;Discovered: Mistake in Codename Tidy. Poop.&quot;,
-          &quot;Decision: Team leader will totally rewrite code himself.&quot;,
-          &quot;Decree from Team Leader: Merge requests every single day.&quot;,
-          &quot;Observation: No merge requests this week. Mutiny underway?&quot;,
-          &quot;Realization: Team leader may have overreacted.&quot;,
-          &quot;Team Meeting: Design code review strategy with team.&quot;,
-          &quot;Observation: Team members bought in.&quot;)
-
-days &lt;- c(0, 1, 23, 24, 25, 26, 26.5, 28, 29, 30, 31, 70)
-
-g &lt;- tibble(person = rep(seq(n), each = length(morale)),
-       time = rep(seq(length(morale)), n),
-       morale = morale + runif(n * length(morale)),
-       prod = prod + runif(n * length(prod)),
-       lab = rep(labs, n)) %&gt;%
-  mutate(lab = factor(lab, levels = labs, ordered = TRUE)) %&gt;%
-  ggplot() +
-  geom_point(aes(y = morale, x = prod, color = factor(person)),
-             size = 5,
-             alpha = 0.8) +
-  geom_line(aes(x = prod, y = morale, group = person),
-            color = &quot;lightgrey&quot;,
-            alpha = 0.3) +
-  ggtitle(&quot;Team&#39;s Log, Day {days[frame_along]} - {labs[frame_along]}&quot;) +
-  theme_rs() +
-  ylab(&quot;Individual Morale&quot;) +
-  xlab(&quot;Individual Productivity&quot;) +
-  guides(color = FALSE) +
-  theme(axis.text = element_blank(),
-        axis.ticks = element_blank()) +
-  ggthemes::scale_color_solarized() +
-  transition_reveal(time) +
-  enter_fade() +
-  exit_shrink() +
-  ease_aes(&#39;sine-in-out&#39;) +
-  labs(caption = &quot;Completely fake data.&quot;)
-animate(g, width = 450, height = 450)</code></pre>
 <p><img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/figure-html/fail-1.gif" /><!-- --></p>
 <p>In case you didn’t feel like sitting through that animation, here’s the bottom line: my team was doing great work upgrading to R, a mistake made it to a client, I <strong>WAY</strong> overreacted and burned a lot of goodwill that took a long time to get back.</p>
 <p>Here’s a checklist to figure out if you’re in a similar situation [] - You’re upgrading your team to a new technology (R). [] - You have to keep doing real work while that transition happens.</p>
@@ -129,31 +75,46 @@ animate(g, width = 450, height = 450)</code></pre>
 <div id="prepare-technically" class="section level1">
 <h1>Prepare Technically</h1>
 <p>This is the obvious kind of preparation. Make sure that you’re doing everything you can to avoid mistakes.</p>
+<p>Particularly if you’re in the business of producing data science insights (as opposed to making models for machines to use), the #1 best tool you have for catching errors is the data scientist or analyst’s brain. It’s sometimes possible to set up more formal error checking (e.g. unit or integration tests) in the style of software development. But more often, if you’re generating insights, the only way to know if what you’ve done is right is to examine the <em>process</em>. Here are a few ideas on how to make the process more ironclad.</p>
 <div id="sanity-checks" class="section level3">
 <h3>Sanity Checks</h3>
-<p>Have workers turn their brains on</p>
+<p>It’s all too easy to churn out an analysis, finish up, breathe a huge sigh of relief, and send it off without thinking about how many 156 year-olds appeared in the data.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Setting team norms (and putting together checklists or templates) for taking a close look through incoming data and examining outgoing analysis can make it way more likely that you’ll catch mistakes.</p>
 </div>
 <div id="share-more-context" class="section level3">
 <h3>Share More Context</h3>
-<p>Always worth it</p>
+<p>This is really only relevant if you’re the team lead…but share more context. Think you’ve shared enough and they don’t really need more? SHARE MORE CONTEXT.</p>
+<p>I have never run into a situation where the amount of context I gave someone who was working with me was a hindrance, and have been bitten by not sharing enough.</p>
+<p>Kinda vague? Here’s an example – I had a team member working on a project for a client that involved visualizing performance on several metrics to thresholds for the metrics. The plots looked something like:</p>
+<p><img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>The input data set had a field for performance (the color) that I assumed my team member was using. They assumed that the color could just be computed from the metric and the threshold. The context they didn’t have was that some of the thresholds changed over time, some referenced prior time periods, and some were whether the difference between the metric and the threshold was statistically significant. Because of my assumption that they would just use the column in the data, and my lack of sharing context, we produced incorrect plots that were spotted by the client (who knew the data well).</p>
 </div>
 <div id="code-review" class="section level3">
 <h3>Code Review</h3>
-<p>Code review is great – but if you’re creating insight products, this is more-or-less your last resort. And even then, I think the primary purpose of code review is to trigger thinking by the person who wrote the code, not for them to be handed insight from on hgiht. Institute good code review practices as soon as you can. And remember, code review <strong>doesn’t have to be on github</strong>.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Code review, no matter how low-tech is 1,000<em>x</em> better than code review that doesn’t happen because you want to see pretty green and red lines in git.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
-<p>This is actually harder than it sounds. Most of the tools we use were created for software engineers. Their main product is code. That is not true for most data science teams.</p>
-<p>Some produce scores, most produce insights, but there’s no forcing mechanism the way there is for software deployment.</p>
-<p>If you’re doing data science to create insights (as opposed to creating a score that will be used in some other contect), as most early-maturity data science teams are, there’s a huge difference between you and a software engineering team.</p>
+<p>Code review is great – but if you’re creating insight products, this is more-or-less your last resort. And even then, I think the primary purpose of code review is to trigger thinking by the person who wrote the code, not for them to be handed insight from on high.</p>
+<p>Institute good code review practices as soon as you can. This can be a hard one, as it’s tempting to believe that code review that doesn’t involve leaving comments on pretty red and green diffs on github isn’t real. But any review, no matter how low-tech is <strong>1,000</strong><em>x</em> better than code review that doesn’t happen because you’re waiting for the team to “get up to speed with git”.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
+<p>In fact, one of my favorite ways to do code review is to print out the code, read through it with the person who wrote it, and mark it up like an essay. Decidedly low-tech, but really engages the internal compiler.</p>
+<div class="figure">
+<img src="/post/2019-01-23-upgrading-to-r-2-failure-s-coming-get-ready_files/giphy.gif" alt="Low Tech" />
+<p class="caption">Low Tech</p>
+</div>
 </div>
 </div>
 <div id="prepare-emotionally" class="section level1">
 <h1>Prepare Emotionally</h1>
-<p>More important Don’t overreact Blameless postmortems Radical Candor Rising Strong</p>
+<p>But even if you do all the things above, failure at some point is almost inevitable. It’s kinda cliche at this point to say that failure is inevitable, and what matters is how you handle that. But as someone who knows that but still handled it badly as a team leader, here are a few tips I’d share.</p>
+<p>The number 1 most important thing you can do is <strong>avoid overreacting</strong>.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> No matter how important the thing that’s messed up is, the long term health of the team is more important. It’s definitely hard to feel this in the moment, but this surely isn’t the only thing the team is (or will be) working on. Burning bridges with your team by overreacting, assigning blame, and creating draconian new rules that will stifle people’s work ethic is unlikely to lead to the outcomes you want.</p>
+<p>To be a little more concrete: it’s impossible to overrate the effectiveness of generating solutions as a team. <a href="https://landing.google.com/sre/sre-book/chapters/postmortem-culture/"><strong>Blameless postmortems</strong></a> on any major milestone or serious error are a <em>great</em> thing to start today, and they are also the right way to recover from a serious error or mistake. Sitting with the team and emphasizing solutions (rather than blame) are the way to recover. In particular, I’ve found several times that handing solutions down from on-high is ineffective. Meeting as a team to come up with solutions work great – even when the eventual team solution is the same as the initial one that didn’t work!</p>
+</div>
+<div id="a-coda-book-recs" class="section level1">
+<h1>A Coda: Book Recs</h1>
+<p>Two books I couldn’t recommend more strongly in this vein are <a href="https://www.amazon.com/dp/B00P5557G2/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">Rising Strong</a> by Brene Brown and <a href="https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">High Output Management</a> by Andy Grove. Brown’s book is a great exploration of failure and recovery. Trying to embrace the mindset in this book, even with frequent failures, has helped me be a much more empathetic and effective leader. Andy Grove’s book is a much more traditional “management” book, but his explanation of managing to task-relevant maturity is a great way to think about avoiding failure points whenever possible.</p>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>You <em>should</em> also be adopting git, as will be in point 5…but don’t WAIT for git to do code review.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>In the spirit of literate programming, my favorite way to do code review for more than a few lines at a time is actually to print out the code and mark it up like an essay.<a href="#fnref2">↩</a></p></li>
+<li id="fn1"><p>Or more likely 999 year-olds. <strong>Missing data should never have numeric codes</strong>, amirite?!?<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Talking to you, past Alex!<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Especially if you’re the team lead, but really no matter what.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 
@@ -178,18 +139,6 @@ animate(g, width = 450, height = 450)</code></pre>
 
     </div>
     
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
-
-
 
     
 
