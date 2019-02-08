@@ -6,10 +6,19 @@
     <description>Recent content on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
+      <link>/2019/02/08/upgrading-to-r-2-failure-s-coming-get-ready/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/08/upgrading-to-r-2-failure-s-coming-get-ready/</guid>
+      <description>As a new manager working with my team of data scientists, upgrading to R meant doing something new, and something hard. As I should’ve known, new + hard is a great recipe for mistakes and failures. I learned a lot from those mistakes - lessons that I couldn’t have anticipated ahead of time. I’ll share my surprising (and less surprising) things I learned from one particular big failure in this blog post.</description>
+    </item>
     
     <item>
       <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
