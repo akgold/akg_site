@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrading to R #3: Be the Data Engineer they Need</title>
+      <link>/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/</guid>
+      <description>When I first went to data conferences, I assumed that EVERYONE else was pulling data from a supercomputer-backed Spark cluster, immaculately maintained by an army of data engineers. Needless to say, that was not my data infrastructure.
+ To be more succinct, most of the “data infrastructure” I’ve worked with has just been csv files. And our ETL processes – cleaning csv files to output more csv files (or rds).</description>
+    </item>
     
     <item>
       <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
