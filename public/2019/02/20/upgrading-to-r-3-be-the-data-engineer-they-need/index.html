@@ -94,7 +94,7 @@
 <ul>
 <li>Use git to manage your code, and git LFS for managing data. Git will choke and die on data files larger than 50Mb or so, but aside from some annoyingly long download and upload times, git LFS has been a good tool for sharing data up to a few Gb across my team.</li>
 <li>Store all data in a <code>data</code> folder, with input data separated from cleaned data.</li>
-<li>If feasible, create standardized cleaning functions (in a package!) so that variable names are the same across different projects.</li>
+<li>If feasible, create standardized cleaning functions (in a <a href="/2019/02/27/upgrading-to-r-4-write-a-package/">package</a>!) so that variable names are the same across different projects.</li>
 <li>Consider creating a data access API in R so you call a function to access data instead of loading a <code>csv</code> file.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> The advantage is that it abstracts away from exactly how you store the data, so you can get used to loading your data in a simple way, and you can always update the backend to a SQL server or something else without changing the way you access your data.</li>
 </ul>
 </div>

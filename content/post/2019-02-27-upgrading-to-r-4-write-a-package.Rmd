@@ -1,0 +1,91 @@
+---
+title: 'Upgrading to R #4: It Takes a Team to Write a Package'
+author: Alex Gold
+date: '2019-02-27'
+slug: upgrading-to-r-4-write-a-package
+categories: 
+  - conferences
+  - R
+tags: []
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(gganimate)
+source(here::here("content", "post", "rsconf2019", "helper_funcs.R"))
+options(gganimate.start_pause = 15)
+```
+
+As you're upgrading to R, you'll be writing a lot of code. As the ever-quotable [David Robinson](https://twitter.com/drob/) says 
+
+`r blogdown::shortcode("tweet", "928447584712253440")`
+
+What he said! And then if you find yourself writing the same function three times, write a package!
+
+I know I'm not exactly breaking new territory to say that writing [an R package](https://medium.com/airbnb-engineering/using-r-packages-and-education-to-scale-data-science-at-airbnb-906faa58e12d) [with your team](https://blog.craftlab.hu/from-0-to-5-our-journey-of-building-an-r-package-ecosystem-ec257818e425) [is great](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/), and there are really great resources for _how_ to write a package.[^1] I'll just add that mastering R packages will make you feel like a wizard, and that is always cool. 
+
+![Master of R packages.](/post/2019-02-27-upgrading-to-r-4-write-a-package_files/wizard.gif)
+
+Obviously other people have covered the why and how in exhausting detail. What I'd like to talk about in the context of [upgrading to R](/2019/01/19/upgrading-to-r-at-rstudio-conf-2019/) is how to make sure your R packages _actually get used_, which is mostly about the **what**'s in the package, and **who** built it.
+
+```{r pkg, messge = FALSE, warning = FALSE, echo = FALSE}
+options(gganimate.nframes = 400,
+        gganimate.end_pause = 10)
+labs <- c("Dplyr Functions with Diagnostics",
+          "Reference Data Sets",
+          "Standard Plotting Functions",
+          "openxlsx Wrappers with Formatting",
+          "Special Analytical Functions",
+          "Report Templates",
+          "Vignettes",
+          "1+ Function(s) by each Team Member",
+          "Clever use of R in Package Name") %>%
+  stringr::str_wrap(15)
+
+pd <- tibble(labs = labs,
+             x = seq(length(labs)),
+             p = c(0.05, 0.1, 0.12, 0.15, 0.2, 0.22, 0.34, 0.65, 0.96)) %>%
+  extend_end_state()
+
+pd %>%
+  ggplot(aes(x = x)) +
+  geom_area(aes(y = p)) +
+  geom_label(aes(label = labs, y = p + 0.05),
+             family = text_fam, size = 4) +
+  theme_rs() +
+  ylab("Likelihood of Use") +
+  ggtitle("What to add to youR package:") +
+  scale_y_continuous(labels = scales::percent) +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank()) +
+  coord_cartesian(xlim = c(min(pd$x - 0.5), max(pd$x + 0.5))) +
+  transition_reveal(time, keep_last = TRUE) +
+  enter_fade() +
+  ease_aes('cubic-in-out')
+```
+
+# What Belongs in Your Team's R Package
+
+As in the `gif` above, your R package can have lots of useful things in it, but here are things that I've frequently used in packages on my team:
+
+### `dplyr` function wrappers
+
+In my opinion, this is probably the most useful, especially if your team has a lot of junior members. Many times students aren't exposed to the weirdness of real data, and so providing some automated checks can be super helpful. Some functions we've created wrappers with diagnostics:
+
+- `recode2`, which wraps `dplyr::recode` with a cross-table of the values before and after recoding
+- `join2`, which wraps `dplyrs` join functions providing diganostics on how many rows did or didn't join and whether there's duplicated IDs
+- `read_in`, which wraps `readr::read_delim` and prints the first few rows upon import
+-`filter2`, which wraps `dplyr::filter` and lets you know how many rows got dropped 
+
+### Reference data sets
+Keeping reference data sets in an R package is an easy way to keep them synced (especially if you're in a [`csv`-driven data environment](/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/)). For example, we had a list of 
+
+### Plotting Functions
+
+## Openxlsx wrappers with formatting
+
+### Special analytical functions
+
+### Report Templates
+
+[^1]: My favorite is Hadley Wickham's _[R Packages](http://r-pkgs.had.co.nz/)_.

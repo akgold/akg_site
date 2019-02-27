@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2019/02/27/upgrading-to-r-4-write-a-package/</loc>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/</loc>
     <lastmod>2019-02-20T00:00:00+00:00</lastmod>
   </url>
@@ -88,7 +93,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,7 +117,7 @@
   
   <url>
     <loc>/categories/conferences/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -178,7 +183,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -190,7 +195,7 @@
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2019-02-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

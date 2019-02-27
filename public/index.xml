@@ -6,10 +6,23 @@
     <description>Recent content on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrading to R #4: It Takes a Team to Write a Package</title>
+      <link>/2019/02/27/upgrading-to-r-4-write-a-package/</link>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/27/upgrading-to-r-4-write-a-package/</guid>
+      <description>As you’re upgrading to R, you’ll be writing a lot of code. As the ever-quotable David Robinson says
+When you’ve written the same code 3 times, write a function
+When you’ve given the same in-person advice 3 times, write a blog post
+&amp;mdash; David Robinson (@drob) November 9, 2017  What he said! And then if you find yourself writing the same function three times, write a package!
+I know I’m not exactly breaking new territory to say that writing an R package with your team is great, and there are really great resources for how to write a package.</description>
+    </item>
     
     <item>
       <title>Upgrading to R #3: Be the Data Engineer you Need</title>

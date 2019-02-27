@@ -24,7 +24,7 @@ In thinking about the transitions I've been part of, here are tips that might've
 1. [Excitement >> Skills](/2019/01/19/upgrading-to-r-1-excitement-skills/)
 2. [Failure's Coming, Get Ready](/2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/)
 3. [You are the Data Engineer your Team Needs](/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/)
-4. It Takes a Team to Write a Package
+4. [It Takes a Team to Write a Package](/2019/02/27/upgrading-to-r-4-write-a-package/)
 5. Git: Sometimes the Right Thing isn't the Easiest
 6. Have you met my Friend RMarkdown?
 7. Don't Get Too Excited Just Yet

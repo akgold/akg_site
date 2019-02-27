@@ -62,7 +62,7 @@ Since I've done and managed a lot of ETL involving flat files, here are some tip
 
 - Use git to manage your code, and git LFS for managing data. Git will choke and die on data files larger than 50Mb or so, but aside from some annoyingly long download and upload times, git LFS has been a good tool for sharing data up to a few Gb across my team.
 - Store all data in a `data` folder, with input data separated from cleaned data.
-- If feasible, create standardized cleaning functions (in a package!) so that variable names are the same across different projects.
+- If feasible, create standardized cleaning functions (in a [package](/2019/02/27/upgrading-to-r-4-write-a-package/)!) so that variable names are the same across different projects.
 - Consider creating a data access API in R so you call a function to access data instead of loading a `csv` file.[^2] The advantage is that it abstracts away from exactly how you store the data, so you can get used to loading your data in a simple way, and you can always update the backend to a SQL server or something else without changing the way you access your data.
 
 
