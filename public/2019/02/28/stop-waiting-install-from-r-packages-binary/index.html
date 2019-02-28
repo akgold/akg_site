@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<title>Tiny Machine, Install R Packages from Binary - Alex K Gold Blog</title>
+<meta property="og:title" content="Tiny Machine, Install R Packages from Binary - Alex K Gold Blog">
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/akg_profile.jpg"
+         width="50"
+         height="50"
+         alt="It Me">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Alex K Gold</a></li>
+    
+    <li><a href="https://github.com/akgold">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/alexkgold">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">Tiny Machine, Install R Packages from Binary</h1>
+
+    
+    <span class="article-date">2019/02/28</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>I decided yesterday that I was going to create a little <a href="https://shiny.rstudio.com/">shiny</a> app for my wife. I won’t share the details here because it’s mushy, but suffice it to say the idea is that she can go to a website and get some nice notes I left for her.</p>
+<div class="figure">
+<img src="/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/romance.gif" alt="It me." width="450" />
+<p class="caption">It me.</p>
+</div>
+<p>Since I wanted to serve this site for cheap, I was going to run a <code>shiny</code> server on an EC2 instance that fit into AWS’s free tier. The finished product will run just fine on this tiny server, but I was finding that package installation was taking forever.</p>
+<p>After launching the AWS instance and installing R, I ran <code>install.packages(&quot;dplyr&quot;)</code> and walked away, knowing that it might take a minute on such a puny system. 25 minutes and 47 seconds later, it was still compiling the <code>mutate</code> command.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<div class="figure">
+<img src="/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/bored.gif" alt="Also me." width="450" />
+<p class="caption">Also me.</p>
+</div>
+<p>I knew installing packages from binary (i.e. pre-compiled) would be way faster. That was validated when the <code>dplyr</code> installation that didn’t finish in 25 minutes and 47 seconds installed from binary in about 10 seconds.</p>
+<div class="figure">
+<img src="/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/fast.gif" alt="Me now." />
+<p class="caption">Me now.</p>
+</div>
+<p>There are a bunch of warnings for using binary packages, particularly that they are community-maintained, are likely to not be up-to date with the latest source updates, and are not available for all package/OS combos. In particular, if you’re looking for an enterprise solution, <a href="https://www.rstudio.com/products/package-manager/">RStudio’s Package Manager</a> is perfect for this sort of thing (did I mention I’m starting work there a week from Monday?).</p>
+<p>BUT - if you’re trying to spend zero money to do something cute for your wife, this will work.</p>
+<div id="add-repository-for-binaries" class="section level3">
+<h3>Add Repository for Binaries</h3>
+<p>Since we’re installing binaries here, you’ll be installing them using your system’s installer (e.g. <code>apt-get</code> in Ubuntu ), not <code>install.packages()</code> in R. Therefore you’ve got to tell Ubuntu that it can install from the binaries online.</p>
+<p>Once you find the right combo of R version (looks like 3.4.x and 3.5.x are supported right now) and OS on the <a href="https://cloud.r-project.org/bin/">r-project</a> website, you add it to your system’s list of sources (using command line, not in an R terminal) and update the repos:</p>
+<pre class="bash"><code>echo &quot;deb [allow-insecure=yes] https://cloud.r-project.org/bin/linux/ubuntu bionic/&quot; | sudo tee -a /etc/apt/sources.list
+sudo apt-get update</code></pre>
+<p>Note the little <code>[allow-insecure=yes]</code> decorator. This allows for packages to be installed even if they’re not verified. I had some issues with this piece, and since I trust the <code>r-project</code> folks, I thought it was ok to allow here.</p>
+</div>
+<div id="off-to-the-races" class="section level3">
+<h3>Off to the Races</h3>
+<p>That’s really it in terms of setup. Now you can search for available R package binaries, for example</p>
+<pre class="bash"><code>apt search dplyr</code></pre>
+<p>And install them in seconds, like</p>
+<pre class="bash"><code>sudo apt-get install r-cran-dplyr</code></pre>
+<p>Done! Packages installed in record time. Mushiness managed.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A length of time, strangely enough, exactly equal to the length of one <a href="https://www.starwars.com/tv-shows/star-wars-rebels">Star Wars Rebels</a> episode…<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-133127514-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  </body>
+</html>
+

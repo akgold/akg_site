@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>How To on Alex K Gold Blog</title>
+    <link>/categories/how-to/</link>
+    <description>Recent content in How To on Alex K Gold Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/how-to/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tiny Machine, Install R Packages from Binary</title>
+      <link>/2019/02/28/stop-waiting-install-from-r-packages-binary/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/28/stop-waiting-install-from-r-packages-binary/</guid>
+      <description>I decided yesterday that I was going to create a little shiny app for my wife. I won’t share the details here because it’s mushy, but suffice it to say the idea is that she can go to a website and get some nice notes I left for her.
+It me.
+ Since I wanted to serve this site for cheap, I was going to run a shiny server on an EC2 instance that fit into AWS’s free tier.</description>
+    </item>
+    
+  </channel>
+</rss>

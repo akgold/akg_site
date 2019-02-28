@@ -6,10 +6,21 @@
     <description>Recent content in R on Alex K Gold Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tiny Machine, Install R Packages from Binary</title>
+      <link>/2019/02/28/stop-waiting-install-from-r-packages-binary/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/02/28/stop-waiting-install-from-r-packages-binary/</guid>
+      <description>I decided yesterday that I was going to create a little shiny app for my wife. I won’t share the details here because it’s mushy, but suffice it to say the idea is that she can go to a website and get some nice notes I left for her.
+It me.
+ Since I wanted to serve this site for cheap, I was going to run a shiny server on an EC2 instance that fit into AWS’s free tier.</description>
+    </item>
     
     <item>
       <title>Upgrading to R #3: Be the Data Engineer you Need</title>
