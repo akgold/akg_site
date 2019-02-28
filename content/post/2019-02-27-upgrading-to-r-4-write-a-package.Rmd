@@ -78,14 +78,20 @@ In my opinion, this is probably the most useful, especially if your team has a l
 -`filter2`, which wraps `dplyr::filter` and lets you know how many rows got dropped 
 
 ### Reference data sets
-Keeping reference data sets in an R package is an easy way to keep them synced (especially if you're in a [`csv`-driven data environment](/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/)). For example, we had a list of 
+Keeping reference data sets in an R package is an easy way to keep them synced (especially if you're in a [`csv`-driven data environment](/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/)). For example, we had a list of facility names that we frequently matched into other data. Putting the dataset of facility names and an `add_facility_names` function removed one source of friction in our workflow.
 
 ### Plotting Functions
+Depending on your applications, you might use the same plots all the time. For example, I was once in a job where we were constantly outputting bar charts with error bars. Building out these plots in `ggplot2` wasn't a huge pain, but putting those default plots into a package made the outputting process super easy.
 
-## Openxlsx wrappers with formatting
+## `openxlsx` or `googlesheets` wrappers with formatting
+In many consulting environments, clients or customers want you to _make_ spreadsheets for them to play with. It's easy to create an R workflow to generate data frames that can be dumped into a Google Sheet or Excel workbook, but manually styling your creations every time is a pain (especially if you frequently find yourself updating the same numbers and having to re-style every time.) Writing some wrapper functions that can write the data out to a spreadsheet while also doing styling can make this annoying task much easier. 
 
 ### Special analytical functions
+When I was full-time doing experiments in political data world, we were constantly running particular kinds of regressions and predictive margins of those regressions. Putting all those analytical functions into a package made code clearer and easier to read, and also made sure that no one forgot important options (e.g. to always use robust standard errors).
 
 ### Report Templates
+Did you know you can include RMarkdown templates in a package? It's awesome.
+
+![Look ma, analysis templates!](/post/2019-02-27-upgrading-to-r-4-write-a-package_files/Screen Shot 2019-02-27 at 12.59.54 PM.png)
 
 [^1]: My favorite is Hadley Wickham's _[R Packages](http://r-pkgs.had.co.nz/)_.

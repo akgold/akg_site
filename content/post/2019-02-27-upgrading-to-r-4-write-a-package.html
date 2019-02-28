@@ -35,17 +35,26 @@ tags: []
 </div>
 <div id="reference-data-sets" class="section level3">
 <h3>Reference data sets</h3>
+<p>Keeping reference data sets in an R package is an easy way to keep them synced (especially if you’re in a <a href="/2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/"><code>csv</code>-driven data environment</a>). For example, we had a list of facility names that we frequently matched into other data. Putting the dataset of facility names and an <code>add_facility_names</code> function removed one source of friction in our workflow.</p>
 </div>
 <div id="plotting-functions" class="section level3">
 <h3>Plotting Functions</h3>
+<p>Depending on your applications, you might use the same plots all the time. For example, I was once in a job where we were constantly outputting bar charts with error bars. Building out these plots in <code>ggplot2</code> wasn’t a huge pain, but putting those default plots into a package made the outputting process super easy.</p>
 </div>
-<div id="openxlsx-wrappers-with-formatting" class="section level2">
-<h2>Openxlsx wrappers with formatting</h2>
+<div id="openxlsx-or-googlesheets-wrappers-with-formatting" class="section level2">
+<h2><code>openxlsx</code> or <code>googlesheets</code> wrappers with formatting</h2>
+<p>In many consulting environments, clients or customers want you to <em>make</em> spreadsheets for them to play with. It’s easy to create an R workflow to generate data frames that can be dumped into a Google Sheet or Excel workbook, but manually styling your creations every time is a pain (especially if you frequently find yourself updating the same numbers and having to re-style every time.) Writing some wrapper functions that can write the data out to a spreadsheet while also doing styling can make this annoying task much easier.</p>
 <div id="special-analytical-functions" class="section level3">
 <h3>Special analytical functions</h3>
+<p>When I was full-time doing experiments in political data world, we were constantly running particular kinds of regressions and predictive margins of those regressions. Putting all those analytical functions into a package made code clearer and easier to read, and also made sure that no one forgot important options (e.g. to always use robust standard errors).</p>
 </div>
 <div id="report-templates" class="section level3">
 <h3>Report Templates</h3>
+<p>Did you know you can include RMarkdown templates in a package? It’s awesome.</p>
+<div class="figure">
+<img src="/post/2019-02-27-upgrading-to-r-4-write-a-package_files/Screen%20Shot%202019-02-27%20at%2012.59.54%20PM.png" alt="Look ma, analysis templates!" />
+<p class="caption">Look ma, analysis templates!</p>
+</div>
 </div>
 </div>
 </div>
