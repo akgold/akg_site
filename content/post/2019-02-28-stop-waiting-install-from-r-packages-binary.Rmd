@@ -1,5 +1,5 @@
 ---
-title: Tiny Machine, Install from R Packages Binary
+title: Tiny Machine, Install R Packages from Binary
 author: Alex Gold
 date: '2019-02-28'
 slug: stop-waiting-install-from-r-packages-binary
@@ -14,48 +14,44 @@ I decided yesterday that I was going to create a little [shiny](https://shiny.rs
 
 ![It me.](/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/romance.gif){width=450px}
 
-Since I was trying to stick with the AWS free tier, I was installing on a tiny machine. The finished product will run just fine on this tiny server, but I was finding that package installation was taking forever. 
+Since I wanted to serve this site for cheap, I was going to run a `shiny` server on an EC2 instance that fit into AWS's free tier. The finished product will run just fine on this tiny server, but I was finding that package installation was taking forever. 
 
-After launching the AWS instance and installing R, I ran `install.packages("dplyr")` and walked away, knowing that it might take a minute on such a puny system. 25 minutes and 47 seconds later (a length of time, strangely enough, exactly equal to the length of one [Star Wars Rebels](https://www.starwars.com/tv-shows/star-wars-rebels) episode...), it was still compiling the `mutate` command.
+After launching the AWS instance and installing R, I ran `install.packages("dplyr")` and walked away, knowing that it might take a minute on such a puny system. 25 minutes and 47 seconds later, it was still compiling the `mutate` command.[^1]
 
 ![Also me.](/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/bored.gif){width=450px}
 
-When I eventually got it working, that `dplyr` installation that didn't finish in 25 minutes and 47 seconds was done in about 10 seconds. 
+I knew installing packages from binary (i.e. pre-compiled) would be way faster. That was validated when the `dplyr` installation that didn't finish in 25 minutes and 47 seconds installed from binary in about 10 seconds. 
 
 ![Me now.](/post/2019-02-28-stop-waiting-install-from-r-packages-binary_files/fast.gif)
 
-There are a bunch of warnings for using compiled packages, particularly that they are community-maintained, are likely to not be up-to date with the latest source updates, and are not available for all package/OS combos. In particular, if you're looking for an enterprise solution, [RStudio's Package Manager](https://www.rstudio.com/products/package-manager/) is perfect for this sort of thing (did I mention I'm starting work there a week from Monday?).
+There are a bunch of warnings for using binary packages, particularly that they are community-maintained, are likely to not be up-to date with the latest source updates, and are not available for all package/OS combos. In particular, if you're looking for an enterprise solution, [RStudio's Package Manager](https://www.rstudio.com/products/package-manager/) is perfect for this sort of thing (did I mention I'm starting work there a week from Monday?).
 
 BUT - if you're trying to spend zero money to do something cute for your wife, this will work.
 
 ### Add Repository for Binaries
 Since we're installing binaries here, you'll be installing them using your system's installer (e.g. `apt-get` in Ubuntu ), not `install.packages()` in R. Therefore you've got to tell Ubuntu that it can install from the binaries online.
 
-Once you find the right combo of R version (looks like 3.4.x and 3.5.x are supported right now) and OS on the [r-project](https://cloud.r-project.org/bin/) website, you can use the command line to add it to your system's list of sources (command line, not in an R terminal):
+Once you find the right combo of R version (looks like 3.4.x and 3.5.x are supported right now) and OS on the [r-project](https://cloud.r-project.org/bin/) website, you add it to your system's list of sources (using command line, not in an R terminal) and update the repos:
 
-```{bash, eval = FALSE, echo = FALSE}
+```{bash, eval = FALSE}
 echo "deb [allow-insecure=yes] https://cloud.r-project.org/bin/linux/ubuntu bionic/" | sudo tee -a /etc/apt/sources.list
-```
-
-Note the little `[allow-insecure=yes]` decorator. This allows for packages to be installed even if they're not verified. I had some issues with this piece, and since you trust the `r-project` folks, it's ok to allow here.
-
-Then you'll update the list of allowable installs using 
-
-```{bash, eval = FALSE, echo = FALSE}
 sudo apt-get update
 ```
 
-And voila! Now you can search for available R package binaries, for example
+Note the little `[allow-insecure=yes]` decorator. This allows for packages to be installed even if they're not verified. I had some issues with this piece, and since I trust the `r-project` folks, I thought it was ok to allow here.
 
-```{bash, eval = FALSE, echo = FALSE}
+### Off to the Races
+That's really it in terms of setup. Now you can search for available R package binaries, for example
+
+```{bash, eval = FALSE}
 apt search dplyr
 ```
 
 And install them in seconds, like
-```{bash, eval = FALSE, echo = FALSE}
+```{bash, eval = FALSE}
 sudo apt-get install r-cran-dplyr
 ```
 
 Done! Packages installed in record time. Mushiness managed.
 
-
+[^1]: A length of time, strangely enough, exactly equal to the length of one [Star Wars Rebels](https://www.starwars.com/tv-shows/star-wars-rebels) episode...
