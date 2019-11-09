@@ -2,7 +2,7 @@
   {
     "path": "posts/2019-10-17-production-shiny-w-pins/",
     "title": "RViews: Production Shiny Apps with Pins",
-    "description": "Using the new [pins](https://rstudio.github.io/pins/) package to create a shiny app.",
+    "description": "Using the new pins package to create a shiny app.",
     "author": [
       {
         "name": "Alex Gold",
@@ -12,7 +12,7 @@
     "date": "2019-10-17",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:15:03-05:00"
+    "last_modified": "2019-11-09T15:15:53-05:00"
   },
   {
     "path": "posts/2019-07-07-r-big-data/",
