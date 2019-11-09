@@ -90,6 +90,21 @@
     "last_modified": "2019-11-09T14:27:55-05:00"
   },
   {
+    "path": "posts/2019-11-09-custom-fonts-in-ggplot2/",
+    "title": "Custom fonts in ggplot2",
+    "description": "Put custom fonts into plots.",
+    "author": [
+      {
+        "name": "Alex Gold",
+        "url": {}
+      }
+    ],
+    "date": "2017-08-28",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2019-11-09T15:13:50-05:00"
+  },
+  {
     "path": "posts/2019-11-09-rstats-nyc-2017/",
     "title": "RStats NYC 2017",
     "description": "My writeup of RStats NYC 2017.",
