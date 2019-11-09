@@ -1,3 +1,12 @@
 ---
-site: blogdown:::blogdown_site
+title: "Alex K Gold Site"
+description: |
+  Recent stuff I've done.
+site: distill::distill_website
 ---
+
+Alex K Gold is a Solutions Engineer at RStudio. He lives in Washington DC. This is his website, which includes speaking and writing Alex has done.
+
+Before coming to RStudio, Alex was a data scientist working on economic policy research, political campaigns, and healthcare. He is a proud economics PhD dropout.
+
+When not data nerd-ing, Alex loves spending time with his wife, doing handstands, and cooking.

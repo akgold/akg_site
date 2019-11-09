@@ -1,0 +1,13 @@
+---
+title: "RViews: Production Shiny Apps with Pins"
+description: |
+  Using the new [pins](https://rstudio.github.io/pins/) package to create a shiny app.
+author:
+  - name: Alex Gold
+date: 10-17-2019
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+[RViews Post](https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/)

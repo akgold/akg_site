@@ -1,0 +1,18 @@
+name: "v2"
+title: "Alex K Gold Site"
+description: |
+  Some stuff I've done.
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Speaking"
+      href: speaking.html
+    - text: "Blog + Writing"
+      href: writing.html
+    - icon: fab fa-twitter
+      href: https://twitter.com/alexkgold
+    - icon: fab fa-github
+      href: https://github.com/akgold/
+output: distill::distill_article

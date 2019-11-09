@@ -1,0 +1,24 @@
+---
+title: "Things I've said"
+description: |
+  Recent presentations I've given
+---
+
+All of my slides are available at [speakerdeck](https://speakerdeck.com/akgold).
+
+Generally, my presentations involve demoing R code, which is available on [GitHub](https://github.com/akgold/).
+
+```{r}
+library(dplyr)
+tibble::tribble(
+  ~Date,            ~Title,         ~Slides,             ~Code, 
+  "2019-05-21", "Data Scientists Doing Software Engineering", "https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering", NA,
+  "2019-06-12", "Big Data and R: Spark", "https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark", "https://github.com/akgold/big_data_2019",
+  "2019-09-17", "Love for Linear Models", "https://speakerdeck.com/akgold/love-for-linear-models", NA,
+  "2019-09-17", "Reproducible Data Science", "https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science", "https://github.com/akgold/2019-09-17_john_deere_webinar"
+) %>%
+  mutate(Slides = glue::glue("[Slides]({Slides})"), 
+         Code = glue::glue("[Code]({Code})")) %>%
+  knitr::kable()
+```
+

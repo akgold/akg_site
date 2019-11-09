@@ -1,0 +1,13 @@
+---
+title: "RViews: 3 Big Data Strategies for R"
+description: |
+  3 strategies for working with big data in R.
+author:
+  - name: Alex Gold
+date: 07-07-2019
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+[RViews Post](https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/)
