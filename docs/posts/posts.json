@@ -27,7 +27,7 @@
     "date": "2019-07-07",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:12:31-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   },
   {
     "path": "posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/",
@@ -42,7 +42,7 @@
     "date": "2019-02-20",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:55:36-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   },
   {
     "path": "posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/",
@@ -57,7 +57,7 @@
     "date": "2019-01-23",
     "categories": [],
     "preview": "posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/upgrading-to-r-2-failures-coming-get-ready_files/figure-html5/unnamed-chunk-2-1.png",
-    "last_modified": "2019-11-09T14:56:37-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   },
   {
     "path": "posts/2019-11-09-upgrading-to-r-1-excitement-skills/",
@@ -72,7 +72,7 @@
     "date": "2019-01-20",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:47:04-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   },
   {
     "path": "posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/",
@@ -87,7 +87,7 @@
     "date": "2019-01-19",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:27:55-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   },
   {
     "path": "posts/2019-11-09-custom-fonts-in-ggplot2/",
@@ -117,6 +117,6 @@
     "date": "2017-04-23",
     "categories": [],
     "preview": {},
-    "last_modified": "2019-11-09T14:26:05-05:00"
+    "last_modified": "2019-11-09T15:08:24-05:00"
   }
 ]
