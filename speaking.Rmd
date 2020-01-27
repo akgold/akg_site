@@ -10,17 +10,30 @@ Generally, my presentations involve demoing R code, which is available on [GitHu
 
 ```{r}
 library(dplyr)
-tibble::tribble(
-  ~Date,            ~Title,         ~Slides,             ~Code, 
-  "2019-05-21", "Data Scientists Doing Software Engineering", "https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering", NA,
-  "2019-06-12", "Big Data and R: Spark", "https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark", "https://github.com/akgold/big_data_2019",
-  "2019-09-17", "Love for Linear Models", "https://speakerdeck.com/akgold/love-for-linear-models", NA,
-  "2019-09-17", "Reproducible Data Science", "https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science", "https://github.com/akgold/2019-09-17_john_deere_webinar", 
-  "2019-11-14", "Big Data and R: Databases", "https://speakerdeck.com/akgold/r-and-big-data-databases", 
-  "https://github.com/akgold/bdl_2019"
+bind_cols(
+  tibble::tribble(
+    ~Date,            ~Title,         ~Slides,             ~Code, 
+    "2019-05-21", "Data Scientists Doing Software Engineering", "https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering", NA,
+    "2019-06-12", "Big Data and R: Spark", "https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark", "https://github.com/akgold/big_data_2019",
+    "2019-09-17", "Love for Linear Models", "https://speakerdeck.com/akgold/love-for-linear-models", NA,
+    "2019-09-17", "Reproducible Data Science", "https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science", "https://github.com/akgold/2019-09-17_john_deere_webinar", 
+    "2019-11-14", "Big Data and R: Databases", "https://speakerdeck.com/akgold/r-and-big-data-databases", 
+    "https://github.com/akgold/bdl_2019"
+  ), 
+  tibble::tribble(
+    ~Video, 
+    NA, 
+    NA, 
+    NA, 
+    NA, 
+    "https://www.youtube.com/watch?v=GQcEnlz3jrI"
+  )
 ) %>%
-  mutate(Slides = glue::glue("[Slides]({Slides})"), 
-         Code = glue::glue("[Code]({Code})")) %>%
+  mutate(
+    Slides = glue::glue("[Slides]({Slides})"), 
+    Code = glue::glue("[Code]({Code})"), 
+    Video = ifelse(is.na(Video), NA, glue::glue("[Video]({Video})"))
+    ) %>%
   knitr::kable()
 ```
 

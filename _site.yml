@@ -3,7 +3,11 @@ title: "Alex K Gold"
 description: |
   Some stuff I've done.
 output_dir: "docs"
+
 navbar:
+  logo:
+    image: images/me.png
+    href: https://alexkgold.space
   right:
     - text: "Home"
       href: index.html
