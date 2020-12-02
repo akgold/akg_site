@@ -1,0 +1,46 @@
+---
+title: "Write Your R Packages Early and Often"
+description: |
+  Practical Patterns for using R packages.
+author:
+  - name: Alex Gold
+    url: {}
+date: 12-02-2020
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+Most reasonably proficient R programmers know that they should be writing R packages as a container for commonly-used functions. In my time working to spread R throguhout several organizations, I've seen that R packages are much more than simple containers for functions -- they're a way to spread R and a data science team. A way to manage a data science practice, whether that management is up, down, or lateral.
+
+In this blog post, I'll share three common patterns for creating R packages that can help them be tools to scale R throughout your organization, as well as the best tools in R right now for managing your package environment.
+
+Important to think about why your team is writing an R package. On many teams, an R package comes relatively late in their data science maturity cycle -- they've got many different projects, and are copying and pasting shared functions among them. An R package becomes a way to centralize and standardize those cross-project functions. However, an R package can be used for at least two other important purposes -- as a tool to promote R use across a team that is new to using R, or to enhance the reproducibility and testability of analyses, regardless of how mature the data science practice is.
+
+With existing R packages and tools, it's so easy to write R packages that even teams early in their R journeys can write packages and use them as a tool to scale the team, as opposed to a standardization mechanism once the team is already bought in on R.
+
+## Pattern 1: Expert Package Creation
+
+Expert Package Creation is what most people think of when they think of a team writing their own packages -- one or more "expert(s)" writes a package to help everyone else out. Most frequently this person is relatively expert in R, but sometimes they're an expert in data vis and are writing plotting functions, or in machine learning/statstics and are crafting specialized estimation functions. Sometimes they're experts in the organization's databases and can create semantically meaningful functions so not everyone else has to learn the painful details of the data.
+
+``` {.R}
+get_ninja_data <- function() {
+  DBI::dbConnect(odbc::odbc(), "dx094") %>%
+  dplyr::tbl("table_axsks") %>%
+  dplyr::left_join(
+    dplyr::tbl("tab_ooil"), 
+    by =  c(badly_named_id = "bad_name_id")
+  )
+}
+```
+
+This pattern can be very useful on teams that are already bought into R and just need someone to provide some working code. However, this pattern is often overused by all teams -- every package becomes an expert package, even if what is really needed is more buy-in.
+
+## Pattern 2: Everyone Package Creation
+
+A different strategy I've successfully used in the past is "everyone package creation". The idea here is that everyone on the team contributes to a team R package. The goal isn't necessarily
+
+## Pattern 3: A Package Per Project
+
+## Tools for Package Management
