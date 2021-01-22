@@ -2,10 +2,7 @@
 title: "R Packages for Experts, not Wizards"
 description: |
   Write internal R packages for your team that disseminate expertise, not cleverness.
-author:
-  - name: Alex Gold
-    url: {}
-date: 01-22-2021
+preview: images/wizard.png
 output:
   distill::distill_article:
     self_contained: false
