@@ -9,12 +9,12 @@ navbar:
     image: images/me.png
     href: https://alexkgold.space
   right:
-    - text: "Home"
+    - text: "Home/Blog"
       href: index.html
     - text: "Speaking"
       href: speaking.html
-    - text: "Blog + Writing"
-      href: writing.html
+    - text: "About Me"
+      href: about.html
     - icon: fab fa-twitter
       href: https://twitter.com/alexkgold
     - icon: fab fa-github
