@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Alex K Gold Site",
+      "description": "Recent stuff I've done.\n",
+      "author": [],
+      "contents": "\nAlex K Gold is a Solutions Engineer at RStudio. He lives in Silver Spring, MD. This is his website, which includes speaking and writing Alex has done.\nBefore coming to RStudio, Alex was a data scientist working on economic policy research, political campaigns, and healthcare. He is a proud economics PhD dropout.\nWhen not data nerd-ing, Alex loves spending time with his wife, doing handstands, and cooking.\n\n\n\n",
+      "last_modified": "2021-01-22T10:11:27-05:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Mostly #rstats and leadership, sometimes politics and handstands",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-01-22T10:11:27-05:00"
+    },
+    {
+      "path": "speaking.html",
+      "title": "Things I've said",
+      "description": "Recent presentations I've given",
+      "author": [],
+      "contents": "\nSelected1 slides are available at speakerdeck.\nGenerally, my presentations involve demoing R code, which is available on GitHub.\n\nDate\nTitle\nSlides\nCode\nVideo\n2020-12-03\nDCR: Powerful Package Patterns\nSlides\nCode\nNA\n2020-07-28\nRStudio Webinar: Growing a Remote Data Science Team\nSlides\nCode\nVideo\n2020-06-17\ne-RUM: Design Patterns for Big Shiny Apps\nSlides\nCode\nVideo\n2020-03-28\nDC SatRDays: Break Up Shiny Apps\nSlides\nCode\nNA\n2019-11-14\nBig Data London 2019: Big Data and R: Databases\nSlides\nCode\nVideo\n2019-09-17\nDC Data Science Meetup: Love for Linear Models\nSlides\nCode\nNA\n2019-09-17\nWebinar: Reproducible Data Science\nSlides\nCode\nNA\n2019-06-12\nBig Data Toronto 2019: Big Data and R, Spark\nSlides\nCode\nNA\n2019-05-21\nData Scientists Doing Software Engineering\nSlides\nCode\nNA\n\n\nOnes I haven’t been too lazy to put there…↩︎\n",
+      "last_modified": "2021-01-22T10:11:28-05:00"
+    },
+    {
+      "path": "writing.html",
+      "title": "Things I've written",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-01-22T10:11:29-05:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
