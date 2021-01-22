@@ -1,11 +1,11 @@
 ---
 title: "Alex K Gold Site"
 description: |
-  Recent stuff I've done.
+  It me.
 site: distill::distill_website
 ---
 
-Alex K Gold is a Solutions Engineer at RStudio. He lives in Silver Spring, MD. This is his website, which includes speaking and writing Alex has done.
+Alex K Gold is a Solutions Engineer at RStudio. He lives in Silver Spring, MD.
 
 Before coming to RStudio, Alex was a data scientist working on economic policy research, political campaigns, and healthcare. He is a proud economics PhD dropout.
 

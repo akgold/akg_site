@@ -1997,6 +1997,12 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
+  <script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+  <script src="site_libs/react-16.12.0/react.min.js"></script>
+  <script src="site_libs/react-16.12.0/react-dom.min.js"></script>
+  <script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/reactable-binding-0.2.3.9000/reactable.js"></script>
   <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
@@ -2057,89 +2063,8 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <p>Selected<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> slides are available at <a href="https://speakerdeck.com/akgold">speakerdeck</a>.</p>
 <p>Generally, my presentations involve demoing R code, which is available on <a href="https://github.com/akgold/">GitHub</a>.</p>
 <div class="layout-chunk" data-layout="l-body">
-<table>
-<colgroup>
-<col style="width: 3%" />
-<col style="width: 16%" />
-<col style="width: 34%" />
-<col style="width: 19%" />
-<col style="width: 26%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Date</th>
-<th style="text-align: left;">Title</th>
-<th style="text-align: left;">Slides</th>
-<th style="text-align: left;">Code</th>
-<th style="text-align: left;">Video</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">2020-12-03</td>
-<td style="text-align: left;">DCR: Powerful Package Patterns</td>
-<td style="text-align: left;"><a href="https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing">Slides</a></td>
-<td style="text-align: left;"><a href="NA">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2020-07-28</td>
-<td style="text-align: left;">RStudio Webinar: Growing a Remote Data Science Team</td>
-<td style="text-align: left;"><a href="https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing">Slides</a></td>
-<td style="text-align: left;"><a href="NA">Code</a></td>
-<td style="text-align: left;"><a href="https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/">Video</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2020-06-17</td>
-<td style="text-align: left;">e-RUM: Design Patterns for Big Shiny Apps</td>
-<td style="text-align: left;"><a href="https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit">Slides</a></td>
-<td style="text-align: left;"><a href="https://github.com/akgold/erum-big-shiny">Code</a></td>
-<td style="text-align: left;"><a href="https://youtu.be/NwVOvfpGq4o">Video</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2020-03-28</td>
-<td style="text-align: left;">DC SatRDays: Break Up Shiny Apps</td>
-<td style="text-align: left;"><a href="https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing">Slides</a></td>
-<td style="text-align: left;"><a href="github.com/akgold/shiny_break_up_satrday">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2019-11-14</td>
-<td style="text-align: left;">Big Data London 2019: Big Data and R: Databases</td>
-<td style="text-align: left;"><a href="https://speakerdeck.com/akgold/r-and-big-data-databases">Slides</a></td>
-<td style="text-align: left;"><a href="https://github.com/akgold/bdl_2019">Code</a></td>
-<td style="text-align: left;"><a href="https://www.youtube.com/watch?v=GQcEnlz3jrI">Video</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019-09-17</td>
-<td style="text-align: left;">DC Data Science Meetup: Love for Linear Models</td>
-<td style="text-align: left;"><a href="https://speakerdeck.com/akgold/love-for-linear-models">Slides</a></td>
-<td style="text-align: left;"><a href="NA">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2019-09-17</td>
-<td style="text-align: left;">Webinar: Reproducible Data Science</td>
-<td style="text-align: left;"><a href="https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science">Slides</a></td>
-<td style="text-align: left;"><a href="https://github.com/akgold/2019-09-17_john_deere_webinar">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">2019-06-12</td>
-<td style="text-align: left;">Big Data Toronto 2019: Big Data and R, Spark</td>
-<td style="text-align: left;"><a href="https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark">Slides</a></td>
-<td style="text-align: left;"><a href="https://github.com/akgold/big_data_2019">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2019-05-21</td>
-<td style="text-align: left;">Data Scientists Doing Software Engineering</td>
-<td style="text-align: left;"><a href="https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering">Slides</a></td>
-<td style="text-align: left;"><a href="NA">Code</a></td>
-<td style="text-align: left;">NA</td>
-</tr>
-</tbody>
-</table>
+<div id="htmlwidget-6130eed81fd53dfbe0da" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-6130eed81fd53dfbe0da">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Date":["2020-12-03","2020-07-28","2020-06-17","2020-03-28","2019-11-14","2019-09-17","2019-09-17","2019-06-12","2019-05-21"],"Title":["<a href=https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing>DCR: Powerful Package Patterns<\/a>","<a href=https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing>RStudio Webinar: Growing a Remote Data Science Team<\/a>","<a href=https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit>e-RUM: Design Patterns for Big Shiny Apps<\/a>","<a href=https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing>DC SatRDays: Break Up Shiny Apps<\/a>","<a href=https://speakerdeck.com/akgold/r-and-big-data-databases>Big Data London 2019: Big Data and R: Databases<\/a>","<a href=https://speakerdeck.com/akgold/love-for-linear-models>DC Data Science Meetup: Love for Linear Models<\/a>","<a href=https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science>Webinar: Reproducible Data Science<\/a>","<a href=https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark>Big Data Toronto 2019: Big Data and R, Spark<\/a>","<a href=https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering>Data Scientists Doing Software Engineering<\/a>"],"Code":[null,null,"<a href=https://github.com/akgold/erum-big-shiny>Code<\/a>","<a href=github.com/akgold/shiny_break_up_satrday>Code<\/a>","<a href=https://github.com/akgold/bdl_2019>Code<\/a>",null,"<a href=https://github.com/akgold/2019-09-17_john_deere_webinar>Code<\/a>","<a href=https://github.com/akgold/big_data_2019>Code<\/a>",null],"Video":[null,"<a href=https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/>Video<\/a>","<a href=https://youtu.be/NwVOvfpGq4o>Video<\/a>",null,"<a href=https://www.youtube.com/watch?v=GQcEnlz3jrI>Video<\/a>",null,null,null,null]},"columns":[{"accessor":"Date","name":"Date","type":"character","width":110},{"accessor":"Title","name":"Title","type":["glue","character"],"html":true},{"accessor":"Code","name":"Code","type":"character","html":true,"maxWidth":55},{"accessor":"Video","name":"Video","type":"character","html":true,"maxWidth":60}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"1afea4d58a6efb21fa5fa0ea8383b23f"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <section class="footnotes" role="doc-endnotes">

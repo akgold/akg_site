@@ -3,6 +3,15 @@ title: "Things I've said"
 description: |
   Recent presentations I've given
 ---
+```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+library(dplyr)
+library(magrittr)
+
+make_link <- function(text, link) {
+  glue::glue("<a href={link}>{text}</a>")
+}
+```
+
 
 Selected[^1] slides are available at [speakerdeck](https://speakerdeck.com/akgold).
 
@@ -11,7 +20,6 @@ Selected[^1] slides are available at [speakerdeck](https://speakerdeck.com/akgol
 Generally, my presentations involve demoing R code, which is available on [GitHub](https://github.com/akgold/).
 
 ```{r}
-library(dplyr)
 bind_cols(
   tibble::tribble(
     ~Date,            ~Title,         ~Slides,             ~Code, 
@@ -39,11 +47,30 @@ bind_cols(
     "https://www.youtube.com/watch?v=GQcEnlz3jrI"
   )
 ) %>%
-  mutate(
-    Slides = glue::glue("[Slides]({Slides})"), 
-    Code = glue::glue("[Code]({Code})"), 
-    Video = ifelse(is.na(Video), NA, glue::glue("[Video]({Video})"))
+  dplyr::transmute(
+    Date,
+    Title = make_link(Title, Slides),
+    Code = ifelse(is.na(Code), NA, make_link("Code", Code)), 
+    Video = ifelse(is.na(Video), NA, make_link("Video", Video))
   ) %>%
   dplyr::arrange(desc(Date)) %>%
-  knitr::kable()
+  reactable::reactable(
+    list(
+      Date = reactable::colDef(
+        width = 110
+      ),
+      Title = reactable::colDef(
+        html = TRUE
+      ), 
+      Code = reactable::colDef(
+        html = TRUE, 
+        maxWidth = 55
+      ), 
+      Video = reactable::colDef(
+        html = TRUE, 
+        maxWidth = 60
+      )
+    )
+  )
 ```
+

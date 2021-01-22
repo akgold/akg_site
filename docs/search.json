@@ -3,32 +3,32 @@
     {
       "path": "about.html",
       "title": "Alex K Gold Site",
-      "description": "Recent stuff I've done.\n",
+      "description": "It me.\n",
       "author": [],
       "contents": "\nAlex K Gold is a Solutions Engineer at RStudio. He lives in Silver Spring, MD. This is his website, which includes speaking and writing Alex has done.\nBefore coming to RStudio, Alex was a data scientist working on economic policy research, political campaigns, and healthcare. He is a proud economics PhD dropout.\nWhen not data nerd-ing, Alex loves spending time with his wife, doing handstands, and cooking.\n\n\n\n",
-      "last_modified": "2021-01-22T10:11:27-05:00"
+      "last_modified": "2021-01-22T10:38:16-05:00"
     },
     {
       "path": "index.html",
       "title": "Mostly #rstats and leadership, sometimes politics and handstands",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-22T10:11:27-05:00"
+      "last_modified": "2021-01-22T10:38:17-05:00"
     },
     {
       "path": "speaking.html",
       "title": "Things I've said",
       "description": "Recent presentations I've given",
       "author": [],
-      "contents": "\nSelected1 slides are available at speakerdeck.\nGenerally, my presentations involve demoing R code, which is available on GitHub.\n\nDate\nTitle\nSlides\nCode\nVideo\n2020-12-03\nDCR: Powerful Package Patterns\nSlides\nCode\nNA\n2020-07-28\nRStudio Webinar: Growing a Remote Data Science Team\nSlides\nCode\nVideo\n2020-06-17\ne-RUM: Design Patterns for Big Shiny Apps\nSlides\nCode\nVideo\n2020-03-28\nDC SatRDays: Break Up Shiny Apps\nSlides\nCode\nNA\n2019-11-14\nBig Data London 2019: Big Data and R: Databases\nSlides\nCode\nVideo\n2019-09-17\nDC Data Science Meetup: Love for Linear Models\nSlides\nCode\nNA\n2019-09-17\nWebinar: Reproducible Data Science\nSlides\nCode\nNA\n2019-06-12\nBig Data Toronto 2019: Big Data and R, Spark\nSlides\nCode\nNA\n2019-05-21\nData Scientists Doing Software Engineering\nSlides\nCode\nNA\n\n\nOnes I haven’t been too lazy to put there…↩︎\n",
-      "last_modified": "2021-01-22T10:11:28-05:00"
+      "contents": "\nSelected1 slides are available at speakerdeck.\nGenerally, my presentations involve demoing R code, which is available on GitHub.\n\n\n{\"x\":{\"tag\":{\"name\":\"Reactable\",\"attribs\":{\"data\":{\"Date\":[\"2020-12-03\",\"2020-07-28\",\"2020-06-17\",\"2020-03-28\",\"2019-11-14\",\"2019-09-17\",\"2019-09-17\",\"2019-06-12\",\"2019-05-21\"],\"Title\":[\"<a href=https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing>DCR: Powerful Package Patterns<\\/a>\",\"<a href=https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing>RStudio Webinar: Growing a Remote Data Science Team<\\/a>\",\"<a href=https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit>e-RUM: Design Patterns for Big Shiny Apps<\\/a>\",\"<a href=https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing>DC SatRDays: Break Up Shiny Apps<\\/a>\",\"<a href=https://speakerdeck.com/akgold/r-and-big-data-databases>Big Data London 2019: Big Data and R: Databases<\\/a>\",\"<a href=https://speakerdeck.com/akgold/love-for-linear-models>DC Data Science Meetup: Love for Linear Models<\\/a>\",\"<a href=https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science>Webinar: Reproducible Data Science<\\/a>\",\"<a href=https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark>Big Data Toronto 2019: Big Data and R, Spark<\\/a>\",\"<a href=https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering>Data Scientists Doing Software Engineering<\\/a>\"],\"Code\":[null,null,\"<a href=https://github.com/akgold/erum-big-shiny>Code<\\/a>\",\"<a href=github.com/akgold/shiny_break_up_satrday>Code<\\/a>\",\"<a href=https://github.com/akgold/bdl_2019>Code<\\/a>\",null,\"<a href=https://github.com/akgold/2019-09-17_john_deere_webinar>Code<\\/a>\",\"<a href=https://github.com/akgold/big_data_2019>Code<\\/a>\",null],\"Video\":[null,\"<a href=https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/>Video<\\/a>\",\"<a href=https://youtu.be/NwVOvfpGq4o>Video<\\/a>\",null,\"<a href=https://www.youtube.com/watch?v=GQcEnlz3jrI>Video<\\/a>\",null,null,null,null]},\"columns\":[{\"accessor\":\"Date\",\"name\":\"Date\",\"type\":\"character\",\"width\":110},{\"accessor\":\"Title\",\"name\":\"Title\",\"type\":[\"glue\",\"character\"],\"html\":true},{\"accessor\":\"Code\",\"name\":\"Code\",\"type\":\"character\",\"html\":true,\"maxWidth\":55},{\"accessor\":\"Video\",\"name\":\"Video\",\"type\":\"character\",\"html\":true,\"maxWidth\":60}],\"defaultPageSize\":10,\"paginationType\":\"numbers\",\"showPageInfo\":true,\"minRows\":1,\"dataKey\":\"1afea4d58a6efb21fa5fa0ea8383b23f\"},\"children\":[]},\"class\":\"reactR_markup\"},\"evals\":[],\"jsHooks\":[]}\n\nOnes I haven’t been too lazy to put there…↩︎\n",
+      "last_modified": "2021-01-22T10:38:18-05:00"
     },
     {
       "path": "writing.html",
       "title": "Things I've written",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-01-22T10:11:29-05:00"
+      "last_modified": "2021-01-22T10:38:19-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
