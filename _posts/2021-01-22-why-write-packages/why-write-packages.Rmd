@@ -1,0 +1,78 @@
+---
+title: "Why Write Packages"
+description: |
+  A short description of the post.
+author:
+  - name: Alex Gold
+    url: {}
+date: 01-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+Why Are We Doing This Anyway?
+
+Since those failed packages, I've written several successful team-wide packages and also worked with many teams writing and using private packages throughout my time at RStudio. 
+
+Here are four of the most common reasons I see teams writing packages:
+
+Document and stabilize: Teams that are reasonably proficient with R often want to make their work faster and easier by writing more expressive R code and reusing code across projects. Extracting that code into functions and sharing those functions in a package is a great pattern.
+
+Diffusing expert knowledge: A package is a way to make idiosyncratic knowledge usable by everyone. When a team has heterogeneous expertise, a package is a great way to diffuse knowledge to everyone on the team.
+
+Onboarding: An R package can be a great way to jumpstart your team's R journey, or to get new team members up to speed more quickly. For teams or team members transitioning from another language into R, a team-wide package can make the learning curve much less steep.
+
+Reproducibility: Because R packages include functions and documentation, are versioned, and can easily include testing, a package is a great tool to enhance reproducibility of results in the future and confidence in the accuracy of those results.
+
+The problem with Wizard Packages is that they don't always solve the particular one of these problems your team needs to solve…or any of them.
+
+But writing packages is hard!
+
+Hopefully you're reasonably convinced that you should write a package, and maybe even have an idea about the best pattern for your team's needs.
+
+But maybe you're not quite sure how to write an R package.
+
+I'm not going to spend long on the mechanics of package writing, but I want to emphasize it's become so easy to get up and running with a new R package.
+
+Once you've got your R code written, it's literally just a few minutes to have an R package with documentation and tests with tools like usethis and devtools and testthat.
+
+Here's my quick package development workflow:
+
+Create package skeleton: usethis::create_package()
+
+Put functions inside /R with documentation.
+
+Specify dependencies with usethis::use_package().
+
+Run devtools::document() to render docs.
+
+Create testing skeleton with usethis::use_testthat() and specific tests with usethis::use_test() .
+
+Run tests with devtools::test().
+
+Push to git and install with remotes::install_XXXX() or install.packages() if you've got RStudio Package Manager.
+
+Packages are a Management Tool
+
+Regardless of your actual position on your team, you're a manager. Whether it's up, down, or sideways, you've got expectations and buy-in to manage. In a variety of different roles, I've found that an R package is a great way to manage my team towards using more R, improving the quality of our work, and spreading knowledge throughout the team.
+
+But it's super dispiriting to be the R wizard on a team, create a package that you think is great…and then have no one use it. Hopefully by taking some time up front to consider why your team needs a package and match that to an appropriate development pattern, you'll drastically increase the likelihood your package becomes a central part of your team's workflow, not just an afterthought.
+
+## Per-Project Package Development
+
+For some teams, an Expert Package is great, but one just isn't enough. Maybe the problem is thinking about *the* package. For some teams, projects are disjoint enough that writing a single R package really isn't possible.
+
+In those cases, separating the functions you're writing into a package can be really helpful to take advantage of a package's documentation and testing features, even if you're not planning to reuse the code past the individual project.
+
+<aside>
+This is doubly-useful if your project is a Shiny app, as testing functions (even just informally) without reactive elements is way easier than having to deal simultaneously with the misbehaving function and reactivity.
+</aside>
+
+For example, I might take some complex `ggplot2` code and separate it out into a function if I'm reusing it. Putting that function into a package allows for much easier documentation, testing, and versioning than hauling a `.R` file around everywhere.
+
+#### Sidebar: Parallel Projects and Packages
+
+I am a strong proponent of creating *parallel projects and packages*, but not a big fan of the related *project as package* pattern. Miles McBain has a great explanation of why it's kinda fitting a square peg into a round hole on [his blog](https://milesmcbain.xyz/posts/an-okay-idea/).
+
+It's also can be hard to deploy R projects that are also packages if you have RStudio Pro Products. If you feel like making your head spin, try to figure out how to to deploy content from a package to RStudio Connect that depends on itself in RStudio Package Manager.

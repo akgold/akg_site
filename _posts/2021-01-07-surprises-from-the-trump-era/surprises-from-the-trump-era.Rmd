@@ -1,0 +1,88 @@
+---
+title: "Symbolism of The Capitol Falling"
+description: |
+  A short description of the post.
+author:
+  - name: Alex Gold
+    url: {}
+date: 01-07-2021
+output:
+  distill::distill_article:
+    self_contained: false
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+The Capitol fell yesterday. For the first time since 1814, the US
+Capitol fell to outside invaders. They departed relatively swiftly, and
+the ongoing count of electors in Biden's win finished more-or-less
+without incident after.
+
+I find myself therefore tempted to write off yesterday's events as not
+meaningful, and my emotional reaction to them as somehow illegitimate.
+
+But I don't think that's the right impulse.
+
+A few days after the 2016 election, I wrote down some thoughts on what I
+was thinking about Trump's victory. Reading back through that document,
+I feel overall pretty good about my predictions on policy. I made a few
+predictions that I think have mostly borne out over the past four years.
+I predicted that Trump's victory was:
+
+-   A disaster for the Supreme Court I'd like to see
+-   Likely to have horrific effects on immigration and immigrants
+-   Extremely bad for climate change, especially since 100% of Obama-era
+    action was administrative and therefore reversable
+-   At least as scary on incompetence grounds as malice
+
+But then I also wrote this:
+
+    In general, I believe that President Trump will be much more bark than bite. He will and can say disgusting things throughout his presidency, but I believe he will quickly be frustrated at the glacially slow pace of change.
+
+I generally struggle to understand the symbolic side of politics. I
+think this is why I loved Obama so much. All too many Americans want a
+[big daddy
+president](https://www.vox.com/2014/5/20/5732208/the-green-lantern-theory-of-the-presidency-explained),
+as opposed to a head of state.
+
+Many people before and throughout the Trump era have overreacted to the
+symbolic impact of his words and deeds. I found myself concurrently
+underreacting.
+
+At the most fundamental level, Donald Trump's candidacy and presidency
+was almost entirely symbolic. While Ryan, McConnell, and others were
+focused on lowering taxes, slashing regulations, and destroying the
+climate, Trump was focused on...owning the libs? Tweeting a lot?
+Personal enrichment through graft and grift?
+
+Really his only intelligible policy priority was on immigration.
+
+It was all too easy to get lost in the endless violations of social
+norms, the conspiracy theorizing, and the fire and fury. But it feels
+like yesterday's events were the obvious culmination of four years of
+this.
+
+I'm not sure I have any intelligible conclusion here. It's still too
+soon.
+
+The US Capitol fell yesterday.
+
+What is clear is that yesterday was a largely symbolic event, and the
+impact will be symbolic. Some of the symbols that feel most potent to
+me:
+
+-   The US Capitol fell to a mob, largely unfettered by law enforcement.
+    This is a very different symbol from the reaction to Black Lives
+    Matter protests over the summer.
+-   The majority of invaders were able to leave the premises without
+    being arrested.
+-   The violent coup attempt came in the middle (and was no doubt
+    furthered by) a peaceful coup attempt by Congressional Republicans
+    to overthrow an election.[^1]
+
+[^1]: I'm not really sure whether coup attempt is the right word. As I
+    understand it, most of the Republicans objecting to the electoral
+    college were cynically doing so for the symbolism of it -- to
+    register their discontent with the election results or to show to
+    the pro-Trump base that they were doing so.
