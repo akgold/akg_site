@@ -64,11 +64,11 @@ bind_cols(
       ), 
       Code = reactable::colDef(
         html = TRUE, 
-        maxWidth = 55
+        maxWidth = 60
       ), 
       Video = reactable::colDef(
         html = TRUE, 
-        maxWidth = 60
+        maxWidth = 65
       )
     )
   )
