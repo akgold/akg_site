@@ -1,0 +1,53 @@
+Package: gcalendr
+Type: Package
+Title: Read Events From Google Calendar
+Version: 0.2.1.9004
+Authors@R: 
+    c(person("Andrie", 
+        "de Vries", 
+        role =c("aut", "cre", "cph"), email="apdevries@gmail.com"),
+    person(given = "Jennifer",
+        family = "Bryan",
+        role = c("ctb"),
+        email = "jenny@rstudio.com",
+        comment = c(ORCID = "0000-0002-6983-2759", 
+        "author of gargle package")),
+    person("RStudio", role = c("cph", "fnd")),
+    person(given = "Google Inc",
+        role = "cph",
+        comment = "Google Calendar API and discovery documents")
+    )
+Description: Read events from the Google Calendar API.
+Date: 2020-03-06
+License: MIT + file LICENSE
+URL: https://github.com/andrie/gcalendr
+BugReports: https://andrie.github.io/gcalendr/issues
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3)
+Imports: rlang, purrr, httr, dplyr, lubridate, gargle (>= 0.2.0),
+        tibble, glue
+Suggests: covr, httptest, knitr, rmarkdown, testthat (>= 2.1.0), withr,
+        tidyr, sodium
+RoxygenNote: 7.0.2
+Roxygen: list(markdown = TRUE)
+VignetteBuilder: knitr
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: gcalendr
+RemoteUsername: andrie
+RemoteRef: HEAD
+RemoteSha: 3b0b9b1992dc58c768b1974c20db7214822e445d
+GithubRepo: gcalendr
+GithubUsername: andrie
+GithubRef: HEAD
+GithubSHA1: 3b0b9b1992dc58c768b1974c20db7214822e445d
+NeedsCompilation: no
+Packaged: 2021-01-11 15:58:16 UTC; alexkgold
+Author: Andrie de Vries [aut, cre, cph],
+  Jennifer Bryan [ctb] (<https://orcid.org/0000-0002-6983-2759>, author
+    of gargle package),
+  RStudio [cph, fnd],
+  Google Inc [cph] (Google Calendar API and discovery documents)
+Maintainer: Andrie de Vries <apdevries@gmail.com>
+Built: R 4.0.2; ; 2021-01-11 15:58:17 UTC; unix

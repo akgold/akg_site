@@ -1,0 +1,16 @@
+gcalendr-package	gcalendr
+calendar_auth	calendar_auth
+calendar_auth_configure	calendar_auth_configure
+calendar_deauth	calendar_deauth
+calendar_endpoints	calendar_endpoints
+calendar_events	calendar_events
+calendar_has_token	calendar_has_token
+calendar_list	calendar_list
+calendar_oauth_app	calendar_auth_configure
+calendar_token	calendar_token
+calendar_user	calendar_user
+gcalendr	gcalendr
+get_gcal_events	gcalendr-defunct
+get_gcal_list	gcalendr-defunct
+get_google_token	gcalendr-defunct
+request_generate	request_generate
