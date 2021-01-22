@@ -1,5 +1,0 @@
----
-title: "Things I've written"
-site: distill::distill_website
-listing: posts
----
