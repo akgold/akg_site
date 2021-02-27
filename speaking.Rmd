@@ -32,7 +32,10 @@ bind_cols(
     "2019-09-17", "DC Data Science Meetup: Love for Linear Models", "https://speakerdeck.com/akgold/love-for-linear-models", NA,
     "2019-09-17", "Webinar: Reproducible Data Science", "https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science", "https://github.com/akgold/2019-09-17_john_deere_webinar", 
     "2019-11-14", "Big Data London 2019: Big Data and R: Databases", "https://speakerdeck.com/akgold/r-and-big-data-databases", 
-    "https://github.com/akgold/bdl_2019"
+    "https://github.com/akgold/bdl_2019", 
+    "2020-01-03", "RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins", "https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf", "https://github.com/akgold/rsconf2020-deployment",
+    "2021-02-17", "RStudio Webinar: Managing Packages for Open Source Data Science", NA, NA
+    
   ), 
   tibble::tribble(
     ~Video, 
@@ -44,7 +47,9 @@ bind_cols(
     NA, 
     NA, 
     NA, 
-    "https://www.youtube.com/watch?v=GQcEnlz3jrI"
+    "https://www.youtube.com/watch?v=GQcEnlz3jrI", 
+    "https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/", 
+    "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/"
   )
 ) %>%
   dplyr::transmute(
