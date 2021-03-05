@@ -23,6 +23,7 @@
 
 <meta property="description" itemprop="description" content="You can teach skills, but not excitement."/>
 
+<link rel="canonical" href="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2019-01-20"/>
@@ -33,6 +34,7 @@
 <meta property="og:title" content="Alex K Gold: Upgrading to R #1: Excitement &gt;&gt; Skills"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="You can teach skills, but not excitement."/>
+<meta property="og:url" content="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Alex K Gold"/>
 
@@ -40,12 +42,20 @@
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Alex K Gold: Upgrading to R #1: Excitement &gt;&gt; Skills"/>
 <meta property="twitter:description" content="You can teach skills, but not excitement."/>
+<meta property="twitter:url" content="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"/>
+<meta property="twitter:site" content="@alexkgold"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Alex K Gold: Upgrading to R #1: Excitement &gt;&gt; Skills"/>
+<meta name="citation_fulltext_html_url" content="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"/>
+<meta name="citation_online_date" content="2019/01/20"/>
+<meta name="citation_publication_date" content="2019/01/20"/>
+<meta name="citation_author" content="Alex Gold"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Upgrading to R #1: Excitement >> Skills"]},{"type":"character","attributes":{},"value":["You can teach skills, but not excitement."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Alex Gold"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["01-20-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Upgrading to R #1: Excitement >> Skills"]},{"type":"character","attributes":{},"value":["You can teach skills, but not excitement."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Alex Gold"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["01-20-2019"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"]},{"type":"character","attributes":{},"value":["https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -65,6 +75,7 @@
     var header = $('header').get(0);
     var headerHeight = header.offsetHeight;
     var headroom = new Headroom(header, {
+      tolerance: 5,
       onPin : function() {
         if (window.headroom_prevent_pin) {
           window.headroom_prevent_pin = false;
@@ -387,8 +398,15 @@ d-title {
   top: 0;
 }
 
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
 </style>
 
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -412,22 +430,19 @@ function offsetURL(url) {
   return offset ? offset + '/' + url : url;
 }
 
-function createIndex() {
-  var options = {
-    keys: [
-      "title",
-      "categories",
-      "description",
-      "contents"
-    ]
-  };
-  return new window.Fuse([],options);
-}
-
 function createFuseIndex() {
 
   // create fuse index
-  var options = { keys: ["title", "description", "contents"] };
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
   var fuse = new window.Fuse([], options);
 
   // fetch the main search.json
@@ -495,29 +510,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             shouldSort: true,
             minMatchCharLength: 2,
             limit: 10,
-            keys: [
-              { name: 'title', weight: 20 },
-              { name: 'categories', weight: 15 },
-              { name: 'description', weight: 10 },
-              { name: 'contents', weight: 5 },
-            ],
           };
           var results = fuse.search(query, searchOptions);
           callback(results
             .map(function(result) { return result.item; })
-            .filter(function(item) { return !!item.description; })
           );
         },
         templates: {
           suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
             var html = `
               <div class="search-item">
                 <h3>${suggestion.title}</h3>
                 <div class="search-item-description">
-                  ${suggestion.description}
+                  ${suggestion.description || ''}
                 </div>
                 <div class="search-item-preview">
-                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                  ${img}
                 </div>
               </div>
             `;
@@ -540,6 +551,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 
 <style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
 
 /* Algolioa Autocomplete */
 
@@ -615,6 +630,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
   margin-block-start: 0;
   margin-block-end: 5px;
 }
@@ -798,7 +814,7 @@ d-article pre code {
 d-article pre,
 d-article div.sourceCode,
 d-article div.sourceCode pre {
-  overflow: hidden;
+  overflow: auto;
 }
 
 d-article div.sourceCode {
@@ -840,6 +856,11 @@ d-article pre a {
 d-article pre a:hover {
   border-bottom: none;
   text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
 }
 
 @media(min-width: 768px) {
@@ -996,6 +1017,17 @@ d-article .citation {
 
 div.hanging-indent{
   margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
 }
 
 
@@ -1663,7 +1695,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('div.sourceCode, pre, script');
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1778,6 +1810,20 @@ function init_distill() {
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
 
     // clear polling timer
     clearInterval(tid);
@@ -1953,7 +1999,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Upgrading to R #1: Excitement >> Skills","description":"You can teach skills, but not excitement.","authors":[{"author":"Alex Gold","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2019-01-20T00:00:00.000-05:00","citationText":"Gold, 2019"}
+{"title":"Upgrading to R #1: Excitement >> Skills","description":"You can teach skills, but not excitement.","authors":[{"author":"Alex Gold","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2019-01-20T00:00:00.000+00:00","citationText":"Gold, 2019"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1971,6 +2017,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="../../index.html">Home/Blog</a>
 <a href="../../speaking.html">Speaking</a>
 <a href="../../about.html">About Me</a>
+<a href="../../mfy.html">Managing the First Year</a>
 <a href="https://twitter.com/alexkgold">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
@@ -2035,7 +2082,20 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="updates-and-corrections">Corrections</h3>
+  <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/akgold/akg_site/issues/new">create an issue</a> on the source repository.</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Gold (2019, Jan. 20). Alex K Gold: Upgrading to R #1: Excitement &gt;&gt; Skills. Retrieved from https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{gold2019upgrading,
+  author = {Gold, Alex},
+  title = {Alex K Gold: Upgrading to R #1: Excitement &gt;&gt; Skills},
+  url = {https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/},
+  year = {2019}
+}</pre>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

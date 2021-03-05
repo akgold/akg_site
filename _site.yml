@@ -3,7 +3,10 @@ title: "Alex K Gold"
 description: |
   Some stuff I've done.
 output_dir: "docs"
-
+base_url: https://alexkgold.space
+repository_url: https://github.com/akgold/akg_site
+twitter:
+  site: "@alexkgold"
 navbar:
   logo:
     image: images/me.png
@@ -15,6 +18,8 @@ navbar:
       href: speaking.html
     - text: "About Me"
       href: about.html
+    - text: "Managing the First Year"
+      href: mfy.html
     - icon: fab fa-twitter
       href: https://twitter.com/alexkgold
     - icon: fab fa-github

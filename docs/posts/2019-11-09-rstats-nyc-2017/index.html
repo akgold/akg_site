@@ -18,11 +18,78 @@
  <!--radix_placeholder_import_source-->
  <!--/radix_placeholder_import_source-->
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
   <!--radix_placeholder_meta_tags-->
 <title>Alex K Gold: RStats NYC 2017</title>
 
 <meta property="description" itemprop="description" content="My writeup of RStats NYC 2017."/>
 
+<link rel="canonical" href="https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"/>
 
 <!--  https://schema.org/Article -->
 <meta property="article:published" itemprop="datePublished" content="2017-04-23"/>
@@ -33,6 +100,7 @@
 <meta property="og:title" content="Alex K Gold: RStats NYC 2017"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="My writeup of RStats NYC 2017."/>
+<meta property="og:url" content="https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Alex K Gold"/>
 
@@ -40,17 +108,25 @@
 <meta property="twitter:card" content="summary"/>
 <meta property="twitter:title" content="Alex K Gold: RStats NYC 2017"/>
 <meta property="twitter:description" content="My writeup of RStats NYC 2017."/>
+<meta property="twitter:url" content="https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"/>
+<meta property="twitter:site" content="@alexkgold"/>
 
+<!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
+<meta name="citation_title" content="Alex K Gold: RStats NYC 2017"/>
+<meta name="citation_fulltext_html_url" content="https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"/>
+<meta name="citation_online_date" content="2017/04/23"/>
+<meta name="citation_publication_date" content="2017/04/23"/>
+<meta name="citation_author" content="Alex Gold"/>
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["RStats NYC 2017"]},{"type":"character","attributes":{},"value":["My writeup of RStats NYC 2017."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Alex Gold"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-23-2017"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["RStats NYC 2017"]},{"type":"character","attributes":{},"value":["My writeup of RStats NYC 2017."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Alex Gold"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-23-2017"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"]},{"type":"character","attributes":{},"value":["https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["rstats-nyc-2017_files/bowser-1.9.3/bowser.min.js","rstats-nyc-2017_files/distill-2.2.21/template.v2.js","rstats-nyc-2017_files/jquery-1.11.3/jquery.min.js","rstats-nyc-2017_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -65,6 +141,7 @@
     var header = $('header').get(0);
     var headerHeight = header.offsetHeight;
     var headroom = new Headroom(header, {
+      tolerance: 5,
       onPin : function() {
         if (window.headroom_prevent_pin) {
           window.headroom_prevent_pin = false;
@@ -387,8 +464,15 @@ d-title {
   top: 0;
 }
 
+/* adjust viewport for navbar height */
+/* helps vertically center bootstrap (non-distill) content */
+.min-vh-100 {
+  min-height: calc(100vh - 100px) !important;
+}
+
 </style>
 
+<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
 <link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
 <link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -412,22 +496,19 @@ function offsetURL(url) {
   return offset ? offset + '/' + url : url;
 }
 
-function createIndex() {
-  var options = {
-    keys: [
-      "title",
-      "categories",
-      "description",
-      "contents"
-    ]
-  };
-  return new window.Fuse([],options);
-}
-
 function createFuseIndex() {
 
   // create fuse index
-  var options = { keys: ["title", "description", "contents"] };
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
   var fuse = new window.Fuse([], options);
 
   // fetch the main search.json
@@ -495,29 +576,25 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             shouldSort: true,
             minMatchCharLength: 2,
             limit: 10,
-            keys: [
-              { name: 'title', weight: 20 },
-              { name: 'categories', weight: 15 },
-              { name: 'description', weight: 10 },
-              { name: 'contents', weight: 5 },
-            ],
           };
           var results = fuse.search(query, searchOptions);
           callback(results
             .map(function(result) { return result.item; })
-            .filter(function(item) { return !!item.description; })
           );
         },
         templates: {
           suggestion: function(suggestion) {
+            var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+              ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+              : '';
             var html = `
               <div class="search-item">
                 <h3>${suggestion.title}</h3>
                 <div class="search-item-description">
-                  ${suggestion.description}
+                  ${suggestion.description || ''}
                 </div>
                 <div class="search-item-preview">
-                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                  ${img}
                 </div>
               </div>
             `;
@@ -540,6 +617,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 
 <style type="text/css">
+
+.nav-search {
+  font-size: x-small;
+}
 
 /* Algolioa Autocomplete */
 
@@ -615,6 +696,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 }
 
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  font-size: 1rem;
   margin-block-start: 0;
   margin-block-end: 5px;
 }
@@ -798,7 +880,7 @@ d-article pre code {
 d-article pre,
 d-article div.sourceCode,
 d-article div.sourceCode pre {
-  overflow: hidden;
+  overflow: auto;
 }
 
 d-article div.sourceCode {
@@ -840,6 +922,11 @@ d-article pre a {
 d-article pre a:hover {
   border-bottom: none;
   text-decoration: underline;
+}
+
+d-article details {
+  grid-column: text;
+  margin-bottom: 0.8em;
 }
 
 @media(min-width: 768px) {
@@ -996,6 +1083,17 @@ d-article .citation {
 
 div.hanging-indent{
   margin-left: 1em; text-indent: -1em;
+}
+
+/* Citation hover box */
+
+.tippy-box[data-theme~=light-border] {
+  background-color: rgba(250, 250, 250, 0.95);
+}
+
+.tippy-content > p {
+  margin-bottom: 0;
+  padding: 2px;
 }
 
 
@@ -1663,7 +1761,7 @@ function init_distill() {
     var layout = $(this).attr('data-layout');
 
     // apply layout to markdown level block elements
-    var elements = $(this).children().not('div.sourceCode, pre, script');
+    var elements = $(this).children().not('details, div.sourceCode, pre, script');
     elements.each(function(i, el) {
       var layout_div = $('<div class="' + layout + '"></div>');
       if (layout_div.hasClass('shaded')) {
@@ -1778,6 +1876,20 @@ function init_distill() {
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
+
+    // hoverable references
+    $('span.citation[data-cites]').each(function() {
+      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      window.tippy(this, {
+        allowHTML: true,
+        content: refHtml,
+        maxWidth: 500,
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start'
+      });
+    });
 
     // clear polling timer
     clearInterval(tid);
@@ -1938,7 +2050,13 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.7/header-attrs.js"></script>
   <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="../../site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
   <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
   <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
@@ -1953,7 +2071,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"RStats NYC 2017","description":"My writeup of RStats NYC 2017.","authors":[{"author":"Alex Gold","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2017-04-23T00:00:00.000-04:00","citationText":"Gold, 2017"}
+{"title":"RStats NYC 2017","description":"My writeup of RStats NYC 2017.","authors":[{"author":"Alex Gold","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2017-04-23T00:00:00.000+00:00","citationText":"Gold, 2017"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1971,6 +2089,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="../../index.html">Home/Blog</a>
 <a href="../../speaking.html">Speaking</a>
 <a href="../../about.html">About Me</a>
+<a href="../../mfy.html">Managing the First Year</a>
 <a href="https://twitter.com/alexkgold">
 <i class="fab fa-twitter" aria-hidden="true"></i>
 </a>
@@ -1987,7 +2106,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-title">
 <h1>RStats NYC 2017</h1>
-<p>My writeup of RStats NYC 2017.</p>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>My writeup of RStats NYC 2017.</p></p>
 </div>
 
 <div class="d-byline">
@@ -1998,7 +2119,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <p>Friday and Saturday of this weekend was the 2017 <a href="http://www.rstats.nyc/">RStatsNYC</a> conference. With the small exception of remarkably uncomfortable chairs, the conference was fantastic (and great food!). There was a remarkable variety in what the speakers covered – from deep thoughts on the ethics and philosophy of doing data science, to some super useful RStudio tips and tricks and everything in between. I decided to take my notes from the two days and post below in case there’s things anyone else might find useful.</p>
-<p><em>See, really good food!</em> {{&lt; tweet 855782617731518464 &gt;}}</p>
 <p>One of the remarkable similarities between the speakers was the degree to which many talks focused on <em>process</em> of doing data science. It feels like there’s a lot of room for growth in terms of understanding and standardizing best practices of doing data science.</p>
 <h2 id="deep-thoughts">Deep Thoughts</h2>
 <p>Many of the speakers shared some great nuggets of insight into doing data science that extended far beyond simple lessons about <code>R</code>. Some of my favorites below.</p>
@@ -2019,8 +2139,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>Automating Excel workflows can be a first step towards bringing <code>R</code> to a team.</li>
 <li>Agile development tells user stories as an empathy hack.</li>
 </ul>
-<pre><code>
-As a ______
+<pre><code>As a ______
 I want ______
 So I can ______ </code></pre>
 <ul>
@@ -2131,6 +2250,7 @@ So I can ______ </code></pre>
 <li><code>ctrl + shift + f</code> (“or if that’s too hard to remember, ctrl capital F”) to customize where searching</li>
 <li><code>SHIFT + ALT + k</code> list keyboard shortcuts</li>
 </ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2142,7 +2262,20 @@ So I can ______ </code></pre>
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="updates-and-corrections">Corrections</h3>
+  <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/akgold/akg_site/issues/new">create an issue</a> on the source repository.</p>
+  <h3 id="citation">Citation</h3>
+  <p>For attribution, please cite this work as</p>
+  <pre class="citation-appendix short">Gold (2017, April 23). Alex K Gold: RStats NYC 2017. Retrieved from https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/</pre>
+  <p>BibTeX citation</p>
+  <pre class="citation-appendix long">@misc{gold2017rstats,
+  author = {Gold, Alex},
+  title = {Alex K Gold: RStats NYC 2017},
+  url = {https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/},
+  year = {2017}
+}</pre>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->
