@@ -1,0 +1,292 @@
+---
+title: "Managing the First Year"
+description: Thoughts on being a new data science manager.
+site: distill::distill_website
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+I became a manager for the first time by surprise.
+
+I had been hired to be a "data scientist" for the first time, after
+years of doing data science work with different titles. During my first
+week, I spoke to my manager only once on the phone, as she was out of
+work with a sprained ankle. So I spent the week getting to know the
+team, thinking I was coming in as a senior data scientist.
+
+It was only in my second week, as I spoke with my manager more that I
+understood that no, I'd been hired to replace her **as** the team's
+manager.
+
+During the 18 months I stayed in that role, I learned a ton about
+management. I read thousands of pages on management and made some really
+big, stupid, mistakes -- including one that literally interrupted my
+honeymoon on the beaches of Croatia.
+
+I started this writing project just after I left my management role,
+when I moved back into individual contributor work when I came to
+RStudio. As of this writing in early March 2021, I find myself in the
+early stages of moving back into management at RStudio. Writing
+something like this is nerve wracking.
+
+So it's worth saying up front -- I'm not an expert on management. I'm
+sure I'll have even more mistakes to write about after the next 18
+months of managing. That said, I learned a lot during my first year that
+I'm sure will help this time around, and I'm hopeful that others might
+find a few of the things I learned useful on their own management
+journey.
+
+# Managing The First Year
+
+When I realized I was going to be a manager, I was excited about the
+challenge, but also sure I didn't know how to manage, and wasn't really
+even sure about how to learn. I understood that leading a data science
+team was different from doing data science, and that it would demand I
+develop new skills.
+
+Even so, I don't think I could have anticipated how much managing would
+stretch me as a professional and a person.
+
+When I started, I wasn't sure how to learn to manage...or even what
+management really was. I'd had a few good managers over the years (and
+some bad ones), but didn't have a clear mental model of what management
+was or how I could get good at it. Certainly nobody was knocking down my
+door to mentor me in management skills, and no one was going to hire a
+[Trillion Dollar Coach](https://www.trilliondollarcoach.com/) for a
+first year junior manager.
+
+So I did what I do best --- I turned to books. I read management books,
+biographies of managers, deep dives on companies that seemed to have
+figured something great out.
+
+<aside>
+
+Recommendations on my favorites at [the bottom](#book-recs)
+
+</aside>
+
+I'm proud of the work the team did during the 18 months I managed them.
+We produced a lot of valuable data analysis, and moved a lot of work
+into R and Python (yay reproducibility!) that had been done in Excel and
+Tableau.
+
+I'm proudest not of any particular deliverable, but of building a team
+culture where collaborative problem solving was the very highest value
+-- I remember the first time I talked to a direct report who had
+consulted a colleague and solved a thorny visualization problem in
+Tableau while I was busy doing other things.
+
+As someone who loves data science, that switch was the hardest. As a
+manager, my relationship to our data science work was mostly secondhand.
+My primary responsibility was not the output, but the team itself.
+
+# What is "Management"?
+
+Good management is a flywheel generator --- it clears obstacles to IC
+achievement, creates an environment of safety and growth, and finds and
+aggregates resources the team needs.
+
+Numerous resources refer to the roles of the manager with the 3 Ps:
+
+> -   People - are team members happy and engaged?
+>
+> -   Process - are there mechanisms for the team to be jointly
+>     productive?
+>
+> -   Priorities - is there a shared vision of the work to be done?
+
+I've always found the three Ps a little pat. Yes, they basically
+summarize what a manager does...but I think, like so many management
+concepts, they don't actually help make anyone good at them.
+
+Also, the way you engage with each of these really differs depending on
+the level of manager you are. Being CEO of a 10,000 person company is
+really different than managing 5 data scientists. Here's more on my
+experience of actually managing a small team.
+
+To me, the job of a junior manager has four distinct parts --- which are
+sometimes literally divided into different roles in some workplaces:
+
+> -   **Project manager** Responsibility for collecting project
+>     requirements and needs, setting timetables and schedules,
+>     assigning tasks, and coordinating and communicating among project
+>     stakeholders.
+> -   **People manager** Responsibility for the day-to-day performance
+>     of subordinates, as well as their long-term career trajectory.
+> -   **Resources manager** Responsible for marshaling resources ---
+>     most often people and their time to join the team and their
+>     projects. Often involving hiring and firing and determining roles.
+> -   **Process Manager** Responsible for creating and designing
+>     processes to accomplish all the rest. On many teams, this
+>     responsibility is spread out among many individuals, some of whom
+>     are "managers", some of whom are not.
+
+The question is how being good at your IC work affects the management
+tasks ahead of you. The path absolutely is not linear. It is not the
+case that being good at your job makes you a good manager.
+
+If you're a highly skilled IC, you'll probably be better than others at
+understanding what has to happen in terms of collecting requirements and
+setting schedules, and you might be better at mentoring and coaching if
+you're doing direct teaching.
+
+Some people believe the opposite to be true --- being too good at IC
+work makes you less able to coach people who aren't such naturals. I'm
+somewhat skeptical of this claim. I've seen too many people who are both
+amazing ICs and teachers and coaches (particularly in martial arts) to
+believe this is true.
+
+So why would you want to do this if you really excel at IC work? To me,
+the most compelling reason is to gain leverage. Leverage is the ability
+to get a lot from a little. In Silicon Valley, they love to throw around
+the idea of a 10x developer --- that is a developer so genius and
+prolific they are literally 10 times as productive as most others. Let's
+take this idea seriously just for a second. Let's say you're a 10x
+developer, then you could plausibly replace 10 people with yourself. So
+if you manage 11 people, you've now exceeded your own personal output,
+and let's be real --- you're not a 10x developer (because they don't
+exist).
+
+<aside>
+
+Don't manage 11 people directly. In my experience, the **maximum**
+number anyone can reasonably manage directly is somewhere between 7-9.
+Fewer is definitely better, but I've seen a 10th direct report crush the
+best managers.
+
+</aside>
+
+And now, my most important piece of management advice
+
+> Every manager should do therapy/counseling.
+
+Being a manager will bring out and magnify your insecurities, fears, and
+misguided thoughts, and they WILL be visited on your direct reports. I
+can't remember where, but I once heard that "organizations magnify the
+worst traits of their leaders".\^[I *think* it might've been [this
+episode](https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities)
+of the EXCELLENT Start Up Podcast.] I have seen nothing that makes me
+think this is anything less than 100% true.
+
+We all have traits and quirks that are maladaptive in a management role.
+Therapy won't *fix* them, but it can increase awareness of them, and
+reduce the likelihood you'll unwittingly perpetuate them upon your team.
+
+I do believe there is one big distinguishing feature between people who
+excel in a management role and those who struggle --- they have a theory
+for why people (usually based on their own experience --- as an example
+or counter-example) are good at their job. They might not use that
+language --- but they've thought about why they're good at what they do.
+
+This thinking is the raw material of good managing. Turning it into
+actual good management requires intentionally, willpower, and a lot of
+generosity. What it does not require is any sort of "natural
+inclination" --- beyond the desire to do those things.
+
+I should also say there are occasionally amazing leaders who are great
+leaders simply because they are so personally astounding and don't do
+any of the things I describe here. I am not one of those people and you
+probably aren't either. If you are, I'm shocked you started reading
+this. Either way, kudos and stop reading --- you do you.
+
+## Mentorship and Coaching
+
+Mentorship and coaching can be a big part of managing, and one of the
+most rewarding.
+
+Who am I? There are many different identities that you'll have to manage
+between yourself and your direct reports. I always found that I
+struggled to convey expectations as high as I have for myself to my
+direct reports. I excused slow work and responded kindly to weak excuses
+for poor outcomes.
+
+I definitely fell victim to trying to be too much of a *friend* and not
+enough of a *coach*. Meanwhile, there is also the role of managing tasks
+vs career mentorship. There are many times where the demands of the
+immediate task is in conflict with the career wishes of the direct
+reports. For example, we had projects that really needed to get done ---
+my direct reports wanted to learn the technology we were using, but what
+we really needed was for them to just get it done. How do you balance
+the time they need to develop new skills with the requirement that they
+do the actual work ahead.
+
+(Care personally vs challenge directly)
+
+## Managing New Workers/Interns
+
+Extra challenges
+
+### Whose interests do I represent?
+
+This is a surprisingly difficult question. As a manager, you have two
+ways to look --- up, and down. Looking up, you have responsibilities to
+the company, your bosses, the rules and regulations (and potentially
+laws) that govern the way you work. But you also have to look down to
+your responsibilities to the people you manage.
+
+Unlike looking up, where the entities involved are somewhat amorphous
+and impersonal, looking down to the people you manage involves their
+real concerns. For example, I was on a consulting project that required
+a Public Trust --- the lowest level of clearance possible in the federal
+clearance process. However, one of my colleagues was as dual citizen,
+and was forced to give up her other passport in order to get her Public
+Trust. Unfortunately that meant that she couldn't go home to visit her
+parents, as her home country required that dual citizens travel there
+only with their passport.
+
+These issues become intensely personal.
+
+Be aware of the fact that if you're mentoring younger people in
+particular, they probably don't understand the dynamic of a workplace
+and that they have to protect themselves from their employer. As a high
+school food service employee, I once purchased and brought home a pizza
+on which I'd messed up the order, because I thought I had to --- and I
+have a severe dairy allergy.
+
+In very real terms of power and privilege, the people who work for you
+almost certainly need more protecting from the company than the company
+needs protecting from them.
+
+Additionally, people know when your number one priority is looking out
+for them and they will respond in kind.
+
+# Meetings
+
+Are really useful. They're your primary tool as a manager.
+
+DIsdain for meetings in is toxic.
+
+They can get out of hand, but just be mindful. Do a meeting Marie Kondo
+periodically.
+
+## 1:1s
+
+Are essential How to do them well?
+
+## Team Meetings
+
+Also essential
+
+Easier to push on barbell than broomstick (group brainstorming =
+:vomit:)
+
+About Setting and Communicating Goals and Priorities
+
+# Requesting Resources (More people!)
+
+One of primary jobs of manager. Easy to overlook when you're not used to
+thinking of team size as something under your control.
+
+Manager: scope, scale, and personnel are mutable
+
+# Book Recommendations {#book-recs}
+
+These are not necessarily the best books on management, but ones that I
+found useful. There are a lot of bad ones. This list is in order.
+
+**Radical Candor**
+
+**High Output Management**
+
+**Mythical Man Month**

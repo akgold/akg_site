@@ -93,6 +93,13 @@
       "Repository": "CRAN",
       "Hash": "9addc7e2c5954eca5719928131fed98c"
     },
+    "bookdown": {
+      "Package": "bookdown",
+      "Version": "0.21",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "1bf627f1f77313e345f71e779b658578"
+    },
     "brio": {
       "Package": "brio",
       "Version": "1.1.0",
@@ -193,10 +200,10 @@
     },
     "distill": {
       "Package": "distill",
-      "Version": "1.0",
+      "Version": "1.2",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "c1dd034939f4e35fd82f76dbabced9d1"
+      "Hash": "5edf0b55f685c668d5e800051bc31f3d"
     },
     "downlit": {
       "Package": "downlit",
@@ -319,10 +326,17 @@
     },
     "htmltools": {
       "Package": "htmltools",
-      "Version": "0.5.0",
+      "Version": "0.5.1.1",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "7d651b7131794fe007b1ad6f21aaa401"
+      "Hash": "af2c2531e55df5cf230c4b5444fc973c"
+    },
+    "htmlwidgets": {
+      "Package": "htmlwidgets",
+      "Version": "1.5.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "6fdaa86d0700f8b3e92ee3c445a5a10d"
     },
     "httr": {
       "Package": "httr",
@@ -520,6 +534,25 @@
       "Repository": "CRAN",
       "Hash": "97def703420c8ab10d8f0e6c72101e02"
     },
+    "reactR": {
+      "Package": "reactR",
+      "Version": "0.4.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "85d50afbf95bf92bda97e9417575e8ff"
+    },
+    "reactable": {
+      "Package": "reactable",
+      "Version": "0.2.3.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "reactable",
+      "RemoteUsername": "glin",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "52b3adb42afe00b9ca2749131d59a2c1549a4981",
+      "Hash": "b9b5a333f7203e2d8723b87bb64279ac"
+    },
     "readr": {
       "Package": "readr",
       "Version": "1.3.1",
@@ -540,6 +573,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "c66b930d20bb6d858cd18e1cebcfae5c"
+    },
+    "rematch2": {
+      "Package": "rematch2",
+      "Version": "2.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "76c9e04c712a05848ae7a23d2f170a40"
     },
     "renv": {
       "Package": "renv",
@@ -564,10 +604,10 @@
     },
     "rmarkdown": {
       "Package": "rmarkdown",
-      "Version": "2.5",
+      "Version": "2.7",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "20a0a94af9e8f7040510447763aab3e9"
+      "Hash": "edbf4cb1aefae783fd8d3a008ae51943"
     },
     "rprojroot": {
       "Package": "rprojroot",
