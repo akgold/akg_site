@@ -3,7 +3,7 @@ on:
     branches:
       - main
 
-name: build-site
+name: rendersite
 
 jobs:
   build-site:
@@ -27,7 +27,7 @@ jobs:
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
           renv::restore(repos = "https://packagemanager.rstudio.com/all/__linux__/bionic/latest")
-      - name: Render Site
+      - name: Vuild Site
         run: Rscript -e 'rmarkdown::render_site(encoding = "UTF-8")'
       - uses: actions/upload-artifact@v1
         with:
@@ -36,15 +36,21 @@ jobs:
 
   checkout-and-deploy:
    runs-on: ubuntu-latest
-   needs:  build-site
+   needs: build-site
    steps:
      - name: Checkout
        uses: actions/checkout@master
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
+       with:
+         # Artifact name
+         name: _site # optional
+         # Destination path
+         path: _site # optional
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@master
        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        with:
           email: alexkgold@gmail.com
+          build_dir: _site/ # defaults to _site
