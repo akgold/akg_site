@@ -1,11 +1,13 @@
 on:
   push:
-    branches: main
+    branches:
+      - main
 
-name: Render & Deploy Site
+name: rendersite
 
 jobs:
   build:
+    name: Render-site
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@v2
