@@ -7,7 +7,7 @@ name: rendersite
 
 jobs:
   build:
-    name: Render-site
+    name: render-site
     runs-on: ubuntu-18.04
     env:
       RENV_PATHS_ROOT: ~/.local/share/renv
@@ -29,8 +29,22 @@ jobs:
           renv::restore(repos = "https://packagemanager.rstudio.com/all/__linux__/bionic/latest")
       - name: Render Site
         run: Rscript -e 'rmarkdown::render_site(encoding = "UTF-8")'
-      - name: Commit results
-        run: |
-          git add -A
-          git commit -m 'Rebuild site' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: _site
+          path: _site/
+
+  checkout-and-deploy:
+   runs-on: ubuntu-latest
+   needs: render-site
+   steps:
+     - name: Checkout
+       uses: actions/checkout@master
+     - name: Download artifact
+       uses: actions/download-artifact@v1.0.0
+     - name: Deploy to GitHub Pages
+       uses: Cecilapp/GitHub-Pages-deploy@master
+       env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       with:
+          email: alexkgold@gmail.com
