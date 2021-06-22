@@ -3,11 +3,11 @@ on:
     branches:
       - main
 
-name: rendersite
+name: build-site
 
 jobs:
-  build:
-    name: render-site
+  build-site:
+    name: build-site
     runs-on: ubuntu-18.04
     env:
       RENV_PATHS_ROOT: ~/.local/share/renv
@@ -36,7 +36,7 @@ jobs:
 
   checkout-and-deploy:
    runs-on: ubuntu-latest
-   needs: render-site
+   needs:  build-site
    steps:
      - name: Checkout
        uses: actions/checkout@master
