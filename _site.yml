@@ -2,7 +2,7 @@ name: "Alex K Gold"
 title: "Alex K Gold"
 description: |
   Some stuff I've done.
-output_dir: "docs"
+output_dir: "_site"
 base_url: https://alexkgold.space
 repository_url: https://github.com/akgold/akg_site
 twitter:
