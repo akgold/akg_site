@@ -39,10 +39,10 @@ management journey.
 # Managing The First Year
 
 When I realized I was going to be a manager, I was excited about the
-challenge, but also sure I didn't know how to manage, and wasn't really
-even sure about how to learn. I understood that leading a data science
-team was different from doing data science, and that it would demand I
-develop new skills.
+challenge, but sure I didn't know how to manage, and not even sure about
+how to learn. I understood that leading a data science team was
+different from doing data science, and that it would demand I develop
+new skills.
 
 Even so, I don't think I could have anticipated how much managing would
 stretch me as a professional and a person.
@@ -96,12 +96,16 @@ managing, this definition is maddeningly vague. That's largely because
 the term *management* covers such a broad range of activities that it's
 somewhat meaningless.
 
-I directly managed a team of 4-8 data scientists. I'm sure that my
-day-to-day work shared some activities with the CEO of the company, some
-7 levels in the hierarchy up from me, but I bet not a lot.
+My experience was at the most junior level of management -- directly
+managing a team of 4-8 data scientists.\^[Sometimes called "line"
+management for...reasons...] I'm sure that my day-to-day work shared
+some activities with the CEO of the company, some 7 levels in the
+hierarchy up from me, but I bet not a lot.
 
-My direct experience is with the most junior level of management, which
-I've heard called "line" management. No idea why.
+I'm proud of the work the team did during the 18 months I managed them.
+We produced a lot of valuable data analysis, and moved a lot of work
+into R and Python (yay reproducibility!) that had been done in Excel and
+Tableau.
 
 <aside>
 
@@ -111,24 +115,19 @@ bunch of bad options to describe that curious relationship.
 
 </aside>
 
-I'm proud of the work the team did during the 18 months I managed them.
-We produced a lot of valuable data analysis, and moved a lot of work
-into R and Python (yay reproducibility!) that had been done in Excel and
-Tableau.
-
-When I think of the work the team did, there's a strongly inverse
-relationship between my level of pride and my level of personal
-involvement in the output. The weeks after the honeymoon interruption,
-when I tried to do the work of the whole team have a dark cloud above
-them, while the time I talked to a direct report who had consulted a
-colleague and solved a thorny visualization problem while I was busy
-doing other things glows in my memory.
+One curious aspect of that time is the the inverse relationship between
+my level of pride and my level of personal involvement in the output.
+The weeks after the honeymoon interruption, when I tried to do the work
+of the whole team have a dark cloud above them, while the time I talked
+to a direct report who had consulted a colleague and solved a thorny
+visualization problem while I was busy doing other things glows in my
+memory.
 
 # What is "Management"?
 
 I have no direct experience with anything other than the most junior
 levels of management, so I'm going to stick to what I actually know. As
-a first-level (line) manager, my work mostly fell into four mostly
+a first-level (line) manager, my work mostly fell into five mostly
 disjoint roles:
 
 > -   **The project manager** collects and triages project requirements,
@@ -190,24 +189,37 @@ any of the things I describe here. I am not one of those people and you
 probably aren't either. If you are, I'm shocked you started reading
 this. Either way, kudos and stop reading --- you do you.
 
-And now, my most important piece of management advice
+### Managing is all About Feelings
 
-> Every manager should do therapy/counseling.
+As a manager, you'll spend a good bit of time managing your direct
+reports' feelings and concerns. But first, it's really important to
+address your own.
 
-Being a manager will bring out and magnify your insecurities, fears, and
-misguided thoughts, and they WILL be visited on your direct reports. I
-can't remember where, but I once heard that "organizations magnify the
+Being a manager will bring out and magnify all your insecurities, fears,
+and misguided thoughts. You'll get shockingly little feedback from
+anyone on how you're doing. And worst of all, this will all be visited
+on your direct reports.
+
+I can't remember where, but I once heard that "organizations magnify the
 worst traits of their leaders".\^[I *think* it might've been [this
 episode](https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities)
 of the EXCELLENT Start Up Podcast.] I have seen nothing that makes me
 think this is anything less than 100% true.
 
+So my only piece of truly directive advice for managers:
+
+> Every manager should do therapy/counseling.
+
 We all have traits and quirks that are maladaptive in a management role.
 Therapy won't *fix* them, but it can increase awareness of them, and
 reduce the likelihood you'll unwittingly perpetuate them upon your team.
 
-[Undeveloped notes for future work/random bits that don't fit in yet
-below this point.]
+### Respect the Power You've Got
+
+How does it feel to get a message saying "can we talk?" with no context
+from your manager?
+
+#### [Undeveloped notes for future work/random bits that don't fit in yet below this point.]
 
 So why would you want to do this if you really excel at IC work? To me,
 the most compelling reason is to gain leverage. Leverage is the ability
@@ -224,7 +236,7 @@ exist).
 
 Don't manage 11 people directly. In my experience, the **maximum**
 number anyone can reasonably manage directly is somewhere between 7-9.
-best managers.
+I've seen 10 direct reports crush the best managers.
 
 </aside>
 

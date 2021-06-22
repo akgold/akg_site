@@ -23,6 +23,7 @@
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
@@ -2099,61 +2100,75 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>I had been hired to be a “data scientist” for the first time, after years of doing data science work with different titles. During my first week, I spoke to my manager only once on the phone, as she was out of work with a sprained ankle. So I spent the week getting to know the team, thinking I was coming in as a senior data scientist.</p>
 <p>It was only in my second week, as I spoke with my manager more that I understood that no, I’d been hired to replace her <strong>as</strong> the team’s manager.</p>
 <p>During the 18 months I stayed in that role, I learned a ton about management. I read thousands of pages on management and made some really big, stupid, mistakes – including one that literally interrupted my honeymoon on the beaches of Croatia.</p>
-<p>I started this writing project just after I left my management role, when I moved back into individual contributor work when I came to RStudio. As of this writing in early March 2021, I find myself in the early stages of moving back into management at RStudio. Writing something like this is nerve wracking.</p>
-<p>So it’s worth saying up front – I’m not an expert on management. I’m sure I’ll have even more mistakes to write about after the next 18 months of managing. That said, I learned a lot during my first year that I’m sure will help this time around, and I’m hopeful that others might find a few of the things I learned useful on their own management journey.</p>
+<p>I started this writing project just after I left my management role, when I moved back into individual contributor (IC) work when I came to RStudio. As of this writing in early March 2021, I find myself in the early stages of moving back into management at RStudio.</p>
+<p>So it’s worth saying up front – I’m not an expert on management and putting this out into the world is a little petrifying. I’m sure I more big, stupid mistakes to write about 18 months from now. That said, my first year managing taught me many lessons that I’m sure will help, and maybe others will find a few of the things I learned useful on their own management journey.</p>
 <h1 id="managing-the-first-year">Managing The First Year</h1>
-<p>When I realized I was going to be a manager, I was excited about the challenge, but also sure I didn’t know how to manage, and wasn’t really even sure about how to learn. I understood that leading a data science team was different from doing data science, and that it would demand I develop new skills.</p>
+<p>When I realized I was going to be a manager, I was excited about the challenge, but sure I didn’t know how to manage, and not even sure about how to learn. I understood that leading a data science team was different from doing data science, and that it would demand I develop new skills.</p>
 <p>Even so, I don’t think I could have anticipated how much managing would stretch me as a professional and a person.</p>
 <p>When I started, I wasn’t sure how to learn to manage…or even what management really was. I’d had a few good managers over the years (and some bad ones), but didn’t have a clear mental model of what management was or how I could get good at it. Certainly nobody was knocking down my door to mentor me in management skills, and no one was going to hire a <a href="https://www.trilliondollarcoach.com/">Trillion Dollar Coach</a> for a first year junior manager.</p>
 <p>So I did what I do best — I turned to books. I read management books, biographies of managers, deep dives on companies that seemed to have figured something great out.</p>
 <aside>
 <p>Recommendations on my favorites at <a href="#book-recs">the bottom</a></p>
 </aside>
+<p>Most of those books were bad (or at least over-long by half), but some were good. Between a lot of reading, making a lot of mistakes, and spending a lot of time reflecting on the reading and the mistakes, I developed a reasonably coherent mental model of what managing is.</p>
+<p>As best I can explain it:</p>
+<blockquote>
+<p>Good management is a flywheel generator — it clears obstacles to achievement of individual contributors (ICs), creates an environment of safety and growth, finds and aggregates resources the team needs, and ensures that everyone understands what the team is doing.</p>
+</blockquote>
+<p>Reading this clever and finely-worded definition fills me with the warm glow of a concept well-encapsulated. But let’s be honest, you — reader — are reading in hopes of <strong>being a better manager</strong>, or maybe even more likely, understanding why your manager is so bad.</p>
+<aside>
+<p><em>The philosophers have only interpreted the world, in various ways. The point, however, is to change it.</em></p>
+<p>- Karl Marx, Eleven Theses on Feuerbach<br />
+</p>
+</aside>
+<p>If you’re looking to change the circumstances of your management or managing, this definition is maddeningly vague. That’s largely because the term <em>management</em> covers such a broad range of activities that it’s somewhat meaningless.</p>
+<p>My experience was at the most junior level of management – directly managing a team of 4-8 data scientists.^[Sometimes called “line” management for…reasons…] I’m sure that my day-to-day work shared some activities with the CEO of the company, some 7 levels in the hierarchy up from me, but I bet not a lot.</p>
 <p>I’m proud of the work the team did during the 18 months I managed them. We produced a lot of valuable data analysis, and moved a lot of work into R and Python (yay reproducibility!) that had been done in Excel and Tableau.</p>
-<p>I’m proudest not of any particular deliverable, but of building a team culture where collaborative problem solving was the very highest value – I remember the first time I talked to a direct report who had consulted a colleague and solved a thorny visualization problem in Tableau while I was busy doing other things.</p>
-<p>As someone who loves data science, that switch was the hardest. As a manager, my relationship to our data science work was mostly secondhand. My primary responsibility was not the output, but the team itself.</p>
+<aside>
+<p>There are so many variants on language around who is managed and who is manager. <strong>Manager</strong> and <strong>direct report</strong> strike me as the best of a bunch of bad options to describe that curious relationship.</p>
+</aside>
+<p>One curious aspect of that time is the the inverse relationship between my level of pride and my level of personal involvement in the output. The weeks after the honeymoon interruption, when I tried to do the work of the whole team have a dark cloud above them, while the time I talked to a direct report who had consulted a colleague and solved a thorny visualization problem while I was busy doing other things glows in my memory.</p>
 <h1 id="what-is-management">What is “Management”?</h1>
-<p>Good management is a flywheel generator — it clears obstacles to IC achievement, creates an environment of safety and growth, and finds and aggregates resources the team needs.</p>
-<p>Numerous resources refer to the roles of the manager with the 3 Ps:</p>
+<p>I have no direct experience with anything other than the most junior levels of management, so I’m going to stick to what I actually know. As a first-level (line) manager, my work mostly fell into five mostly disjoint roles:</p>
 <blockquote>
 <ul>
-<li><p>People - are team members happy and engaged?</p></li>
-<li><p>Process - are there mechanisms for the team to be jointly productive?</p></li>
-<li><p>Priorities - is there a shared vision of the work to be done?</p></li>
+<li><strong>The project manager</strong> collects and triages project requirements, sets timetables and schedules, assigns tasks, and is responsible for communications with stakeholders outside the team.</li>
+<li><strong>The people manager</strong> pays attention to the happiness and well-being of direct reports, stays in touch with their long-term career aspirations, and provides thought partnership about how to get there.</li>
+<li><strong>The resources manager</strong> determines the resources — usually people and their time — required for the team and its work, hiring, onboarding, and firing people.</li>
+<li><strong>The process manager</strong> Responsible for creating and designing processes to accomplish all the rest. On many teams, this responsibility is spread out among many individuals, some of whom are “managers”, some of whom are not.</li>
+<li><strong>The communications manager</strong> makes sure the team’s work is being promoted to those outside and ensures a shared vision across those on the team.</li>
 </ul>
 </blockquote>
-<p>I’ve always found the three Ps a little pat. Yes, they basically summarize what a manager does…but I think, like so many management concepts, they don’t actually help make anyone good at them.</p>
-<p>Also, the way you engage with each of these really differs depending on the level of manager you are. Being CEO of a 10,000 person company is really different than managing 5 data scientists. Here’s more on my experience of actually managing a small team.</p>
-<p>To me, the job of a junior manager has four distinct parts — which are sometimes literally divided into different roles in some workplaces:</p>
-<blockquote>
-<ul>
-<li><strong>Project manager</strong> Responsibility for collecting project requirements and needs, setting timetables and schedules, assigning tasks, and coordinating and communicating among project stakeholders.</li>
-<li><strong>People manager</strong> Responsibility for the day-to-day performance of subordinates, as well as their long-term career trajectory.</li>
-<li><strong>Resources manager</strong> Responsible for marshaling resources — most often people and their time to join the team and their projects. Often involving hiring and firing and determining roles.</li>
-<li><strong>Process Manager</strong> Responsible for creating and designing processes to accomplish all the rest. On many teams, this responsibility is spread out among many individuals, some of whom are “managers”, some of whom are not.</li>
-</ul>
-</blockquote>
-<p>The question is how being good at your IC work affects the management tasks ahead of you. The path absolutely is not linear. It is not the case that being good at your job makes you a good manager.</p>
+<p>For me, resources management was the hardest. As an IC, the amount of work is more-or-less fixed, and the choice variable is how hard you work/on what. As a manager, the work content, amount, level of burn the team is under, are all choice variables.</p>
+<p>As the people you manage get more senior, the first of these to drop away is the project management. With more senior people, you just help guide people and trust them to do more of their own direct project management.</p>
+<p>One thing that was entirely apparent was that my prowess as an IC mattered only to the extent it made me credible at these other things.</p>
 <p>If you’re a highly skilled IC, you’ll probably be better than others at understanding what has to happen in terms of collecting requirements and setting schedules, and you might be better at mentoring and coaching if you’re doing direct teaching.</p>
 <p>Some people believe the opposite to be true — being too good at IC work makes you less able to coach people who aren’t such naturals. I’m somewhat skeptical of this claim. I’ve seen too many people who are both amazing ICs and teachers and coaches (particularly in martial arts) to believe this is true.</p>
-<p>So why would you want to do this if you really excel at IC work? To me, the most compelling reason is to gain leverage. Leverage is the ability to get a lot from a little. In Silicon Valley, they love to throw around the idea of a 10x developer — that is a developer so genius and prolific they are literally 10 times as productive as most others. Let’s take this idea seriously just for a second. Let’s say you’re a 10x developer, then you could plausibly replace 10 people with yourself. So if you manage 11 people, you’ve now exceeded your own personal output, and let’s be real — you’re not a 10x developer (because they don’t exist).</p>
-<aside>
-<p>Don’t manage 11 people directly. In my experience, the <strong>maximum</strong> number anyone can reasonably manage directly is somewhere between 7-9. Fewer is definitely better, but I’ve seen a 10th direct report crush the best managers.</p>
-</aside>
-<p>And now, my most important piece of management advice</p>
-<blockquote>
-<p>Every manager should do therapy/counseling.</p>
-</blockquote>
-<p>Being a manager will bring out and magnify your insecurities, fears, and misguided thoughts, and they WILL be visited on your direct reports. I can’t remember where, but I once heard that “organizations magnify the worst traits of their leaders”.^[I <em>think</em> it might’ve been <a href="https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities">this episode</a> of the EXCELLENT Start Up Podcast.] I have seen nothing that makes me think this is anything less than 100% true.</p>
-<p>We all have traits and quirks that are maladaptive in a management role. Therapy won’t <em>fix</em> them, but it can increase awareness of them, and reduce the likelihood you’ll unwittingly perpetuate them upon your team.</p>
 <p>I do believe there is one big distinguishing feature between people who excel in a management role and those who struggle — they have a theory for why people (usually based on their own experience — as an example or counter-example) are good at their job. They might not use that language — but they’ve thought about why they’re good at what they do.</p>
 <p>This thinking is the raw material of good managing. Turning it into actual good management requires intentionally, willpower, and a lot of generosity. What it does not require is any sort of “natural inclination” — beyond the desire to do those things.</p>
 <p>I should also say there are occasionally amazing leaders who are great leaders simply because they are so personally astounding and don’t do any of the things I describe here. I am not one of those people and you probably aren’t either. If you are, I’m shocked you started reading this. Either way, kudos and stop reading — you do you.</p>
+<h3 id="managing-is-all-about-feelings">Managing is all About Feelings</h3>
+<p>As a manager, you’ll spend a good bit of time managing your direct reports’ feelings and concerns. But first, it’s really important to address your own.</p>
+<p>Being a manager will bring out and magnify all your insecurities, fears, and misguided thoughts. You’ll get shockingly little feedback from anyone on how you’re doing. And worst of all, this will all be visited on your direct reports.</p>
+<p>I can’t remember where, but I once heard that “organizations magnify the worst traits of their leaders”.^[I <em>think</em> it might’ve been <a href="https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities">this episode</a> of the EXCELLENT Start Up Podcast.] I have seen nothing that makes me think this is anything less than 100% true.</p>
+<p>So my only piece of truly directive advice for managers:</p>
+<blockquote>
+<p>Every manager should do therapy/counseling.</p>
+</blockquote>
+<p>We all have traits and quirks that are maladaptive in a management role. Therapy won’t <em>fix</em> them, but it can increase awareness of them, and reduce the likelihood you’ll unwittingly perpetuate them upon your team.</p>
+<h3 id="respect-the-power-youve-got">Respect the Power You’ve Got</h3>
+<p>How does it feel to get a message saying “can we talk?” with no context from your manager?</p>
+<h4 id="undeveloped-notes-for-future-workrandom-bits-that-dont-fit-in-yet-below-this-point.">[Undeveloped notes for future work/random bits that don’t fit in yet below this point.]</h4>
+<p>So why would you want to do this if you really excel at IC work? To me, the most compelling reason is to gain leverage. Leverage is the ability to get a lot from a little. In Silicon Valley, they love to throw around the idea of a 10x developer — that is a developer so genius and prolific they are literally 10 times as productive as most others. Let’s take this idea seriously just for a second. Let’s say you’re a 10x developer, then you could plausibly replace 10 people with yourself. So if you manage 11 people, you’ve now exceeded your own personal output, and let’s be real — you’re not a 10x developer (because they don’t exist).</p>
+<aside>
+<p>Don’t manage 11 people directly. In my experience, the <strong>maximum</strong> number anyone can reasonably manage directly is somewhere between 7-9. I’ve seen 10 direct reports crush the best managers.</p>
+</aside>
 <h2 id="mentorship-and-coaching">Mentorship and Coaching</h2>
 <p>Mentorship and coaching can be a big part of managing, and one of the most rewarding.</p>
 <p>Who am I? There are many different identities that you’ll have to manage between yourself and your direct reports. I always found that I struggled to convey expectations as high as I have for myself to my direct reports. I excused slow work and responded kindly to weak excuses for poor outcomes.</p>
 <p>I definitely fell victim to trying to be too much of a <em>friend</em> and not enough of a <em>coach</em>. Meanwhile, there is also the role of managing tasks vs career mentorship. There are many times where the demands of the immediate task is in conflict with the career wishes of the direct reports. For example, we had projects that really needed to get done — my direct reports wanted to learn the technology we were using, but what we really needed was for them to just get it done. How do you balance the time they need to develop new skills with the requirement that they do the actual work ahead.</p>
 <p>(Care personally vs challenge directly)</p>
+<p>What is a direct report? How does the langauge matter?</p>
 <h2 id="managing-new-workersinterns">Managing New Workers/Interns</h2>
 <p>Extra challenges</p>
 <h3 id="whose-interests-do-i-represent">Whose interests do I represent?</h3>
@@ -2163,6 +2178,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Be aware of the fact that if you’re mentoring younger people in particular, they probably don’t understand the dynamic of a workplace and that they have to protect themselves from their employer. As a high school food service employee, I once purchased and brought home a pizza on which I’d messed up the order, because I thought I had to — and I have a severe dairy allergy.</p>
 <p>In very real terms of power and privilege, the people who work for you almost certainly need more protecting from the company than the company needs protecting from them.</p>
 <p>Additionally, people know when your number one priority is looking out for them and they will respond in kind.</p>
+<h3 id="extractive-vs-growth-organizations">Extractive vs growth organizations</h3>
+<h3 id="limitations-on-what-you-can-do-as-a-junior-managers">Limitations on what you can do as a junior managers</h3>
 <h1 id="meetings">Meetings</h1>
 <p>Are really useful. They’re your primary tool as a manager.</p>
 <p>DIsdain for meetings in is toxic.</p>
@@ -2173,9 +2190,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Also essential</p>
 <p>Easier to push on barbell than broomstick (group brainstorming = :vomit:)</p>
 <p>About Setting and Communicating Goals and Priorities</p>
-<h1 id="requesting-resources-more-people">Requesting Resources (More people!)</h1>
-<p>One of primary jobs of manager. Easy to overlook when you’re not used to thinking of team size as something under your control.</p>
-<p>Manager: scope, scale, and personnel are mutable</p>
 <h1 id="book-recs">Book Recommendations</h1>
 <p>These are not necessarily the best books on management, but ones that I found useful. There are a lot of bad ones. This list is in order.</p>
 <p><strong>Radical Candor</strong></p>
