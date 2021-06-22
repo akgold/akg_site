@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://alexkgold.space/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -87,27 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Alex K Gold: Mostly #rstats and leadership, sometimes politics and handstands</title>
+  <title>Alex K Gold: Things I've said</title>
   
+  <meta property="description" itemprop="description" content="Recent presentations I&#39;ve given"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Alex K Gold: Mostly #rstats and leadership, sometimes politics and handstands"/>
+  <meta property="og:title" content="Alex K Gold: Things I&#39;ve said"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Recent presentations I&#39;ve given"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Alex K Gold"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Alex K Gold: Mostly #rstats and leadership, sometimes politics and handstands"/>
+  <meta property="twitter:title" content="Alex K Gold: Things I&#39;ve said"/>
+  <meta property="twitter:description" content="Recent presentations I&#39;ve given"/>
   <meta property="twitter:site" content="@alexkgold"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Mostly #rstats and leadership, sometimes politics and handstands"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Things I've said"]},{"type":"character","attributes":{},"value":["Recent presentations I've given"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2032,6 +2034,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
   
   <!--/radix_placeholder_distill-->
+  <script src="site_libs/core-js-2.5.3/shim.min.js"></script>
+  <script src="site_libs/react-16.12.0/react.min.js"></script>
+  <script src="site_libs/react-16.12.0/react-dom.min.js"></script>
+  <script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="site_libs/reactable-binding-0.2.3.9000/reactable.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2046,12 +2054,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Mostly #rstats and leadership, sometimes politics and handstands","authors":[]}
+{"title":"Things I've said","description":"Recent presentations I've given","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2083,309 +2091,89 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Mostly #rstats and leadership, sometimes politics and handstands">Mostly #rstats and leadership, sometimes politics and handstands</h1>
-<a href="posts/2020-12-02-practical-package-patterns/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 22, 2021</div>
-<div class="dt-authors"></div>
-</div>
-<div class="thumbnail">
-<img src="posts/2020-12-02-practical-package-patterns/images/wizard.png"/>
-</div>
-<div class="description">
-<h2>R Packages for Experts, not Wizards</h2>
-<div class="dt-tags"></div>
-<p>Write internal R packages for your team that disseminate expertise, not cleverness.</p>
-</div>
-</a>
-<a href="posts/2019-10-17-production-shiny-w-pins/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 17, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>RViews: Production Shiny Apps with Pins</h2>
-<div class="dt-tags"></div>
-<p>Using the new pins package to create a shiny app.</p>
-</div>
-</a>
-<a href="posts/2019-07-07-r-big-data/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">July 7, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>RViews: 3 Big Data Strategies for R</h2>
-<div class="dt-tags"></div>
-<p>3 strategies for working with big data in R.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 20, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Upgrading to R #3: Be the Data Engineer you Need</h2>
-<div class="dt-tags"></div>
-<p>Be the data engineer of your dreams.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 23, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/upgrading-to-r-2-failures-coming-get-ready_files/figure-html5/unnamed-chunk-2-1.png"/>
-</div>
-<div class="description">
-<h2>Upgrading to R #2: Failure's Coming, Get Ready!</h2>
-<div class="dt-tags"></div>
-<p>Prep in advance for things to be hard.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-upgrading-to-r-1-excitement-skills/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 20, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Upgrading to R #1: Excitement &gt;&gt; Skills</h2>
-<div class="dt-tags"></div>
-<p>You can teach skills, but not excitement.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Jan. 19, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Upgrading to R: RStudio Conf 2019</h2>
-<div class="dt-tags"></div>
-<p>Upgrading a team to R.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-custom-fonts-in-ggplot2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 28, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Custom fonts in ggplot2</h2>
-<div class="dt-tags"></div>
-<p>Put custom fonts into plots.</p>
-</div>
-</a>
-<a href="posts/2019-11-09-rstats-nyc-2017/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 23, 2017</div>
-<div class="dt-authors">
-<div class="dt-author">Alex Gold</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>RStats NYC 2017</h2>
-<div class="dt-tags"></div>
-<p>My writeup of RStats NYC 2017.</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Mostly #rstats and leadership, sometimes politics and handstands</h1>
+<h1>Things I’ve said</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Recent presentations I’ve given</p></p>
 </div>
 
 
 <div class="d-article">
+<p>Selected<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> slides are available at <a href="https://speakerdeck.com/akgold">speakerdeck</a>.</p>
+<p>Generally, my presentations involve demoing R code, which is available on <a href="https://github.com/akgold/">GitHub</a>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://dplyr.tidyverse.org/reference/bind.html'>bind_cols</a></span><span class='op'>(</span>
+  <span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tribble.html'>tribble</a></span><span class='op'>(</span>
+    <span class='op'>~</span><span class='va'>Date</span>,            <span class='op'>~</span><span class='va'>Title</span>,         <span class='op'>~</span><span class='va'>Slides</span>,             <span class='op'>~</span><span class='va'>Code</span>, 
+    <span class='st'>"2020-03-28"</span>, <span class='st'>"DC SatRDays: Break Up Shiny Apps"</span>, <span class='st'>"https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing"</span>, <span class='st'>"github.com/akgold/shiny_break_up_satrday"</span>,
+    <span class='st'>"2020-07-28"</span>, <span class='st'>"RStudio Webinar: Growing a Remote Data Science Team"</span>, <span class='st'>"https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing"</span>, <span class='cn'>NA</span>,
+    <span class='st'>"2020-06-17"</span>, <span class='st'>"e-RUM: Design Patterns for Big Shiny Apps"</span>, <span class='st'>"https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit"</span>, <span class='st'>"https://github.com/akgold/erum-big-shiny"</span>,
+    <span class='st'>"2020-12-03"</span>, <span class='st'>"DCR: Powerful Package Patterns"</span>, <span class='st'>"https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing"</span>, <span class='cn'>NA</span>,
+    <span class='st'>"2019-05-21"</span>, <span class='st'>"Data Scientists Doing Software Engineering"</span>, <span class='st'>"https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering"</span>, <span class='cn'>NA</span>,
+    <span class='st'>"2019-06-12"</span>, <span class='st'>"Big Data Toronto 2019: Big Data and R, Spark"</span>, <span class='st'>"https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark"</span>, <span class='st'>"https://github.com/akgold/big_data_2019"</span>,
+    <span class='st'>"2019-09-17"</span>, <span class='st'>"DC Data Science Meetup: Love for Linear Models"</span>, <span class='st'>"https://speakerdeck.com/akgold/love-for-linear-models"</span>, <span class='cn'>NA</span>,
+    <span class='st'>"2019-09-17"</span>, <span class='st'>"Webinar: Reproducible Data Science"</span>, <span class='st'>"https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science"</span>, <span class='st'>"https://github.com/akgold/2019-09-17_john_deere_webinar"</span>, 
+    <span class='st'>"2019-11-14"</span>, <span class='st'>"Big Data London 2019: Big Data and R: Databases"</span>, <span class='st'>"https://speakerdeck.com/akgold/r-and-big-data-databases"</span>, 
+    <span class='st'>"https://github.com/akgold/bdl_2019"</span>, 
+    <span class='st'>"2020-01-03"</span>, <span class='st'>"RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins"</span>, <span class='st'>"https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf"</span>, <span class='st'>"https://github.com/akgold/rsconf2020-deployment"</span>,
+    <span class='st'>"2021-02-17"</span>, <span class='st'>"RStudio Webinar: Managing Packages for Open Source Data Science"</span>, <span class='cn'>NA</span>, <span class='cn'>NA</span>
+    
+  <span class='op'>)</span>, 
+  <span class='fu'>tibble</span><span class='fu'>::</span><span class='fu'><a href='https://tibble.tidyverse.org/reference/tribble.html'>tribble</a></span><span class='op'>(</span>
+    <span class='op'>~</span><span class='va'>Video</span>, 
+    <span class='cn'>NA</span>,
+    <span class='st'>"https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/"</span>,
+    <span class='st'>"https://youtu.be/NwVOvfpGq4o"</span>,
+    <span class='cn'>NA</span>,
+    <span class='cn'>NA</span>, 
+    <span class='cn'>NA</span>, 
+    <span class='cn'>NA</span>, 
+    <span class='cn'>NA</span>, 
+    <span class='st'>"https://www.youtube.com/watch?v=GQcEnlz3jrI"</span>, 
+    <span class='st'>"https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/"</span>, 
+    <span class='st'>"https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/"</span>
+  <span class='op'>)</span>
+<span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/mutate.html'>transmute</a></span><span class='op'>(</span>
+    <span class='va'>Date</span>,
+    Title <span class='op'>=</span> <span class='fu'>make_link</span><span class='op'>(</span><span class='va'>Title</span>, <span class='va'>Slides</span><span class='op'>)</span>,
+    Code <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>Code</span><span class='op'>)</span>, <span class='cn'>NA</span>, <span class='fu'>make_link</span><span class='op'>(</span><span class='st'>"Code"</span>, <span class='va'>Code</span><span class='op'>)</span><span class='op'>)</span>, 
+    Video <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>Video</span><span class='op'>)</span>, <span class='cn'>NA</span>, <span class='fu'>make_link</span><span class='op'>(</span><span class='st'>"Video"</span>, <span class='va'>Video</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/arrange.html'>arrange</a></span><span class='op'>(</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/desc.html'>desc</a></span><span class='op'>(</span><span class='va'>Date</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span>
+  <span class='fu'>reactable</span><span class='fu'>::</span><span class='fu'><a href='https://glin.github.io/reactable/reference/reactable.html'>reactable</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+      Date <span class='op'>=</span> <span class='fu'>reactable</span><span class='fu'>::</span><span class='fu'><a href='https://glin.github.io/reactable/reference/colDef.html'>colDef</a></span><span class='op'>(</span>
+        width <span class='op'>=</span> <span class='fl'>110</span>
+      <span class='op'>)</span>,
+      Title <span class='op'>=</span> <span class='fu'>reactable</span><span class='fu'>::</span><span class='fu'><a href='https://glin.github.io/reactable/reference/colDef.html'>colDef</a></span><span class='op'>(</span>
+        html <span class='op'>=</span> <span class='cn'>TRUE</span>
+      <span class='op'>)</span>, 
+      Code <span class='op'>=</span> <span class='fu'>reactable</span><span class='fu'>::</span><span class='fu'><a href='https://glin.github.io/reactable/reference/colDef.html'>colDef</a></span><span class='op'>(</span>
+        html <span class='op'>=</span> <span class='cn'>TRUE</span>, 
+        maxWidth <span class='op'>=</span> <span class='fl'>60</span>
+      <span class='op'>)</span>, 
+      Video <span class='op'>=</span> <span class='fu'>reactable</span><span class='fu'>::</span><span class='fu'><a href='https://glin.github.io/reactable/reference/colDef.html'>colDef</a></span><span class='op'>(</span>
+        html <span class='op'>=</span> <span class='cn'>TRUE</span>, 
+        maxWidth <span class='op'>=</span> <span class='fl'>65</span>
+      <span class='op'>)</span>
+    <span class='op'>)</span>
+  <span class='op'>)</span>
+</code></pre>
+</div>
+<div id="htmlwidget-19b80c29fea38b116187" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-19b80c29fea38b116187">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Date":["2021-02-17","2020-12-03","2020-07-28","2020-06-17","2020-03-28","2020-01-03","2019-11-14","2019-09-17","2019-09-17","2019-06-12","2019-05-21"],"Title":["<a href=NA>RStudio Webinar: Managing Packages for Open Source Data Science<\/a>","<a href=https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing>DCR: Powerful Package Patterns<\/a>","<a href=https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing>RStudio Webinar: Growing a Remote Data Science Team<\/a>","<a href=https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit>e-RUM: Design Patterns for Big Shiny Apps<\/a>","<a href=https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing>DC SatRDays: Break Up Shiny Apps<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf>RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins<\/a>","<a href=https://speakerdeck.com/akgold/r-and-big-data-databases>Big Data London 2019: Big Data and R: Databases<\/a>","<a href=https://speakerdeck.com/akgold/love-for-linear-models>DC Data Science Meetup: Love for Linear Models<\/a>","<a href=https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science>Webinar: Reproducible Data Science<\/a>","<a href=https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark>Big Data Toronto 2019: Big Data and R, Spark<\/a>","<a href=https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering>Data Scientists Doing Software Engineering<\/a>"],"Code":[null,null,null,"<a href=https://github.com/akgold/erum-big-shiny>Code<\/a>","<a href=github.com/akgold/shiny_break_up_satrday>Code<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment>Code<\/a>","<a href=https://github.com/akgold/bdl_2019>Code<\/a>",null,"<a href=https://github.com/akgold/2019-09-17_john_deere_webinar>Code<\/a>","<a href=https://github.com/akgold/big_data_2019>Code<\/a>",null],"Video":["<a href=https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/>Video<\/a>",null,"<a href=https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/>Video<\/a>","<a href=https://youtu.be/NwVOvfpGq4o>Video<\/a>",null,"<a href=https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/>Video<\/a>","<a href=https://www.youtube.com/watch?v=GQcEnlz3jrI>Video<\/a>",null,null,null,null]},"columns":[{"accessor":"Date","name":"Date","type":"character","width":110},{"accessor":"Title","name":"Title","type":["glue","character"],"html":true},{"accessor":"Code","name":"Code","type":"character","html":true,"maxWidth":60},{"accessor":"Video","name":"Video","type":"character","html":true,"maxWidth":65}],"defaultPageSize":10,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"8140ff20387a18993244229bacf71def"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Ones I haven’t been too lazy to put there…<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
