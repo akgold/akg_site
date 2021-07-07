@@ -19,7 +19,7 @@ Selected[^1] slides are available at [speakerdeck](https://speakerdeck.com/akgol
 
 Generally, my presentations involve demoing R code, which is available on [GitHub](https://github.com/akgold/).
 
-```{r}
+```{r, echo = FALSE}
 bind_cols(
   tibble::tribble(
     ~Date,            ~Title,         ~Slides,             ~Code, 
