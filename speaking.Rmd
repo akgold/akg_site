@@ -35,6 +35,7 @@ bind_cols(
     "https://github.com/akgold/bdl_2019", 
     "2020-01-03", "RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins", "https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf", "https://github.com/akgold/rsconf2020-deployment",
     "2021-02-17", "RStudio Webinar: Managing Packages for Open Source Data Science", NA, NA
+    "2021-07-07", "UseR 2021: Reliably Reproducible Product Packages", "https://docs.google.com/presentation/d/1a7YvEsknIcOAUJGskjW-jooW-A4ochg12k7iS5WpwAs/edit?usp=sharing", NA
     
   ), 
   tibble::tribble(
@@ -49,7 +50,8 @@ bind_cols(
     NA, 
     "https://www.youtube.com/watch?v=GQcEnlz3jrI", 
     "https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/", 
-    "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/"
+    "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/", 
+    NA
   )
 ) %>%
   dplyr::transmute(
