@@ -93,9 +93,10 @@ beckoning, listening to voicemails about data values being too big by
 half and categories not making sense.
 
 I write all this to share that having a theory of good management has
-been important to me, but it was wildly insufficient. *Management is a
-craft more than an art or science -- and like any craft the trick is in
-the doing*.
+been important to me, but it was wildly insufficient.
+
+> *Management is more craft than art or science. Like any craft the
+> trick is in the doing*.
 
 So, I hope you'll get some helpful mental models out of this (partially
 finished) essay -- but even the best mental models are only modest
@@ -103,6 +104,31 @@ protection against ending up in a dark stairway, listening the seagulls,
 wishing the line plots would just go away.
 
 # What is "management"?
+
+For many people skilled in IC work, management seems like an
+unattractive land. An colorless flatland filled with meeting after
+meeting -- and none of the creative joy of IC work. In my experience, it
+is true that you'll probably do less of the IC work you know and love if
+you move into management.
+
+I was challenged in ways I wasn't prepared for, especially emotionally.
+Being a manager was a huge challenge, and when I went to RStudio and
+back to IC work I jumped at the chance -- because in some ways, the
+hardest IC work feels like a vacation after the emotional stretching of
+being a manager.
+
+On the other hand, I found more joy in watching my team succeed than I
+ever had from seeing a model run successfully or a dashboard light up a
+client's face. Seeing the people on my team achieve higher levels of
+success and independence was an enormous reward -- and I elected to move
+back into management as soon as I was given an opportunity.
+
+Aside from the feel-goody-ness of management, management is most
+exciting as a form of leverage (in the financial sense). You can only
+ever type so many lines of code in a day, fit so many models, deploy so
+many apps. But if you can scale yourself -- figure out how to share and
+spread some of your expertise. That's a truly special thing to be able
+to do.
 
 As best I can explain it:
 
@@ -131,10 +157,12 @@ the term *management* covers such a broad range of activities that it's
 somewhat meaningless.
 
 My experience was at the most junior level of management -- directly
-managing a team of 4-8 data scientists.\^[Sometimes called "line"
-management for...reasons...] I'm sure that my day-to-day work shared
-some activities with the CEO of the company, some 7 levels in the
-hierarchy up from me, but I bet not a lot.
+managing a team of 4-8 data scientists.[^1] I'm sure that my day-to-day
+work shared some activities with the CEO of the company, some 7 levels
+in the hierarchy up from me, but I bet not a lot.
+
+[^1]: Often called *line* management, for reasons that almost certainly
+    hearken back to the assembly line...
 
 I'm proud of the work the team did during the 18 months I managed them.
 We produced a lot of valuable data analysis, and moved a lot of work
@@ -157,7 +185,7 @@ to a direct report who had consulted a colleague and solved a thorny
 visualization problem while I was busy doing other things glows in my
 memory.
 
-### Roles of a manager
+## Roles of a manager
 
 I have no direct experience with anything other than the most junior
 levels of management, so I'm going to stick to what I actually know. As
@@ -234,11 +262,13 @@ and misguided thoughts. You'll get shockingly little feedback from
 anyone on how you're doing. And worst of all, this will all be visited
 on your direct reports.
 
-I can't remember where, but I once heard that "organizations magnify the
-worst traits of their leaders".\^[I *think* it might've been [this
-episode](https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities)
-of the excellent Start Up Podcast.] I have seen nothing that makes me
+The quote that sticks in my head is that "organizations magnify the
+worst traits of their leaders".[^2] I have seen nothing that makes me
 think this is anything less than 100% true.
+
+[^2]: I *think* it was [this
+    episode](https://gimletmedia.com/shows/startup/mehw5w/gimlet-23-shadowed-qualities)
+    of the excellent Start Up Podcast.
 
 So my only piece of truly directive advice for managers:
 
@@ -250,29 +280,53 @@ reduce the likelihood you'll unwittingly perpetuate them upon your team.
 
 ### Respect the power you've got
 
-How does it feel to get a message saying "can we talk?" with no context
-from your manager?
+One thing that's important to be aware of as you enter management is the
+extra weight your words now carry. Feedback -- positive, negative, and
+even neutral carries a weight it didn't when you were just an IC.
 
-#### [Undeveloped notes for future work/random bits that don't fit in yet below this point.]
+If you're anything like me, getting a message from my manager saying
+"have a minute to talk?" makes your heart race a little, while the same
+message from someone at the same seniority as me elicits no reaction.
 
-So why would you want to do this if you really excel at IC work? To me,
-the most compelling reason is to gain leverage. Leverage is the ability
-to get a lot from a little. In Silicon Valley, they love to throw around
-the idea of a 10x developer --- that is a developer so genius and
-prolific they are literally 10 times as productive as most others. Let's
-take this idea seriously just for a second. Let's say you're a 10x
-developer, then you could plausibly replace 10 people with yourself. So
-if you manage 11 people, you've now exceeded your own personal output,
-and let's be real --- you're not a 10x developer (because they don't
-exist).
+Generally trying to be aware of the impact of your words and actions is
+an imporatnt part of management. As a manager you implicitly and
+explicitly set norms throughout organizations.
 
-<aside>
+One important role you have as a manager is to give feedback. In many
+cases, new managers fixate on having to give negative feedback as a hard
+part of their new job. But you also have to give positive feedback.
+Someone I know got almost no positive feedback at her job -- until the
+day she quit. Suddenly the accolades came pouring out of the woodwork
+from her manager and more senior leadership -- all the way up to the
+head of the organization. The program she ran was impactful, and her
+role essential. She's brought grace, professionalism, and strategic
+thinking to the organization.
 
-Don't manage 11 people directly. In my experience, the **maximum**
-number anyone can reasonably manage directly is somewhere between 7-9.
-I've seen 10 direct reports crush the best managers.
+What an utter failure of management. Managing isn't like a funeral. You
+don't save up the nice things to say to someone until they're gone. You
+want to give feedback -- both positive and negative -- **as quickly as
+possible**.[^3] If not, you risk waiting too long to give feedback.
 
-</aside>
+[^3]: The section on feedback in [Radical Candor](#book-recs)
+    particularly influenced my thinking on this front.
+
+Negative feedback, in particular, has a half-life. If you have minor
+negative feedback -- "you really needed to spellcheck those slides
+before the presentation" -- saving it for later makes it either seem
+petty to bring up and you'll skip it, or it'll blow it out of proportion
+to the person you're delivering it to "my behavior was so bad that it
+was worth bringing up 2 weeks later?!?".
+
+When someone does something great -- tell them immediately -- and
+publicly if possible. When someone does something that requires
+correction, tell them immediately, and privately.
+
+Aside from actually giving feedback to your reports, you also set norms
+with your actions. A huge -- often overlooked -- example of this is your
+work habits. Send emails and messages outside of work hours? Your direct
+reports will see and respond. On the other hand, visibly unplug when you
+go on vacation -- that is a powerful norm -- one you should feel honored
+to uphold.
 
 ## Mentorship and Coaching
 
@@ -372,9 +426,9 @@ About Setting and Communicating Goals and Priorities
 I've read many, many books on management. I think most are not terribly
 useful -- often providing 3 pages of insight in 150 pages of text, or
 providing a mix of theory and practice that ends up being insufficiently
-useful on both dimensions.[^1]
+useful on both dimensions.[^4]
 
-[^1]: I am keenly aware of the danger of speaking ill of others writing,
+[^4]: I am keenly aware of the danger of speaking ill of others writing,
     given my own limitations as a writer. But if it can be useful to
     you, maybe it's worth it.
 
