@@ -52,7 +52,7 @@ bind_cols(
     "https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/", 
     "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/", 
     NA, 
-    NA
+    "https://youtu.be/-6TlzhRA9vA"
   )
 ) %>%
   dplyr::transmute(
