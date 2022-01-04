@@ -367,8 +367,6 @@ Instead, I came to believe meetings are bad when they:
 
 2.  Feel useless to attendees.
 
-------------------------------------------------------------------------
-
 Preventing calendar fragmentation is a genuinely hard problem. Meetings
 tend to migrate to places where there are large open blocks of time on
 people's calendars. There's definitely no one-size-fits-all solution,
@@ -592,8 +590,6 @@ development -- which means slowing down and taking time to learn -- with
 the need to just get stuff done in the quickest way possible. As a
 manager, it was my responsibility to figure out when we had to focus on
 efficiency and when there were good opportunities for learning.
-
-------------------------------------------------------------------------
 
 ## I loved management
 
