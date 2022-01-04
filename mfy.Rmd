@@ -9,13 +9,14 @@ editor_options:
 
 I first became a manager by surprise.
 
-During my first week at a consulting firm supporting a large federal
-client, my manager was out, so I spent the week getting to know 3 other
-analysts and data scientists on the team. I was excited to join as the
-team's most senior data scientist and to get my hands dirty.
+It was my first week in my new job as a data scientist at a consulting
+firm, and my manager was out with a sprained ankle. So I spent the week
+getting to know 3 other analysts and data scientists on the team,
+thinking I was the new senior data scientist. I was excited to get my
+hands dirty.
 
-It was during my second week that I understood that no, I'd been hired
-to replace her **as** the team's manager.
+It was during my second week that I met with my manager and understood
+that no, I'd been hired to replace her **as** the team's manager.
 
 For the next 18 months I stayed in that role, directly managing a team
 of 4-8 data scientists. That time was a firehose of learning -- some
