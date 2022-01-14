@@ -7,13 +7,12 @@ editor_options:
     wrap: 72
 ---
 
-I first became a manager by surprise.
+My first managerial role came by surprise.
 
-It was my first week in my new job as a data scientist at a consulting
-firm and my manager was out with a sprained ankle. So I spent the week
-getting to know 3 other analysts and data scientists on the team,
-thinking I was the new senior data scientist. I was excited to get my
-hands dirty.
+I had just started as a data scientist at a large consulting firm, and
+my manager was out for my first week with a sprained ankle. I spent that
+week getting to know the three other folks on the team, thinking I was
+the new senior data scientist. I was excited to get my hands dirty.
 
 It was during my second week that I met with my manager and understood
 that no, I'd been hired to replace her **as** the team's manager.
@@ -24,16 +23,17 @@ were lessons I sought out, and others landed on my head without
 invitation. I bought many books on management and implemented some of
 the nuggets I found in those thousands of pages.
 
-But I learned even more from some of the big, stupid, mistakes I made --
+But I learned even more from some of the big, stupid mistakes I made --
 including one that literally interrupted my honeymoon on the beaches of
 Croatia.
 
-Later, I moved back into an individual contributor role on the Solutions
-Engineering team at RStudio. I started writing this essay around the
-time I went to RStudio.
+Later, when I joined RStudio, I moved back into an individual
+contributor role on the Solutions Engineering team. It was around that
+time I started writing this essay -- and I'm now declaring it done, some
+three years later.
 
 I'm not a management expert, but I did try really hard during my first
-year managing, and I've since spent time digesting the experience. My
+year managing and I've since spent time digesting the experience. My
 hope is that others will find a few of the things I learned useful when
 they're at the start of their own management journey.
 
@@ -41,20 +41,17 @@ they're at the start of their own management journey.
 
 When I first understood that I was to manage the team, I knew it would
 be very different from doing data science, demanding new kinds of work
-and new skills of me. But I didn't know how to do it yet, and to be
+and new skills of me. But I didn't know how to do it yet and, to be
 honest, I didn't really know what management was.
 
-The next 18 months were an incredible challenge. Even with the
-overwhelming amount I had to learn when I first started as a Solutions
-Engineer at RStudio, it felt like vacation after the daily emotional
-stretching management had required of me.
+The next 18 months were an incredible challenge.
 
 As I started, I really didn't have a clear idea of what management was.
 I'd had a few good managers over the years -- and more bad ones -- but
 didn't really understand why the good ones had been good and the bad
 ones bad.
 
-So I did what I do best --- I turned to books. I read management books,
+So, I did what I do best --- read some books. I read management books,
 biographies of managers, deep dives on companies that seemed to have
 figured something great out.
 
@@ -64,15 +61,15 @@ Recommendations on my favorites at [the bottom](#book-recs).
 
 </aside>
 
-Most of those books were bad (or at least over-long by half), but some
+Most of those books were bad (or at least too long by half), but some
 were good. I developed a reasonably coherent mental model of what
 managing is.
 
 And yet -- I found myself on my honeymoon in Split, Croatia, known for
-its old-world charm and stunning azure waters. My new wife and I were
-staying in a single-room flat so humorously small that the bathroom was
-just a glass-enclosed corner of the room, privacy provided solely gauzy
-purple curtain.
+its old-world charm and stunning azure waters. My wife and I were
+staying in a single-room flat, so humorously small that the bathroom was
+just a glass-enclosed corner of the room, privacy provided solely by a
+gauzy purple curtain.
 
 But I was crouched in the dark stairwell listening to voicemails and
 reading emails.
@@ -83,19 +80,19 @@ misclassified data points. The mistakes reflected that we, the supposed
 data experts, had no idea what the data was -- much less any cogent
 interpretation.
 
-Clearly I had goofed -- the person who had created the charts didn't
+Clearly, I had goofed -- the person who had created the charts didn't
 have the context and knowledge necessary to produce the charts without
 error.
 
 And then things got worse after I got home and instituted drastic new
 requirements for everyone's code to be checked in and reviewed daily.
-Many on the team chafed under the sudden new requirements, and a few
+Many on the team chafed under the sudden new requirements and a few
 weeks after that, I found myself in a number of difficult conversations
 about how we might lose people on the team, all due to my actions.
 
 But the team recovered. Over the remainder of my time there, the team
-more-than-doubled in size, and by the time I left for RStudio, it was a
-highly-functional data and analytics team.
+more than doubled in size, and by the time I left for RStudio, it was a
+highly functional data and analytics team.
 
 And I loved it.
 
@@ -112,7 +109,7 @@ scientist.
 
 So, I hope you'll get some helpful mental models out of this essay --
 but even the best mental models are only modest protection against
-ending up in a dark stairway, listening the seagulls, wishing you'd
+ending up in a dark stairway, listening to the seagulls, wishing you'd
 never even heard of line plots or line management.
 
 ## My definition of management
@@ -127,9 +124,9 @@ As best I can explain it:
 > and helps them feel safe to experiment and grow, resulting in
 > ever-higher levels of collective performance.
 
-Reading this clever and finely-worded definition fills me with the warm
+Reading this clever and finely worded definition fills me with the warm
 glow of a concept well-encapsulated. But let's be honest, you --- reader
---- are reading in hopes of **being a better manager**, or maybe even
+--- are reading in hopes of **being a better manager** or, maybe even
 more likely, understanding why your manager is so bad.
 
 <aside>
@@ -162,7 +159,7 @@ my time spent in books didn't seem to translate directly into being
 better at my job.
 
 As a manager, I found that it wasn't knowledge I needed, it was the
-daily practice of doing the work. And in that I was constantly bumping
+daily practice of doing the work. And in that, I was constantly bumping
 up against the limits of my bravery and patience.
 
 <aside>
@@ -175,9 +172,9 @@ up against the limits of my bravery and patience.
 
 When I came back from my honeymoon, I let my ego and my fear of being
 wrong again get the better of me. I knew that the code and the plots
-weren't good enough, and my review could have caught it. So I decided
-that all of the team's code would be checked into git every night and I
-would review it.
+weren't good enough, and my review could have caught it. I decided that
+all of the team's code would be checked into git every night and I would
+review it.
 
 This was a dumb rule -- for many reasons.
 
@@ -211,12 +208,12 @@ for my team, mostly recent college grads, the intimation that they still
 might be children after 16+ years of school was about the worst thing I
 could do.
 
-And moreover, the new rules provoked the fear of being stupid or
-lacking. One of the main rules was that code had to be checked into git
-every night. From my own experience, I knew how hard git is. It is so
-hard to develop a reliable mental model, and it feels like all the code
-might go poof with any action.[^1] And I told my team they had to use it
-constantly, with no help or guidance from me.
+Even worse, the new rules were a source of fear. One of the main rules
+was that code had to be checked into git every night. From my own
+experience, I knew how hard git is. It is so hard to develop a reliable
+mental model, and it feels like all the code might go poof with any
+action.[^1] And I told my team they had to use it constantly, with no
+help or guidance from me.
 
 [^1]: If you or your team is trying to learn git, I strongly recommend
     [Happy Git with R](https://happygitwithr.com/) as a resource. Good
@@ -241,8 +238,8 @@ of the excellent Start Up Podcast in which someone says the line,
 "organizations magnify the worst traits of their leaders". I have seen
 nothing that makes me think this is anything less than 100% true.
 
-So my only piece of truly directive advice for any new managers reading
-this book:
+My only piece of truly directive advice for any new managers reading
+this essay:
 
 > Go do therapy/counseling.
 
@@ -252,11 +249,11 @@ tendencies and patterns, more able to step outside and observe them, and
 (I hope) reduced the likelihood I unwittingly perpetuated them on my
 team.
 
-Eventually, I grasped that the main thing I was actually doing was
+Eventually, once I grasped that the main thing I was actually doing was
 providing context and managing feelings, and things started going much
 smoother. Instead of walking into work every day thinking through some
 technical challenge or another, I tried to activate the best of my
-bravery and patience for the day ahead, and I started digging myself out
+bravery and patience for the day ahead and I started digging myself out
 of the hole I'd fallen in with the team.
 
 ## Management was just a bunch of roles smashed together
@@ -274,7 +271,7 @@ Hopefully, sharing my mental model can clarify what things you might
 want to get better at.
 
 Central to my mental model of management is that it isn't actually *a*
-role. Manager is a title applied to a collection of largely distinct
+*role*. Manager is a title applied to a collection of largely distinct
 roles.
 
 Before I became a manager, I had heard that management is exhausting
@@ -328,11 +325,10 @@ where people frequently changed projects, my role was explicitly divided
 between my role as a people ("career") manager and a "job lead" who
 managed a particular project and its resources.
 
-I actually really liked this division, as it gave everyone the
-opportunity to acquire more mentors and mentorship. It was also nice in
-that career management conversations were truly about career -- because
-I wasn't close enough to have tactical conversations about day-to-day
-work.
+I found that I actually liked this division, as it gave more
+opportunities to acquire mentors and mentorship. Also, career
+conversations were truly about career -- I wasn't close enough to the
+work that status updates made much sense.
 
 My technical skills were relevant in many of these roles -- but not in
 the way I had thought. For the most junior employees, my skills
@@ -343,17 +339,17 @@ my skills.
 The primary relationship between my data science skills and my skills as
 a data science manager was that my technical skills helped me **ask the
 right questions**. Ultimately, my direct reports succeeded and learned
-more when they were asked questions than given answers.
+more when they were asked questions than when given answers.
 
-### Meetings were my main main tool
+### Meetings were my main tool
 
 My first, and most obvious, observation about being a manager was that
 nothing I did was a solo activity. In the work world, any gathering of
 two or more people is a meeting. Thus, meetings were my main tool as a
 manager.
 
-My meetings varied widely in both form and content. Many were 1-1
-meetings between me and a direct report, others were team-wide update or
+The meetings varied widely in both form and content. Many were 1-1
+meetings between a direct report and, others were team-wide update or
 decision-making meetings.
 
 Primal disdain for meetings is pretty common in tech circles. I believe
@@ -376,11 +372,13 @@ from that, I found no great solutions here aside from trying to minimize
 the number of meetings and their size.
 
 There have been so many books written on making meetings (feel) useful.
-Generally they present a system or tactic to make meetings (feel)
+Generally, they present a system or tactic to make meetings (feel)
 useful. Amazon makes everyone read a memo before they start. Tim Ferris
 won't show up if there isn't an agenda ahead of time. 1-1s are supposed
 to be "the employee's meeting" where they come with an agenda and get to
-do most of the talking. They're fine rules.
+do most of the talking.
+
+They're fine rules.
 
 But I think the focus on tactics often missed the point. Let's take the
 example of 1-1 meetings with direct reports, which I found incredibly
@@ -388,10 +386,10 @@ valuable -- even fun!
 
 Up to the point I became a manager, I didn't have great experiences with
 1-1s. Most of my career didn't feature formal 1-1s, and the one manager
-who adopted a real 1-1 playbook managed to make them quite negative even
-with a set format.
+who adopted a real 1-1 playbook managed to make them a potent source of
+toxicity, format notwithstanding.
 
-So I walked into management really confused about how to do good 1-1s,
+So, I walked into management really confused about how to do good 1-1s,
 and deeply skeptical of prescriptive formats.
 
 <aside>
@@ -399,28 +397,30 @@ and deeply skeptical of prescriptive formats.
 My skepticism about meeting formats was later deepened by my first
 manager at RStudio.
 
-I loved our 1-1s. Each one made me feel valued and seen and I left with
-clarity about my work, this despite (or because?) him breaking every 1-1
-rule I've ever seen.
+I loved our 1-1s despite (or because?) he broke every 1-1 rule I've ever
+seen. He talked more than he listened, meandered to wild places, and we
+never kept an agenda. But each one made me feel valued and seen and I
+left with clarity about my work. They were amazing.
 
 </aside>
 
-I found it was important to make clear *why we were there* and actually
-focus on that why in the meeting. Sometimes the tactics from books were
-helpful...but it constantly varied meeting to meeting and I struggled to
-taxonomize the meetings or tactics.
+In the meetings I ran, I found it was important to make clear *why we
+were there* and actually focus on that why in the meeting. Sometimes the
+tactics from books were helpful...but it constantly varied meeting to
+meeting and I struggled to taxonomize the meetings or tactics.
 
 Keeping the focus on what we were there to do never went wrong.
 
 <aside>
 
 Having meetings (or parts of meetings) for frivolous fun or to get to
-know each other is really important -- doubly so for remote teams.
+know each other is really important -- doubly so for remote teams. Just
+make clear that's what they're for!
 
 </aside>
 
 The one kind of meeting that is *always bad* is the group brainstorm
-with more than about 4 people. Groups that large don't do good
+with more than about four people. Groups that large don't do good
 exploratory thinking. Skip them, write a memo ahead of time, and debate
 options at the meeting.[^3]
 
@@ -433,7 +433,7 @@ options at the meeting.[^3]
 
 ## My words carried a lot of power
 
-It's important to be aware of implicit sources of power in a workplace
+It's important to be aware of implicit sources of power in a workplace,
 like identity-based privilege, technical knowledge, and tenure. Despite
 being pretty comfortable talking about power and privileged in my life,
 I was surprised by how much power was still embedded in the explicit
@@ -452,35 +452,37 @@ chat about something minor.
 After I observed myself doing the same, I tried to always explain why in
 the same message as a request to meet with a direct report.
 
-Even more complicated, I came to feel that the form and timing of my
-communication mattered, because they communicated about my work habits,
-which implicitly set expectations for others.
+Even more navel-gaze-y, I realized that the form and timing of my
+communication mattered, because they implicitly set expectations about
+work habits for others.
 
 I tried really hard not to send messages outside of work hours -- and I
 made a big deal of visibly unplugging when I went on vacation. I felt
 those were important norms for our team, and the easiest way to upend
 them would've been to be seen not following them myself.
 
-Another new thing was how often -- and quickly -- I had to give
-feedback.[^4] I quickly found that critical feedback, has a short
-half-life. The first few times I had critical feedback, I held onto it,
-figuring I'd deliver it at a more convenient time.
+It took me a while to calibrate just how often -- and quickly -- I had
+to give feedback.[^4] I found that critical feedback has a way shorter
+half-life than I assumed.
 
 [^4]: The section on feedback in [Radical Candor](#book-recs)
     particularly influenced my thinking on this front.
 
-But if I'd waited a week, it felt petty to bust out, "Remember that
-presentation last week? You really should've proofread it before we
-showed a typo to the client." And when it didn't feel petty, I was
-worried it'd be blown out of proportion in my direct reports' head
-because it had bothered me enough to hold onto for so long. I found the
-quicker I could give critical feedback, the better.
+The first few times I had critical feedback I held it, waiting for a
+convenient time. But after I'd waited a week, it felt petty to bust out,
+"Remember that presentation last week? You really should've proofread it
+before we showed a typo to the client." And I was worried it'd be blown
+out of proportion in my direct report's head because it had bothered me
+enough to hold onto for so long.
 
-I also found that speed was important for positive feedback.
+I never delivered that feedback.
+
+I found the quicker I could give critical feedback, the better -- and
+that the same was also true for positive feedback.
 
 I don't have a great anecdote from when I was managing, but a good
 friend of mine was getting very little feedback at her job. She didn't
-really know if she was doing well, and didn't feel like her role was
+really know if she was doing well and didn't feel like her role was
 valued in the organization -- until the day she resigned.
 
 Suddenly, accolades were pouring in from leadership across the
@@ -505,7 +507,7 @@ for me.
 
 I believe my employer genuinely wanted to treat employees well. They
 were not trying to -- as Jack so eloquently put it on 30 Rock --
-"squeeze the sweetest juice out of workers mind grapes."
+"squeeze the sweetest juice out of workers' mind grapes."
 
 Even so, I felt a tension between looking out for the company and
 looking out for my direct reports. In those cases, I generally found it
@@ -522,17 +524,16 @@ looking for another project.
 
 But there were also other cases that were much harder -- where there was
 a tension between my role as a mentor for particular members of my team
-and my responsibilities as team lead.
+and my responsibilities to the team as a whole.
 
 For example, someone on the team confidentially shared that she was
 considering another project that would give her more exposure to machine
 learning. From my perspective as her professional mentor, this was
 awesome - that was the work she really wanted to do!
 
-But it was hard for me to keep this information confidential from my
-perspective as a team lead, because sitting on it meant less time to
-discuss what to do if she left, and more stress for the rest of the team
-down the road.
+But it was hard for me to keep this information confidential, because
+sitting on it meant less time to discuss what to do if she left, and
+more stress for the rest of the team down the road.
 
 My sense is that exactly what you're stuck between does change depending
 on the level of management...but I'm not sure this between-ness ever
@@ -544,17 +545,18 @@ I despise the use of the term *resource* to describe a person on a team,
 like, "we're going to need to add a resource in Q3" 🤮.
 
 But the main resource I managed was the number of people we had and the
-roles they filled. I found it really hard to figure out the right number
-of people for our team.
+roles they filled. I found that figuring out the right number of people
+for our team was an entirely new skill to master.
 
-Before, I basically just had to figure out how hard to work.
+Before I was a manager, I basically just had to figure out how hard to
+work.
 
-As a manager, I gained the mind-bending ability to add people and make
-more time. Simultaneously deciding how much work the team could take on
-and how many people we needed required solving an underdetermined system
-of equations.
+As a manager, I gained the mind-bending ability to make more time by
+adding people. Simultaneously deciding how much work the team could take
+on and how many people we needed required solving an underdetermined
+system of equations.
 
-With no clear right answer, I had to rely on my judgement about the
+With no clear right answer, I had to rely on my judgment about the
 importance of the marginal bit of work and how quickly we could add team
 members.
 
@@ -571,7 +573,7 @@ challenge that I don't think ever really ends.
 I knew I was a good data scientist with a particularly strong background
 in econometrics and statistics, and I had become a very proficient R
 programmer. I had done a lot of teaching, which I loved. I figured I had
-the mentoring part pf the job in the bag.
+the mentoring part of the job in the bag.
 
 Yet again -- wrong.
 
@@ -583,14 +585,14 @@ But it turned out that an even bigger part of mentoring as a manager was
 coaching, rather than teaching. I had to help my direct reports develop
 an inspiring vision for their career -- or at least for their
 involvement in the current project. It was a heady task -- figuring out
-how to convey really high expectations for people without setting short
-term goals or deadlines that were unreasonable.
+how to convey really high expectations for people without setting
+short-term goals or deadlines that were unreasonable.
 
 Moreover, it was hard to figure out how to balance people's need for
-development -- which means slowing down and taking time to learn -- with
-the need to just get stuff done in the quickest way possible. As a
-manager, it was my responsibility to figure out when we had to focus on
-efficiency and when there were good opportunities for learning.
+development, letting them slow down and take time to learn, with the
+need to get stuff done in the quickest way possible. As a manager, it
+was my responsibility to figure out when we had to focus on efficiency
+and when there were good opportunities for learning.
 
 ## I loved management
 
@@ -601,15 +603,15 @@ That's all true.
 
 But it's also the case that I loved my role as a manager. I experienced
 so much joy as I watched the connections between the people on my team
-got denser, and the team's topology come to resemble a spiderweb much
-more so than a wagon wheel with me at the center.
+get denser, and the team's topology came more to resemble a spiderweb
+than a wagon wheel with me at the center.
 
 I found, curiously enough, that my joy at seeing what the team
 accomplished was inversely proportional to my involvement in it.
 
-Now, having been at RStudio almost 3 years and being back in management,
-I look back quite fondly on that hectic, intense, learning-filled first
-year.
+Now, having been at RStudio almost three years and being back in
+management, I look back quite fondly on that hectic, intense,
+learning-filled first year.
 
 My hope is that, if you've read this far, you've gotten a nugget or two
 that might help your own transition.
@@ -621,7 +623,7 @@ So, if you're there -- good luck!
 # Appendix: Book Recommendations
 
 I've read many, many books on management. I think most are not terribly
-useful -- often providing 3 pages of insight in 150 pages of text, or
+useful -- often providing 3 pages of insight in 150 pages of text or
 providing one interesting insight but adding in a lot of other topics
 because it seems obligatory.[^5]
 
@@ -629,8 +631,8 @@ because it seems obligatory.[^5]
     given my own limitations as a writer. But if it can be useful to
     you, maybe it's worth it.
 
-I'm not going to badmouth any particular books, but I've read most of
-the currently-popular management books. If it's not on this list, I've
+I'm not going to badmouth any particular books, but I've read many of
+the currently popular management books. If it's not on this list, I've
 probably read it and didn't think the marginal information gain was
 worth it.
 
@@ -643,7 +645,7 @@ what a manager is doing.
 
 You'll notice that I lean towards older books on theory -- both of these
 recommendations were written before I was born! While the computer,
-internet, and emote work have changed the practice of management, I
+internet, and remote work have changed the practice of management, I
 don't think the underlying theory has changed at all.
 
 I strongly believe that the core messages of these books are still fresh
@@ -659,16 +661,16 @@ to describe good management.
 
 **Mythical Man Month (1975)**
 
-Fred Brooks' tome on communicating across large groups and software
-complexity. Not strictly about management, but deeply impacted the way I
-think about the optimal size of working groups and how to help people be
-productive.
+Fred Brooks' tome on communicating across large groups and what it is
+that makes building software complex. Not strictly about management, but
+it deeply impacted the way I think about the optimal size of working
+groups and how to help people be productive.
 
 ### Practice
 
 This book helped me figure out what to do every day as a manager,
 providing concrete advice on how to do onboarding with people you're
-newly managing, conduct 1:1s, and more.
+newly managing, conduct 1-1s, and more.
 
 **Radical Candor (2017)**
 
@@ -676,3 +678,8 @@ Kim Scott's book on how to provide direct and meaningful feedback to
 direct reports across a wide range of topics and venues. As a new
 manager, providing feedback was one of the strangest and hardest things
 to learn.
+
+Even more so than other managerial tasks, giving feedback is almost
+entirely craft, so reading about it is sorta useful at best. I think
+this is one of the best treatments I've read.
+
