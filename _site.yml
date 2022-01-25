@@ -4,7 +4,7 @@ description: |
   Some stuff I've done.
 output_dir: "_site"
 base_url: https://alexkgold.space
-repository_url: https://github.com/akgold/
+repository_url: https://github.com/akgold/akg_site/
 google_analytics: "UA-133127514-1"
 twitter:
   site: "@alexkgold"
