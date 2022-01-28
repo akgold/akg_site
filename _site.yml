@@ -13,7 +13,7 @@ navbar:
     image: images/me.png
     href: https://alexkgold.space
   right:
-    - text: "Home/Blog"
+    - text: "Home"
       href: index.html
     - text: "Speaking"
       href: speaking.html
@@ -21,6 +21,8 @@ navbar:
       href: about.html
     - text: "Managing the First Year"
       href: mfy.html
+    - text: "📕DevOps For Data Science"
+      href: https://akgold.github.io/do4ds/
     - icon: fab fa-twitter
       href: https://twitter.com/alexkgold
     - icon: fab fa-github
