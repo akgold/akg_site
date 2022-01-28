@@ -3,3 +3,5 @@ title: "Mostly #rstats and leadership, sometimes politics and handstands"
 site: distill::distill_website
 listing: posts
 ---
+
+Most of my writing activity is currently going towards my forthcoming book, tenatively named [DevOps for Data Science](https://akgold.github.io/do4ds/).
