@@ -27,4 +27,6 @@ navbar:
       href: https://twitter.com/alexkgold
     - icon: fab fa-github
       href: https://github.com/akgold/
+    - icon: fab fa-linkedin-in
+      href: https://www.linkedin.com/in/alexkgold/
 output: distill::distill_article
