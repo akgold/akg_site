@@ -1,0 +1,6 @@
+---
+title: "RViews: Production Shiny Apps with Pins"
+date: 2019-10-17
+---
+
+[RViews Post](https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/)

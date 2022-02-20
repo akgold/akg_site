@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.6">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="You can teach skills, but not excitement.">
+  <title>Alex K Gold - Upgrading to R #1: Excitement &gt;&gt; Skills</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+
+  <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="../../site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="../../">
+  <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="../../site_libs/quarto-search/fuse.min.js"></script>
+  <script src="../../site_libs/quarto-search/quarto-search.js"></script>
+  <script src="../../site_libs/quarto-html/quarto.js"></script>
+  <script src="../../site_libs/quarto-html/popper.min.js"></script>
+  <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="../../site_libs/quarto-html/anchor.min.js"></script>
+  <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  
+  <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-133127514-1', 'auto');
+
+  ga('send', {
+    hitType: 'pageview',
+    'anonymizeIp': true,
+  });
+  </script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<meta name="twitter:title" content="Alex K Gold - Upgrading to R #1: Excitement >> Skills">
+<meta name="twitter:description" content="You can teach skills, but not excitement.
+">
+<meta name="twitter:creator" content="@alexkgold">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Alex K Gold</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../speaking.html">Talks</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../mfy.html">Managing the First Year</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://akgold.github.io/do4ds/">📕DevOps For Data Science</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/alexkgold"><i class="bi-fab fa-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/akgold/"><i class="bi-fab fa-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexkgold/"><i class="bi-fab fa-linkedin-in" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#wired-teams-enthusiasm-for-learning-r" class="nav-link active" data-scroll-target="#wired-teams-enthusiasm-for-learning-r">Wired: Team’s enthusiasm for learning R</a></li>
+<li><a href="#lesser-angels" class="nav-link" data-scroll-target="#lesser-angels">Lesser Angels</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/posts/2019-11-09-upgrading-to-r-1-excitement-skills/upgrading-to-r-1-excitement-skills.Rmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header">
+<h1 class="title display-7">Upgrading to R #1: Excitement &gt;&gt; Skills</h1>
+<p class="author">true</p>
+<p class="date">01-20-2019</p>
+</header>
+
+<p><em>This is the first in a series of posts sharing some insights on upgrading to R. See the <a href="../../2019/01/19/upgrading-to-r-at-rstudio-conf-2019/">index post</a> for others.</em></p>
+<p>Whether you’re a team leader trying to take your group to the next level, or an indvidual contributor just trying to infect your org with R love, finding companions is really important.</p>
+<p>Finding the right people will determine whether you end up part of a crack R team or fall back to whatever you’re doing now. A few factors can ease the way from the desolate R-less place you might live now back to the to the beautiful shire full of free range R code (ok, swear I’m done with LOTR references).</p>
+<p>Here’s my totally subjective estimate of some important factors:</p>
+<div class="cell" data-messge="false">
+
+</div>
+<section id="wired-teams-enthusiasm-for-learning-r" class="level2">
+<h2 class="anchored" data-anchor-id="wired-teams-enthusiasm-for-learning-r">Wired: Team’s enthusiasm for learning R</h2>
+<p>Tired: How much R they already know</p>
+<p>This is pretty straightforward. By far the most important factor that will determine your team’s success in transitioning to R is <strong>whether they’re excited about it</strong>, and the least important is how much they already know. Learning R just really isn’t that hard. People who are excited to learn will do it, and those who aren’t won’t. It’s that simple.</p>
+<p>Don’t know who’s excited and who’s not? Ask them! And don’t just ask whether they’re excited to learn R. What you really want to know is whether they’re excited to work on a team that operates with R at its core. Transitioning to R from Excel or Stata has a bunch of potential benefits. Making those benefits real requires a lot more than just writing some code. It’s a wholesale transition in terms of how the team thinks about work (see future blog posts for more on that).</p>
+</section>
+<section id="lesser-angels" class="level2">
+<h2 class="anchored" data-anchor-id="lesser-angels">Lesser Angels</h2>
+<p>Beyond enthusiasm, there are a couple of things you can do to make it easier, whether you’re a team member or the leader.</p>
+<ul>
+<li><em>Tidyverse-First Orientation</em>: If you’ve been doing R for a while, you probably know this, but the Tidyverse is AWESOME. It takes the wonderful benefits of R and adds an opinionated take on what code should look like. If you’re just learning R, start with the Tidyverse. You’ll be glad you did because it’s <a href="https://docs.google.com/presentation/d/1iUz3A_xHIzeFIzOQ_JQLdGPbC82qcDEDSqvjIBiP1a8/edit">magical</a>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li><em>Relentless R</em>: Adoping R as a team isn’t really about a programming langauge, it’s organizational change. Writing code is easy. Changing hearts, minds, and workflows is <em>hard</em>. There are people who make whole careers out of this stuff. Don’t get down if it’s slow going. I’m skeptical it’s possible to really transition a team to R in less than 12 months.</li>
+<li><em>Learning Environment</em>: More on this during Tip #2: Failure, but you’re trying to make room for people to learn. That means it’s important to make work a space where they won’t feel stupid for asking questions or making mistakes. Hopefully this is already true for your workplace…but it’s especially important if you’re trying to get your team to do something new and hard like use R. Every workplace is busy, but almost every one can spare an hour a week to do a mini-seminar on R, or to share a package of the week. On my team, we have a show-and-tell every Friday where people share something they’ve learned. Very often, that something is a fun new R thing!
+<ul>
+<li>A sub-point to this: If you can, don’t expect that all this learning will take place outside of work. Some people on your team may have kids or parents they’re caring for, or other life circumstances that mean that they have less capacity to do out-of-work learning than others. They can still be amazing partners on your journey to R. If you’re the team lead, try and make space for them to learn. If not, make sure they’re included on at-work R plans.</li>
+</ul></li>
+</ul>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p>This presentation by <a href="https://twitter.com/milesmcbain?lang=en">MilesMcBain</a> on the magic of R packages was FANTASTIC - one of my favorites from RStudio::conf(2019).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>

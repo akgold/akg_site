@@ -1,0 +1,42 @@
+---
+title: "Custom fonts in ggplot2"
+date: 2017-08-28
+---
+
+A lot of things are great and easy to do in `ggplot2`...but putting new fonts in can be a pain in the butt. I had to do this last week, so I decided to write down what I did (as much for me as for anyone else).
+
+1.  Get the package `extrafont`: `install.packages('extrafont')`
+2.  Start `extrafont`: `library(extrafont)`
+3.  Import system fonts to R (this can take a minute): `font_import()`
+4.  Load fonts: `loadfonts(device = 'win')`. If you're on a Mac, just `loadfonts()`.
+5.  Fonts are loaded!
+
+Now, when you type `windowsFonts()` in windows or , you'll get a list of all available fonts:
+
+``` r
+$serif
+[1] "TT Times New Roman"
+
+$sans
+[1] "TT Arial"
+
+$mono
+[1] "TT Courier New"
+
+$`Agency FB`
+[1] "Agency FB"
+
+$Algerian
+[1] "Algerian"
+
+$`Arial Black`
+[1] "Arial Black"
+
+$Arial
+[1] "Arial"
+...
+```
+
+Now, when you want to use a font in `ggplot`, it's as easy as calling `theme(family = 'Arial')`.
+
+Note that if you're on a Mac, you won't get the default Microsoft Office fonts, so if you're trying to convince people that you can switch from Powerpoint by making Excel-like plot styles, you'll need to add the fonts manually. Luckily, it's really easy to do through the font book utility on your Mac (just type `Font` into spotlight), and [this blog post](http://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac).

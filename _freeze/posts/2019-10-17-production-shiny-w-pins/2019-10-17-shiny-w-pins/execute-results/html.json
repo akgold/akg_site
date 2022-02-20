@@ -1,0 +1,14 @@
+{
+  "hash": "e43f1129ee4dbf1638ce101751c18649",
+  "result": {
+    "markdown": "---\ntitle: \"RViews: Production Shiny Apps with Pins\"\ndate: 2019-10-17\n---\n\n[RViews Post](https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/)",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": [],
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": null
+  }
+}

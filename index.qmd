@@ -1,0 +1,23 @@
+---
+listing:
+  id: blog
+  contents: posts
+  sort: "date-desc"
+  feed: true
+  sort-ui: false
+  filter-ui: false
+---
+
+This is my website, with links to past and ongoing work.
+
+::: {.callout-note icon="false"}
+## [📕DevOps 4 Data Science📕](https://akgold.github.io/do4ds/)
+
+Work on this book project, with CRC Press, is currently ongoing. You can read and/or review the current state of work by clicking the link above.
+:::
+
+# Blog Posts
+
+::: {#blog}
+:::
+
