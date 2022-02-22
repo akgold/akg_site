@@ -3,19 +3,39 @@ on:
     branches:
       - main
 
-name: Render and deploy Quarto files
 jobs:
-  quarto-render-and-deploy:
-    runs-on: ubuntu-latest
+  build-site:
+    name: build-site
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-
-      - name: "Install Quarto and render"
-        uses: pommevilla/quarto-render@main
-
-      - name: "Deploy to gh-pages"
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - uses: quarto-dev/quarto-actions/install-quarto@v1
+      - run: |
+          quarto --version
+      - name: Render Site
+        run: Rscript -e 'quarto::quarto_render()'
+      - uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          name: _site
+          path: _site
+
+  checkout-and-deploy:
+   runs-on: ubuntu-latest
+   needs: build-site
+   steps:
+     - name: Checkout
+       uses: actions/checkout@master
+     - name: Download artifact
+       uses: actions/download-artifact@v1.0.0
+       with:
+         # Artifact name
+         name: _site # optional
+         # Destination path
+         path: _site # optional
+     - name: Deploy to GitHub Pages
+       uses: Cecilapp/GitHub-Pages-deploy@master
+       env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       with:
+          email: alexkgold@gmail.com
+          build_dir: _site/ # defaults to _site
