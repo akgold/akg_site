@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Alex K Gold</title>
+<link>https://alexkgold.space/index.html</link>
+<atom:link href="https://alexkgold.space/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-0.9.30</generator>
+<lastBuildDate>Wed, 02 Dec 2020 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>R Packages for Experts, not Wizards</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</link>
+  <description><![CDATA[ 
+
+
+<p>I, like so many other R aficionados, love writing R packages for my team. They’re a great way to get everyone on the same page and to ensure everyone has access to the same resources. But I’ve also (more than once) lovingly crafted an R package only to find that…no one used it.</p>
+<p>I’d incorrectly thought a bunch of clever R code could solve my team’s problems. I’d assumed I, the team’s R wizard, could go write the perfect package, and return to great acclaim that I’d fixed everyone’s woes.</p>
+<p>Unfortunately, my vision of how the package writing process was busted in at least three ways – ones that I’ve seen befall other teams and R aficionados. Read on for more.</p>
+<section id="the-wizard-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-wizard-package">The Wizard Package</h2>
+<p>When I wrote my team’s packages, I was the R wizard on the team – and if you’re reading this, you probably are too. I believed I could go off, write a package, and deliver it from on high a la Moses from Mount Sinai.<sup>1</sup></p>
+<p>I’ve come to call the result of this (not so great) pattern <strong>the Wizard Package</strong>.</p>
+<p>Wizard Packages <em>can</em> work. I’ve seen Wizard Packages work when (1) the whole team is clear that a package will solve the problem, (2) the need is can be met by clever R code, and (3) the team is strongly motivated to adopt the package.</p>
+<p>In my case, none of these conditions held. I wasn’t riding a wave of enthusiasm for R – I was trying to spark it. People weren’t super motivated to adopt the package, and I couldn’t really compel them to do so. Worst of all, my R code just wasn’t solving the keenest problems of my teammates.</p>
+<p>Because they’re written by R wizards, Wizard Packages tend to solve R wizard problems. They have clever wrappers for other functions, or convenience functions for advanced R users.</p>
+<p>Very often though, the team’s needs aren’t needs that are solved primarily by clever R code – the team needs to get their R Markdown report formatted with the right CSS, or calculate correct standard errors from a complicated estimator, or complete those weird database merges that only one person on the team knows how to do.<sup>2</sup></p>
+<p>Wizard packages convey expertise of a sort, but they often aren’t adopted because they’re not expert <strong>enough</strong>, or aren’t expert in the <strong>right ways</strong>.</p>
+</section>
+<section id="expert-packages" class="level2">
+<h2 class="anchored" data-anchor-id="expert-packages">Expert Packages</h2>
+<p>R packages are a tool to make your team’s expertise real. By incorporating knowledge from everyone on the team, you can create a package that disseminates that expertise to everyone on the team.</p>
+<p>There’s tons of psych research (that I’m too lazy to actually cite) that one of the best ways to get someone excited about something is to get their help with it.</p>
+<p>More importantly, there’s far more to package development than writing R code, so the process really can include everyone, regardless of their level of comfort with R.</p>
+<p>A few ways for folks to help out who might not be the R wizards:</p>
+<ul>
+<li><p><strong>Designing the API</strong> Even folks who are novice R developers probably have a strong sense about what the important features and options are for things like plotting the data.</p></li>
+<li><p><strong>Designing the data model</strong> Someone who knows the problem really well probably has the best sense of what the important parts of the data are to keep track of.</p></li>
+<li><p><strong>Sharing expert knowledge</strong> An Expert Package shares expertise across the team. By collecting that knowledge directly, you can incorporate someone’s data vis, database access, or stats expertise without needing them to write R code.</p></li>
+<li><p><strong>Writing documentation, tests, or vignettes</strong> Internal packages often include documentation or vignettes that go beyond just explaining the functions themselves, but providing some context on why the function works as it does. People can also provide feedback on whether package tests are meaningful.</p></li>
+</ul>
+</section>
+<section id="make-your-packages-experts-not-wizards" class="level2">
+<h2 class="anchored" data-anchor-id="make-your-packages-experts-not-wizards">Make Your Packages Experts, not Wizards</h2>
+<p>There’s a reason that so many stories of Wizards include dark endings, evil omens, and fallen mages. Wizardry is ineherently disconnected from others, and it’s all about being clever.</p>
+<p>In the land of R packages, being expert is so much more valuable than being clever – doubly so if you can provide expertise and value to others on your team, and the number one way to do that is to get your teammates involved in the package creation process the whole way along.</p>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>If only I’d remembered the end of that story, where Moses’s return isn’t exactly greeted with enthusiasm.↩︎</p></li>
+<li id="fn2"><p>Every team has this person, and they are amazing. They also are all-too-often undervalued, because their skills aren’t as “technical” as the coding wizards. That is false.↩︎</p></li>
+</ol>
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</guid>
+  <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>RViews: Production Shiny Apps with Pins</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</link>
+  <description><![CDATA[ 
+
+<p><a href="https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/">RViews Post</a></p>
+
+
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</guid>
+  <pubDate>Thu, 17 Oct 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>RViews: 3 Big Data Strategies for R</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</link>
+  <description><![CDATA[ 
+
+<p><a href="https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/">RViews Post</a></p>
+
+
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</guid>
+  <pubDate>Sun, 07 Jul 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Upgrading to R #3: Be the Data Engineer you Need</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>When I first went to data conferences, I assumed that EVERYONE else was pulling data from a supercomputer-backed Spark cluster, immaculately maintained by an army of data engineers. Needless to say, that was not my data infrastructure.</p>
+<p>To be more succinct, most of the “data infrastructure” I’ve worked with has just been <code>csv</code> files. And our ETL processes – cleaning <code>csv</code> files to output more <code>csv</code> files (or <code>rds</code>).</p>
+<p>Based on my very informal polling of people in the field, this is WAY more common than anyone admits, especially if you’re on a team that’s just upgrading to R. As you make that switch, it’s easy to be discouraged feeling like everyone else is lightyears ahead. The (not so) dirty secret is that they’re not really.</p>
+<p>If I had to guess, the modal data scientist/analyst working in industry does ETL across a mixture of flat files and <code>SQL</code> databases. It’s still relatively rare to find people working on higher-power systems.<sup>1</sup></p>
+<p>Coming into a new role and discovering that you’re expected to wrangle a bunch of <code>csv</code> files can be frustrating, especially if you don’t reall ywant to be a data engineer. But you should. The number one way to be a better data scientist is to <strong>become the data engineer you wish you had</strong>.</p>
+<p>Being a great junior data scientist is 75% just knowing the data super well. A junior data scientist who can confidently identify things that <em>just look weird</em> in data is worth approximately 47 XGBoost models and 76 convolutional neural nets.</p>
+<p>A data scientist who combines data science knowledge with expertise on the data’s provenance and the data-generating process is <em>way</em> more likely to make a good catch or identify a clever new feature for modeling than a better modeler with little understanding of the specifics of the data.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index_files/figure-html/csvs-1.gif" class="img-fluid"></p>
+</div>
+</div>
+<p>So yes, become the data engineer for your data because you need it, but also to make yourself a better data scientist. It won’t kill you.</p>
+<section id="best-practices-for-etl-on-flat-files" class="level1">
+<h1>Best Practices for ETL on Flat Files</h1>
+<p>Since I’ve done and managed a lot of ETL involving flat files, here are some tips I’d suggest:</p>
+<ul>
+<li>Use git to manage your code, and git LFS for managing data. Git will choke and die on data files larger than 50Mb or so, but aside from some annoyingly long download and upload times, git LFS has been a good tool for sharing data up to a few Gb across my team.</li>
+<li>Store all data in a <code>data</code> folder, with input data separated from cleaned data.</li>
+<li>If feasible, create standardized cleaning functions (in a package!) so that variable names are the same across different projects.</li>
+<li>Consider creating a data access API in R so you call a function to access data instead of loading a <code>csv</code> file.<sup>2</sup> The advantage is that it abstracts away from exactly how you store the data, so you can get used to loading your data in a simple way, and you can always update the backend to a SQL server or something else without changing the way you access your data.</li>
+</ul>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Or honetly, use cases that really need those systems. Postgres will get you pretty far.↩︎</p></li>
+<li id="fn2"><p>Don’t get scared by “an API” if you’re not familiar! It just means a bunch of functions so that you can access in a consistent way.↩︎</p></li>
+</ol>
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</guid>
+  <pubDate>Wed, 20 Feb 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>As a new manager working with my team of data scientists, upgrading to R meant doing something new, and something hard. As I should’ve known, new + hard is a great recipe for mistakes and failures. I learned a lot from those mistakes - lessons that I couldn’t have anticipated ahead of time. I’ll share my surprising (and less surprising) things I learned from one particular big failure in this blog post.</p>
+<p>To start, here’s an animation I made that describes <em>Alex’s big goof-up</em>:</p>
+<div class="cell" data-messge="false">
+<div class="cell-output-display">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/fail-1.gif" class="img-fluid"></p>
+</div>
+</div>
+<p><strong>TL;DR:</strong> my team was working hard onboarding themselves to R, a mistake made it to a client, and I overreacted with new policies that burned a lot of my team’s goodwill. Regaining the team’s trust required eating some words, retracting some policies, and a bunch of all-team discussions to figure out how to do better in the future.</p>
+<p>I should’ve realized that <strong>my team’s goodwill was my most precious resource as a manager</strong>. Squandering it wasn’t a simple matter of <em>not being nice</em>, it (thankfully temporarily) damaged my ability to effectively lead and guide them, and diminished the likelihood that they would do their best work. Here are some things I wish I’d done ahead of time.</p>
+<section id="share-more-context" class="level1">
+<h1>Share More Context</h1>
+<p>As far as my teammate knew their role in this project was to create a plot in <code>ggplot</code> based on some data they were given. I’d shared very little about why that plot was important, where the data was coming from, or who was the intended audience. Without that knowledge, there were a multitude of ways my teammate could make totally sensible decisions that resulted in mistakes - mistakes that could’ve been avoided had I just <strong>shared more context</strong>.</p>
+<p>Here’s something like the plot we were making:</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Among the context I should’ve shared was that we couldn’t derive the color coding of the data points ourselves.<sup>1</sup> Since I’d neglected make sure my teammate really understood what we were doing, my teammate just computed the color themselves (metric &gt; threshold -&gt; green, red otherwise). This totally reasonable choice, which resulted in mistakes the client noticed, could’ve totally been avoided had I spent a few more minutes <strong>sharing more context</strong>.</p>
+</section>
+<section id="prepare-emotionally" class="level1">
+<h1>Prepare Emotionally</h1>
+<p>The number 1 thing I could’ve done to make this experience less bad was to <strong>avoid overreacting</strong>.<sup>2</sup> If I could’ve gone back to a week before we found our mistake, I would’ve told past me that a mistake was inevitable, and that I should be ready to react - not unilaterally, but by rallying the team to fix the issue together.</p>
+<p>The project was important, and the client seeing a mistake was bad. But draconian new procedures and rules resulted in ill-will from my team that was ultimately way more costly.</p>
+<p>What eventually got us back on track was when we met as a team, and had a few meetings in the style of a <a href="https://landing.google.com/sre/sre-book/chapters/postmortem-culture/">blameless postmortem</a> figuring out where communication had broken down and how we could avoid it next time. The guidelines we eventually generated and adopted as a group were actually pretty similar to the rules I’d introduced, but this time we were actually able to <em>stick to them</em>, because we’d generated them together.</p>
+</section>
+<section id="prepare-technically" class="level1">
+<h1>Prepare Technically</h1>
+<p>Before this incident,I focused 100% of my mistake-avoiding attention on technical prepartion - explicit error avoidance and checking. I’ve since come to believe that error checking is an important part of the solution, but on a team that primarily produces data insights, the number one way to avoid errors is to give analysts and data scientists the knowledge they need to <strong>find mistakes themselves</strong>.</p>
+<section id="sanity-checks" class="level3">
+<h3 class="anchored" data-anchor-id="sanity-checks">Sanity Checks</h3>
+<p>All data scientists know the horror of finishing an analysis, breathing a huge sigh of relief, sending it off, and then realizing that something just doesn’t add up. I’ve definitely had categories that add up to more than 100 percent, some 256 year-olds, and coefficents so big they could power a trip to the moon.<sup>3</sup></p>
+<p>Remembering to do these sanity checks <em>before</em> anything gets sent out is hard, especially since finding something might result in more work. This is doubly true for junior team members, who might not have made all these mistakes before and might not totally know what they’re looking for.</p>
+<p>One strategy that helped was removing some of the cognitive load of <em>what</em> to check. That meant building analysis templates that included sanity checks on results, checklists for review and execution, and R packages that automated simple checks. Removing some of the cognitive load of remembering to do all these checks was relieving for junior and senior team members alike.</p>
+</section>
+<section id="code-review" class="level3">
+<h3 class="anchored" data-anchor-id="code-review">Code Review</h3>
+<p>Code review is great. But it was easy to believe only “real” code review (i.e.&nbsp;comments on <code>github</code> merge requests) mattered. More and more, I’ve come to think that the primary purpose of code review is to <strong>trigger thinking by the code’s author</strong>. Given that the author is 100<em>x</em> more familiar with it (to a first approximation), I found that code review that forces the writer to rethink what they’ve done catches many mistakes, and that the venue isn’t really important.</p>
+<p>Since this incident, my team has gotten more consistent at using git for code reviews, but we’ve also gotten better at doing low-tech code review. Any review, no matter how low-tech, is <strong>1,000</strong><em>x</em> better than code review that didn’t happen because I was waiting for the team to “get up to speed with git”. Sometimes I even like to print out code, read through it, and mark it up like an essay. Decidedly low-tech, but really engages the mental compiler.</p>
+</section>
+</section>
+<section id="takeaways" class="level1">
+<h1>Takeaways</h1>
+<p>So, here are the big lessons I took home from my moment of failure:</p>
+<ul>
+<li>New + Hard -&gt; Failure, and being emotionally ready is at least as importance as technical preparation.</li>
+<li>Overreacting to a mistakes as a manager can cause a bigger problem than the mistake itself.</li>
+<li>Always share more context.</li>
+<li>Technical solutions like templates, checklists, packages, and code review are great, but mostly because they reduce cognitive load of simple checks, or because they force the author to reengage.</li>
+</ul>
+</section>
+<section id="a-coda-book-recs" class="level1">
+<h1>A Coda: Book Recs</h1>
+<p>I can’t leave this blog post without sharing three book recommendations that really helped me. While the screw up I describe here is real, I wasn’t entirely without tools to cope, and these three books helped form my mental model for how we might think about recovery as a team.</p>
+<ul>
+<li><a href="https://www.amazon.com/dp/B00P5557G2/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">Rising Strong</a> by Brene Brown is a great exploration of failure and recovery, it provides some interesting perspectives on failure and resilience from both a personal and professional level.</li>
+<li><a href="https://www.amazon.com/dp/B015VACHOK/ref=dp-kindle-redirect?_encoding=UTF8&amp;btkr=1">High Output Management</a> by Andy Grove is a pretty traditional “management” book, and his explanation of managing to task-relevant maturity has been a helpful way to think about helping the people I manage (or helping my managers help me) avoid potential mistakes and failures.</li>
+<li><a href="https://www.amazon.com/Checklist-Manifesto-How-Things-Right/dp/0312430000">Checklist Manifesto</a> by Atul Gawande is one of my all time favorite books, and it really influenced the way I think about what should be automated vs checklisted vs left up to humans.</li>
+</ul>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>To be precise, whether the difference between the metric and the threshold was statistically significant, which we didn’t have the data to compute ourselves.↩︎</p></li>
+<li id="fn2"><p>Especially if you’re the team lead, but really no matter what.↩︎</p></li>
+<li id="fn3"><p>Or more likely 999 year-olds. <strong>Missing data should never have numeric codes</strong>, amirite?!?↩︎</p></li>
+</ol>
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</guid>
+  <pubDate>Wed, 23 Jan 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Upgrading to R #1: Excitement >> Skills</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</link>
+  <description><![CDATA[ 
+
+
+<p><em>This is the first in a series of posts sharing some insights on upgrading to R. See the <a href="../../2019/01/19/upgrading-to-r-at-rstudio-conf-2019/">index post</a> for others.</em></p>
+<p>Whether you’re a team leader trying to take your group to the next level, or an indvidual contributor just trying to infect your org with R love, finding companions is really important.</p>
+<p>Finding the right people will determine whether you end up part of a crack R team or fall back to whatever you’re doing now. A few factors can ease the way from the desolate R-less place you might live now back to the to the beautiful shire full of free range R code (ok, swear I’m done with LOTR references).</p>
+<p>Here’s my totally subjective estimate of some important factors:</p>
+<div class="cell" data-messge="false">
+<div class="cell-output-display">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index_files/figure-html/skills-1.gif" class="img-fluid"></p>
+</div>
+</div>
+<section id="wired-teams-enthusiasm-for-learning-r" class="level2">
+<h2 class="anchored" data-anchor-id="wired-teams-enthusiasm-for-learning-r">Wired: Team’s enthusiasm for learning R</h2>
+<p>Tired: How much R they already know</p>
+<p>This is pretty straightforward. By far the most important factor that will determine your team’s success in transitioning to R is <strong>whether they’re excited about it</strong>, and the least important is how much they already know. Learning R just really isn’t that hard. People who are excited to learn will do it, and those who aren’t won’t. It’s that simple.</p>
+<p>Don’t know who’s excited and who’s not? Ask them! And don’t just ask whether they’re excited to learn R. What you really want to know is whether they’re excited to work on a team that operates with R at its core. Transitioning to R from Excel or Stata has a bunch of potential benefits. Making those benefits real requires a lot more than just writing some code. It’s a wholesale transition in terms of how the team thinks about work (see future blog posts for more on that).</p>
+</section>
+<section id="lesser-angels" class="level2">
+<h2 class="anchored" data-anchor-id="lesser-angels">Lesser Angels</h2>
+<p>Beyond enthusiasm, there are a couple of things you can do to make it easier, whether you’re a team member or the leader.</p>
+<ul>
+<li><em>Tidyverse-First Orientation</em>: If you’ve been doing R for a while, you probably know this, but the Tidyverse is AWESOME. It takes the wonderful benefits of R and adds an opinionated take on what code should look like. If you’re just learning R, start with the Tidyverse. You’ll be glad you did because it’s <a href="https://docs.google.com/presentation/d/1iUz3A_xHIzeFIzOQ_JQLdGPbC82qcDEDSqvjIBiP1a8/edit">magical</a>.<sup>1</sup></li>
+<li><em>Relentless R</em>: Adoping R as a team isn’t really about a programming langauge, it’s organizational change. Writing code is easy. Changing hearts, minds, and workflows is <em>hard</em>. There are people who make whole careers out of this stuff. Don’t get down if it’s slow going. I’m skeptical it’s possible to really transition a team to R in less than 12 months.</li>
+<li><em>Learning Environment</em>: More on this during Tip #2: Failure, but you’re trying to make room for people to learn. That means it’s important to make work a space where they won’t feel stupid for asking questions or making mistakes. Hopefully this is already true for your workplace…but it’s especially important if you’re trying to get your team to do something new and hard like use R. Every workplace is busy, but almost every one can spare an hour a week to do a mini-seminar on R, or to share a package of the week. On my team, we have a show-and-tell every Friday where people share something they’ve learned. Very often, that something is a fun new R thing!
+<ul>
+<li>A sub-point to this: If you can, don’t expect that all this learning will take place outside of work. Some people on your team may have kids or parents they’re caring for, or other life circumstances that mean that they have less capacity to do out-of-work learning than others. They can still be amazing partners on your journey to R. If you’re the team lead, try and make space for them to learn. If not, make sure they’re included on at-work R plans.</li>
+</ul></li>
+</ul>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This presentation by <a href="https://twitter.com/milesmcbain?lang=en">MilesMcBain</a> on the magic of R packages was FANTASTIC - one of my favorites from RStudio::conf(2019).↩︎</p></li>
+</ol>
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</guid>
+  <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Upgrading to R: RStudio Conf 2019</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>A few months ago, I was beyond thrilled to be chosen to give an e-poster at RStudio::conf(2019) on the topic of <em>Upgrading to R</em>. I had such a blast talking to people who are trying to get their team to use more R, sharing some of the lessons I’ve learned over the last few years. My slides are available <a href="https://akgold.github.io/rsconf2019/">online</a>, but I’d also like to share some of the things I spoke with people about, and a little on how I made the slides.</p>
+<section id="upgrading-to-r" class="level2">
+<h2 class="anchored" data-anchor-id="upgrading-to-r">Upgrading to R</h2>
+<p>So many data scientists have had the same experience - walking onto a team where something other than R or Python was the language of choice. Unless that other language was Julia or Scala, this was almost certainly a disappointing moment. But it doesn’t have a be a reason to run screaming for the hills.</p>
+<p>I’ve now worked on several teams that have successfully transitioned from Excel or Stata to R. These transitions, while sometimes painful, were definitely worth it. Along the way, I learned a few tips and made a lot of mistakes. I decided I’d try to share as much as possible to help anyone else in the same boat. These lessons will be particularly applicable to someone <em>leading</em> a data science team that’s transitioning. Some will also be relevant if you’re a junior staffer trying to push change, but not all.</p>
+<p>In thinking about the transitions I’ve been part of, here are tips that might’ve helped me if I’d known them when I started. Links will be added as the posts go live.</p>
+<p><em>Edit: I seem to have fallen behind on these; maybe I’ll finish someday…</em></p>
+</section>
+<section id="the-tips" class="level2">
+<h2 class="anchored" data-anchor-id="the-tips">The Tips</h2>
+<ol type="1">
+<li><a href="../../2019/01/19/upgrading-to-r-1-excitement-skills/">Excitement &gt;&gt; Skills</a></li>
+<li><a href="../../2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/">Failure’s Coming, Get Ready</a></li>
+<li><a href="../../2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/">You are the Data Engineer your Team Needs</a></li>
+<li>It Takes a Team to Write a Package</li>
+<li>Git: Sometimes the Right Thing isn’t the Easiest</li>
+<li>Have you met my Friend RMarkdown?</li>
+<li>Don’t Get Too Excited Just Yet</li>
+</ol>
+<p>I plan to write a blog post on each of these, plus an extra about how I put together these tips and the accompanying plots.</p>
+
+
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</guid>
+  <pubDate>Sat, 19 Jan 2019 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Custom fonts in ggplot2</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</link>
+  <description><![CDATA[ 
+
+<p>A lot of things are great and easy to do in <code>ggplot2</code>…but putting new fonts in can be a pain in the butt. I had to do this last week, so I decided to write down what I did (as much for me as for anyone else).</p>
+<ol type="1">
+<li>Get the package <code>extrafont</code>: <code>install.packages('extrafont')</code></li>
+<li>Start <code>extrafont</code>: <code>library(extrafont)</code></li>
+<li>Import system fonts to R (this can take a minute): <code>font_import()</code></li>
+<li>Load fonts: <code>loadfonts(device = 'win')</code>. If you’re on a Mac, just <code>loadfonts()</code>.</li>
+<li>Fonts are loaded!</li>
+</ol>
+<p>Now, when you type <code>windowsFonts()</code> in windows or , you’ll get a list of all available fonts:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="sc" style="color: #5E5E5E;">$</span>serif</span>
+<span id="cb1-2">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Times New Roman"</span></span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="sc" style="color: #5E5E5E;">$</span>sans</span>
+<span id="cb1-5">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Arial"</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="sc" style="color: #5E5E5E;">$</span>mono</span>
+<span id="cb1-8">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Courier New"</span></span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: null;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-11">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Agency FB"</span></span>
+<span id="cb1-12"></span>
+<span id="cb1-13"><span class="sc" style="color: #5E5E5E;">$</span>Algerian</span>
+<span id="cb1-14">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Algerian"</span></span>
+<span id="cb1-15"></span>
+<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: null;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-17">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial Black"</span></span>
+<span id="cb1-18"></span>
+<span id="cb1-19"><span class="sc" style="color: #5E5E5E;">$</span>Arial</span>
+<span id="cb1-20">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial"</span></span>
+<span id="cb1-21">...</span></code></pre></div>
+<p>Now, when you want to use a font in <code>ggplot</code>, it’s as easy as calling <code>theme(family = 'Arial')</code>.</p>
+<p>Note that if you’re on a Mac, you won’t get the default Microsoft Office fonts, so if you’re trying to convince people that you can switch from Powerpoint by making Excel-like plot styles, you’ll need to add the fonts manually. Luckily, it’s really easy to do through the font book utility on your Mac (just type <code>Font</code> into spotlight), and <a href="http://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac">this blog post</a>.</p>
+
+
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</guid>
+  <pubDate>Mon, 28 Aug 2017 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>RStats NYC 2017</title>
+  <dc:creator></dc:creator>
+  <link>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>Friday and Saturday of this weekend was the 2017 <a href="http://www.rstats.nyc/">RStatsNYC</a> conference. With the small exception of remarkably uncomfortable chairs, the conference was fantastic (and great food!). There was a remarkable variety in what the speakers covered – from deep thoughts on the ethics and philosophy of doing data science, to some super useful RStudio tips and tricks and everything in between. I decided to take my notes from the two days and post below in case there’s things anyone else might find useful.</p>
+<p>One of the remarkable similarities between the speakers was the degree to which many talks focused on <em>process</em> of doing data science. It feels like there’s a lot of room for growth in terms of understanding and standardizing best practices of doing data science.</p>
+<section id="deep-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="deep-thoughts">Deep Thoughts</h2>
+<p>Many of the speakers shared some great nuggets of insight into doing data science that extended far beyond simple lessons about <code>R</code>. Some of my favorites below.</p>
+<section id="the-past-present-and-future-of-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="the-past-present-and-future-of-data-science">The Past, Present, and Future of Data Science</h3>
+<ul>
+<li>Statistics has gradually added different parts of the statistical process to the field — but many process points remain to be integrated. We don’t have a theory of a good statistical workflow. Meta-systematization is needed. We need to systematize how we systematize things.</li>
+<li>Why do we need theory? Theory is scalable. Simulations are not.</li>
+<li>We should be specifying priors about effect sizes along with research designs.</li>
+<li>Is having a core data science team at a company a good thing or a bad thing?</li>
+<li>The history of software engineering is a great guide for the future of data science.</li>
+<li>As data gets bigger, machine learning problems and questions will get bigger too. Our jobs are safe.</li>
+<li>The hardest job of a data scientist is turning open-ended problems in the real world into practical problem statements that are solvable using data. Defining success is essential.</li>
+<li>Software engineers build and grow software — the sky is the limit. Data scientists are <em>scientists</em> and are constrained by the real world.</li>
+</ul>
+</section>
+<section id="data-science-as-business-intelligence-and-empathy" class="level3">
+<h3 class="anchored" data-anchor-id="data-science-as-business-intelligence-and-empathy">Data Science as Business Intelligence (and Empathy)</h3>
+<ul>
+<li>Analysis doesn’t end at result delivery — it ends at developing and proselytizing new business strategies and innovation.</li>
+<li>Automating Excel workflows can be a first step towards bringing <code>R</code> to a team.</li>
+<li>Agile development tells user stories as an empathy hack.</li>
+</ul>
+<!-- -->
+<pre><code>As a ______
+I want ______
+So I can ______ </code></pre>
+<ul>
+<li>Person-level stories (the near) are always more meaningful than data stories (the far). We need to balance both as Data Scientists.</li>
+<li>In development, we need to have an actual user in mind, rather than a theoretical user who wants everything.</li>
+</ul>
+</section>
+<section id="how-to-live-tweet-an-event-a-great-aside" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-live-tweet-an-event-a-great-aside">How to Live-Tweet an Event (a great aside)</h3>
+<ul>
+<li>Three important elements in live tweet of event: conference hashtag <code>#rstatsnyc</code>, <span class="citation" data-cites="speaker">@speaker</span> (put . first so it’s viewable publicly), always include a pic.</li>
+<li>They can have one of a few purposes: intro person/topic, spread insight, link to resource, spread positivity!</li>
+</ul>
+<p><em>Live tweet: conference hashtag, <span class="citation" data-cites="speaker">@speaker</span>, picture, positivity</em> {{&lt; tweet 855792361527541760 &gt;}}</p>
+</section>
+<section id="how-to-hackathon" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-hackathon">How to Hackathon</h3>
+<ul>
+<li>If you’re not at risk of failing a few days a quarter, you’re not pushing.</li>
+<li>Keys to focused hacking: rock solid infrastrure, minimize context switching (away messages), parallel work, strong and clear conversation, timeline accountability (detailed to the half-hour), positive team dynamic, time-boxing decisions.</li>
+<li>How to start an analysis:
+<ul>
+<li>Identify assumptions about a solution</li>
+<li>Rank assumptions by how critical they are</li>
+<li>Test assumptions with the simplest experiment possible</li>
+</ul></li>
+<li>Fail fast. The worst thing about spending a few months barking up the wrong tree isn’t the time or money lost — it’s team demoralization.</li>
+<li>Truths about data science:
+<ul>
+<li>Nerd != won’t engage with business</li>
+<li>Shiny tool != hard problem</li>
+<li>Shiny tool != being a smart data scientist</li>
+</ul></li>
+</ul>
+</section>
+<section id="open-source-and-package-building" class="level3">
+<h3 class="anchored" data-anchor-id="open-source-and-package-building">Open Source and Package-Building</h3>
+<ul>
+<li>The hardest step in joining the open source community is going from 0 contributions to 1.</li>
+<li>Open source contributions: failing test with fix &gt; failing test &gt; bug report
+<ul>
+<li>Remember to include <code>sessionInfo()</code></li>
+</ul></li>
+<li>Package release ideas:
+<ul>
+<li>Release quickly, but also slowly — take time to fix dumb decisions</li>
+<li>Blaze new trails, but don’t reinvent the wheel</li>
+<li>Tell people about your package — then listen.</li>
+</ul></li>
+<li>Package design: documentation &gt; usability &gt; performance &gt; features</li>
+</ul>
+</section>
+</section>
+<section id="interesting-research" class="level2">
+<h2 class="anchored" data-anchor-id="interesting-research">Interesting Research</h2>
+<p>There were only a few presentations of actual research projects — but the ones presented were really wonderful.</p>
+<ul>
+<li>Cell tower data can reveal interesting patterns in movement — in particular return to normal flow of people after natural disasters.</li>
+<li><a href="http://www.kaggle.com/stackoverflow">Stack Overflow</a> has a selection of data from stack overflow — can do text analysis on it. There’s also a jobs list and an <a href="http://www.api.stackoverflow.com">api</a>.</li>
+<li>It is possible to <a href="https://dssg.uchicago.edu/project/early-intervention-system-for-adverse-police-interactions/">predict</a> which officers in police departments will have adverse incidents with the public in order to arrange interventions. Nashville and Charlottesville are doing this. This work can save lives.</li>
+<li>ROpenSci does peer review for <code>R</code> packages. Many of their packages get data from scientific databases or interface with scientific equipment.</li>
+</ul>
+</section>
+<section id="statistical-and-programming-tools" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-and-programming-tools">Statistical and Programming Tools</h2>
+<ul>
+<li>Convolutional Neural Net: used for image recognition</li>
+<li>VPNs are good privacy tools, we should probably all use one.</li>
+</ul>
+</section>
+<section id="r-packages-to-investigate" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages-to-investigate">R Packages to Investigate</h2>
+<p>There were so many neat R packages mentioned over the course of the conference. Here was a short list of ones I didn’t know and wanted to look into.</p>
+<ul>
+<li><code>packrat</code>: helps you create a package template file</li>
+<li><code>plumber</code>: allows you to easily turn regular R code into an API</li>
+<li><code>RXKCD</code>: add <a href="http://www.xkcd.com">XKCD</a> cartoons to stuff!</li>
+<li><code>trelliscope</code>: many-panel data vis</li>
+<li><code>compareGroups</code>: compare demographics and other aspects across groups</li>
+<li><code>htmlWidgets</code>: integrate <code>javascript</code> applets into <code>R</code> code. We want interactivity, and javascript is de-facto standard for everything having to do with interactivity.
+<ul>
+<li><code>ipywidgets</code>: similar for <code>python</code></li>
+</ul></li>
+<li><code>broom</code>: turn analytics output into tidy data frames</li>
+<li><code>goodpractice</code>: does a variety of checking for good package development practice
+<ul>
+<li><code>lintr</code>: helps check for good code style</li>
+<li><code>devtools::spellcheck()</code></li>
+</ul></li>
+<li><code>solidify</code>, <code>highcharts</code>: commonly used presentation packages</li>
+<li><code>tidytext</code>: help turn text into tidy data frames</li>
+</ul>
+</section>
+<section id="generally-helpful-programming-hints-tips-and-tricks" class="level2">
+<h2 class="anchored" data-anchor-id="generally-helpful-programming-hints-tips-and-tricks">Generally Helpful Programming Hints, tips, and tricks</h2>
+<ul>
+<li><code>rr-init</code>: ROpenSci package to create skeleton of project</li>
+<li>Run <code>R</code> script <code>myscript.R</code> from command line: <code>Rscript myscript.R</code></li>
+<li>RStudio Server runs on port 8787 by default</li>
+<li>Anaconda can be used to download a local R version</li>
+<li>Can install entire tidy verse at once: <code>install.packages(“tidyverse”)</code></li>
+<li>Always choose a license for your <a href="http://www.github.com">github</a> repo. MIT is the loosest.</li>
+<li>Can put an empty folder in a git repo by creating and adding a file to git <code>touch folder/.gitkeep</code></li>
+<li><code>make</code> bash — can create a makefile (<code>make.sh</code>) with assigned dependencies and will only run files that have been updated since last run</li>
+<li>Join <a href="http://www.r-project.org/mail.html">R mailing list</a></li>
+<li>Contributing to documentation (or improving unhelpful error messages) is a great way to get started on contributing to Open Source</li>
+<li>In R <code>save()</code> saves multiple objects with their names as <code>.Rda</code>. Using <code>load</code> restores them into the environment. <code>saveRds()</code> saves a single object without its name. Restoring requires assignment <code>a &lt;- readRds()</code>.</li>
+</ul>
+</section>
+<section id="rstudio-hints-tips-tricks" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio-hints-tips-tricks">RStudio Hints, Tips, Tricks</h2>
+<p>The RStudio folks gave a great presentation on some tricks and tips in RStudio. Some of my favorite takeaways:</p>
+<ul>
+<li>Realtime inline <code>TeX</code> previews in RNotebooks: <code>$EQN$</code></li>
+<li>Notebook preview — doesn’t re-run, just renders what’s been run</li>
+<li>Can include code chunks that run code other than R (SQL, Bash, Python). Instead of <code>{r}</code> in chunk header, put (e.g.) <code>{sql connection = con, output.var = ‘varname’}</code> and then can put <code>SELECT</code> statement in body that will be assigned to <code>varname</code></li>
+<li>If you want to include variables in SQL code, use <code>?varname</code> in code.</li>
+<li>RStudio git integration provides nice way to view diffs</li>
+<li>Tab autocomplete is fuzzy — just type unique letters in command and tab for rest</li>
+<li><code>Shift-Tab</code> to insert code snippets — there are built in (<code>tools &gt; global options &gt; code snippets</code>)</li>
+<li>Starting to type a command and then <code>cmd + arrow up</code> gives history of all times that command used</li>
+<li>Can easily go from history to console or script</li>
+<li><code>ctrl + .</code> search files, fns, etc</li>
+<li><code>CTRL + SHIFT + .</code> search among tabs</li>
+<li><code>ctrl + shift + f</code> (“or if that’s too hard to remember, ctrl capital F”) to customize where searching</li>
+<li><code>SHIFT + ALT + k</code> list keyboard shortcuts</li>
+</ul>
+
+
+</section>
+ ]]></description>
+  <category></category>
+  <guid>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</guid>
+  <pubDate>Sun, 23 Apr 2017 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
