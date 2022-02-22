@@ -12,8 +12,10 @@ jobs:
       - uses: quarto-dev/quarto-actions/install-quarto@v1
       - run: |
           quarto --version
-      - name: Render Site
-        run: Rscript -e 'quarto::quarto_render()'
+      - name: "Quarto render"
+        shell: bash
+        run: |
+          quarto render --execute-debug
       - uses: actions/upload-artifact@v2
         with:
           name: _site
