@@ -3,72 +3,23 @@ on:
     branches:
       - main
 
-name: rendersite
-
-env:
-  RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/all/latest
-  RENV_PATHS_ROOT: ~/.local/share/renv
+name: Render and deploy Quarto files
+on:
+  push:
+  pull_request:
 
 jobs:
-  build-site:
-    name: build-site
-    runs-on: ubuntu-18.04
+  quarto-render-and-deploy:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@v1
-        with:
-          r-version: '4.0.3'
-      - uses: quarto-dev/quarto-actions/install-quarto@v1
-      - run: |
-          quarto --version
-      - name: Set RENV_PATHS_ROOT
-        shell: bash
-        run: |
-          echo "RENV_PATHS_ROOT=${{ runner.temp }}/renv" >> $GITHUB_ENV
-      - name: Install and activate renv
-        run: |
-          install.packages("renv")
-          renv::activate()
-        shell: Rscript {0}
-      - name: Get R version
-        id: get-version
-        run: |
-          cat("##[set-output name=r-version;]", R.Version()$version.string, sep = "")
-        shell: Rscript {0}
-      - name: Restore Renv package cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-${{ steps.get-version.outputs.r-version }}-${{ inputs.cache-version }}-${{ hashFiles('renv.lock') }}
-          restore-keys: ${{ runner.os }}-${{ steps.get-version.outputs.r-version }}-${{inputs.cache-version }}-
-      - name: Restore packages
-        shell: Rscript {0}
-        run: |
-          renv::restore()
-      - name: Render Site
-        run: Rscript -e 'quarto::quarto_render()'
-      - uses: actions/upload-artifact@v2
-        with:
-          name: _site
-          path: _site
 
-  checkout-and-deploy:
-   runs-on: ubuntu-latest
-   needs: build-site
-   steps:
-     - name: Checkout
-       uses: actions/checkout@master
-     - name: Download artifact
-       uses: actions/download-artifact@v1.0.0
-       with:
-         # Artifact name
-         name: _site # optional
-         # Destination path
-         path: _site # optional
-     - name: Deploy to GitHub Pages
-       uses: Cecilapp/GitHub-Pages-deploy@master
-       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-       with:
-          email: alexkgold@gmail.com
-          build_dir: _site/ # defaults to _site
+      - name: "Install Quarto and render"
+        uses: pommevilla/quarto-render@main
+
+      - name: "Deploy to gh-pages"
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
