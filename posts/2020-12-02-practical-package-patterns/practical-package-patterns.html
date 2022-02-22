@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-0.9.30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="dcterms.date" content="2020-12-02">
+  <meta name="description" content="Write internal R packages for your team that disseminate expertise, not cleverness.">
+  <title>Alex K Gold - R Packages for Experts, not Wizards</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+
+  <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="../../site_libs/clipboard/clipboard.min.js"></script>
+  <meta name="quarto:offset" content="../../">
+  <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="../../site_libs/quarto-search/fuse.min.js"></script>
+  <script src="../../site_libs/quarto-search/quarto-search.js"></script>
+  <script src="../../site_libs/quarto-html/quarto.js"></script>
+  <script src="../../site_libs/quarto-html/popper.min.js"></script>
+  <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="../../site_libs/quarto-html/anchor.min.js"></script>
+  <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
+  
+  <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-133127514-1', 'auto');
+
+  ga('send', {
+    hitType: 'pageview',
+    'anonymizeIp': true,
+  });
+  </script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<meta name="twitter:title" content="Alex K Gold - R Packages for Experts, not Wizards">
+<meta name="twitter:description" content="Write internal R packages for your team that disseminate expertise, not cleverness.
+">
+<meta name="twitter:creator" content="@alexkgold">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Alex K Gold</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../speaking.html">Speaking</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/alexkgold"><i class="bi bi-fab fa-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/akgold/"><i class="bi bi-fab fa-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexkgold/"><i class="bi bi-fab fa-linkedin-in" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#the-wizard-package" class="nav-link active" data-scroll-target="#the-wizard-package">The Wizard Package</a></li>
+<li><a href="#expert-packages" class="nav-link" data-scroll-target="#expert-packages">Expert Packages</a></li>
+<li><a href="#make-your-packages-experts-not-wizards" class="nav-link" data-scroll-target="#make-your-packages-experts-not-wizards">Make Your Packages Experts, not Wizards</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/posts/2020-12-02-practical-package-patterns/practical-package-patterns.Rmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header id="title-block-header">
+<h1 class="title display-7">R Packages for Experts, not Wizards</h1>
+<p class="date">2020-12-02</p>
+</header>
+
+<p>I, like so many other R aficionados, love writing R packages for my team. They’re a great way to get everyone on the same page and to ensure everyone has access to the same resources. But I’ve also (more than once) lovingly crafted an R package only to find that…no one used it.</p>
+<p>I’d incorrectly thought a bunch of clever R code could solve my team’s problems. I’d assumed I, the team’s R wizard, could go write the perfect package, and return to great acclaim that I’d fixed everyone’s woes.</p>
+<p>Unfortunately, my vision of how the package writing process was busted in at least three ways – ones that I’ve seen befall other teams and R aficionados. Read on for more.</p>
+<section id="the-wizard-package" class="level2">
+<h2 class="anchored" data-anchor-id="the-wizard-package">The Wizard Package</h2>
+<p>When I wrote my team’s packages, I was the R wizard on the team – and if you’re reading this, you probably are too. I believed I could go off, write a package, and deliver it from on high a la Moses from Mount Sinai.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>I’ve come to call the result of this (not so great) pattern <strong>the Wizard Package</strong>.</p>
+<p>Wizard Packages <em>can</em> work. I’ve seen Wizard Packages work when (1) the whole team is clear that a package will solve the problem, (2) the need is can be met by clever R code, and (3) the team is strongly motivated to adopt the package.</p>
+<p>In my case, none of these conditions held. I wasn’t riding a wave of enthusiasm for R – I was trying to spark it. People weren’t super motivated to adopt the package, and I couldn’t really compel them to do so. Worst of all, my R code just wasn’t solving the keenest problems of my teammates.</p>
+<p>Because they’re written by R wizards, Wizard Packages tend to solve R wizard problems. They have clever wrappers for other functions, or convenience functions for advanced R users.</p>
+<p>Very often though, the team’s needs aren’t needs that are solved primarily by clever R code – the team needs to get their R Markdown report formatted with the right CSS, or calculate correct standard errors from a complicated estimator, or complete those weird database merges that only one person on the team knows how to do.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Wizard packages convey expertise of a sort, but they often aren’t adopted because they’re not expert <strong>enough</strong>, or aren’t expert in the <strong>right ways</strong>.</p>
+</section>
+<section id="expert-packages" class="level2">
+<h2 class="anchored" data-anchor-id="expert-packages">Expert Packages</h2>
+<p>R packages are a tool to make your team’s expertise real. By incorporating knowledge from everyone on the team, you can create a package that disseminates that expertise to everyone on the team.</p>
+<p>There’s tons of psych research (that I’m too lazy to actually cite) that one of the best ways to get someone excited about something is to get their help with it.</p>
+<p>More importantly, there’s far more to package development than writing R code, so the process really can include everyone, regardless of their level of comfort with R.</p>
+<p>A few ways for folks to help out who might not be the R wizards:</p>
+<ul>
+<li><p><strong>Designing the API</strong> Even folks who are novice R developers probably have a strong sense about what the important features and options are for things like plotting the data.</p></li>
+<li><p><strong>Designing the data model</strong> Someone who knows the problem really well probably has the best sense of what the important parts of the data are to keep track of.</p></li>
+<li><p><strong>Sharing expert knowledge</strong> An Expert Package shares expertise across the team. By collecting that knowledge directly, you can incorporate someone’s data vis, database access, or stats expertise without needing them to write R code.</p></li>
+<li><p><strong>Writing documentation, tests, or vignettes</strong> Internal packages often include documentation or vignettes that go beyond just explaining the functions themselves, but providing some context on why the function works as it does. People can also provide feedback on whether package tests are meaningful.</p></li>
+</ul>
+</section>
+<section id="make-your-packages-experts-not-wizards" class="level2">
+<h2 class="anchored" data-anchor-id="make-your-packages-experts-not-wizards">Make Your Packages Experts, not Wizards</h2>
+<p>There’s a reason that so many stories of Wizards include dark endings, evil omens, and fallen mages. Wizardry is ineherently disconnected from others, and it’s all about being clever.</p>
+<p>In the land of R packages, being expert is so much more valuable than being clever – doubly so if you can provide expertise and value to others on your team, and the number one way to do that is to get your teammates involved in the package creation process the whole way along.</p>
+
+
+</section>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1" role="doc-endnote"><p>If only I’d remembered the end of that story, where Moses’s return isn’t exactly greeted with enthusiasm.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Every team has this person, and they are amazing. They also are all-too-often undervalued, because their skills aren’t as “technical” as the coding wizards. That is false.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</main> <!-- /main -->
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+</body></html>
