@@ -2,13 +2,7 @@
 title: "Upgrading to R #2: Failure's Coming, Get Ready!"
 description: |
   Prep in advance for things to be hard.
-author:
-  - name: Alex Gold
-    url: {}
-date: 01-23-2019
-output:
-  distill::distill_article:
-    self_contained: false
+date: 2019-01-23
 ---
 
 ```{r setup, include=FALSE}

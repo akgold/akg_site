@@ -1,7 +1,7 @@
 ---
 title: "Managing the First Year"
 description: Thoughts on being a new data science manager.
-site: distill::distill_website
+toc: true
 editor_options: 
   markdown: 
     wrap: 72

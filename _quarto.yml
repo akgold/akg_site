@@ -12,15 +12,12 @@ website:
   navbar:
     background: primary
     left:
-      - text: "Talks"
+      - text: About
+        href: about.qmd
+      - text: Speaking
         href: speaking.qmd
-      - text: "Managing the First Year"
-        href: mfy.qmd
-      - text: "📕DevOps For Data Science"
-        href: https://akgold.github.io/do4ds/
     right:
-      - href: about.qmd
-        text: About
+
       - icon: fab fa-twitter
         href: https://twitter.com/alexkgold
       - icon: fab fa-github

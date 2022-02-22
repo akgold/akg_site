@@ -1,5 +1,6 @@
 ---
 title: "RStats NYC 2017"
+description: Write up of NYR 2017
 date: 2017-04-23
 ---
 

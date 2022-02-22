@@ -3,9 +3,8 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.6">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="dcterms.date" content="2019-02-20">
-  <meta name="description" content="Be the data engineer of your dreams.">
-  <title>Alex K Gold - Upgrading to R #3: Be the Data Engineer you Need</title>
+  <meta name="description" content="Upgrading a team to R.">
+  <title>Alex K Gold - Upgrading to R: RStudio Conf 2019</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -67,8 +66,8 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-<meta name="twitter:title" content="Alex K Gold - Upgrading to R #3: Be the Data Engineer you Need">
-<meta name="twitter:description" content="Be the data engineer of your dreams.
+<meta name="twitter:title" content="Alex K Gold - Upgrading to R: RStudio Conf 2019">
+<meta name="twitter:description" content="Upgrading a team to R.
 ">
 <meta name="twitter:creator" content="@alexkgold">
 <meta name="twitter:card" content="summary">
@@ -123,49 +122,40 @@
         <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#best-practices-for-etl-on-flat-files" class="nav-link active" data-scroll-target="#best-practices-for-etl-on-flat-files">Best Practices for ETL on Flat Files</a></li>
+<li><a href="#upgrading-to-r" class="nav-link active" data-scroll-target="#upgrading-to-r">Upgrading to R</a></li>
+<li><a href="#the-tips" class="nav-link" data-scroll-target="#the-tips">The Tips</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title display-7">Upgrading to R #3: Be the Data Engineer you Need</h1>
-<p class="author">true</p>
-<p class="date">2019-02-20</p>
+<h1 class="title display-7">Upgrading to R: RStudio Conf 2019</h1>
+<p class="date">01-19-2019</p>
 </header>
 
-<p>When I first went to data conferences, I assumed that EVERYONE else was pulling data from a supercomputer-backed Spark cluster, immaculately maintained by an army of data engineers. Needless to say, that was not my data infrastructure.</p>
-<p>To be more succinct, most of the “data infrastructure” I’ve worked with has just been <code>csv</code> files. And our ETL processes – cleaning <code>csv</code> files to output more <code>csv</code> files (or <code>rds</code>).</p>
-<p>Based on my very informal polling of people in the field, this is WAY more common than anyone admits, especially if you’re on a team that’s just upgrading to R. As you make that switch, it’s easy to be discouraged feeling like everyone else is lightyears ahead. The (not so) dirty secret is that they’re not really.</p>
-<p>If I had to guess, the modal data scientist/analyst working in industry does ETL across a mixture of flat files and <code>SQL</code> databases. It’s still relatively rare to find people working on higher-power systems.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>Coming into a new role and discovering that you’re expected to wrangle a bunch of <code>csv</code> files can be frustrating, especially if you don’t reall ywant to be a data engineer. But you should. The number one way to be a better data scientist is to <strong>become the data engineer you wish you had</strong>.</p>
-<p>Being a great junior data scientist is 75% just knowing the data super well. A junior data scientist who can confidently identify things that <em>just look weird</em> in data is worth approximately 47 XGBoost models and 76 convolutional neural nets.</p>
-<p>A data scientist who combines data science knowledge with expertise on the data’s provenance and the data-generating process is <em>way</em> more likely to make a good catch or identify a clever new feature for modeling than a better modeler with little understanding of the specifics of the data.</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/csvs-1.gif" class="img-fluid"></p>
-</div>
-</div>
-<p>So yes, become the data engineer for your data because you need it, but also to make yourself a better data scientist. It won’t kill you.</p>
-<section id="best-practices-for-etl-on-flat-files" class="level1">
-<h1>Best Practices for ETL on Flat Files</h1>
-<p>Since I’ve done and managed a lot of ETL involving flat files, here are some tips I’d suggest:</p>
-<ul>
-<li>Use git to manage your code, and git LFS for managing data. Git will choke and die on data files larger than 50Mb or so, but aside from some annoyingly long download and upload times, git LFS has been a good tool for sharing data up to a few Gb across my team.</li>
-<li>Store all data in a <code>data</code> folder, with input data separated from cleaned data.</li>
-<li>If feasible, create standardized cleaning functions (in a package!) so that variable names are the same across different projects.</li>
-<li>Consider creating a data access API in R so you call a function to access data instead of loading a <code>csv</code> file.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The advantage is that it abstracts away from exactly how you store the data, so you can get used to loading your data in a simple way, and you can always update the backend to a SQL server or something else without changing the way you access your data.</li>
-</ul>
-
-
+<p>A few months ago, I was beyond thrilled to be chosen to give an e-poster at RStudio::conf(2019) on the topic of <em>Upgrading to R</em>. I had such a blast talking to people who are trying to get their team to use more R, sharing some of the lessons I’ve learned over the last few years. My slides are available <a href="https://akgold.github.io/rsconf2019/">online</a>, but I’d also like to share some of the things I spoke with people about, and a little on how I made the slides.</p>
+<section id="upgrading-to-r" class="level2">
+<h2 class="anchored" data-anchor-id="upgrading-to-r">Upgrading to R</h2>
+<p>So many data scientists have had the same experience - walking onto a team where something other than R or Python was the language of choice. Unless that other language was Julia or Scala, this was almost certainly a disappointing moment. But it doesn’t have a be a reason to run screaming for the hills.</p>
+<p>I’ve now worked on several teams that have successfully transitioned from Excel or Stata to R. These transitions, while sometimes painful, were definitely worth it. Along the way, I learned a few tips and made a lot of mistakes. I decided I’d try to share as much as possible to help anyone else in the same boat. These lessons will be particularly applicable to someone <em>leading</em> a data science team that’s transitioning. Some will also be relevant if you’re a junior staffer trying to push change, but not all.</p>
+<p>In thinking about the transitions I’ve been part of, here are tips that might’ve helped me if I’d known them when I started. Links will be added as the posts go live.</p>
+<p><em>Edit: I seem to have fallen behind on these; maybe I’ll finish someday…</em></p>
 </section>
-<section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2>Footnotes</h2>
-
-<ol>
-<li id="fn1" role="doc-endnote"><p>Or honetly, use cases that really need those systems. Postgres will get you pretty far.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Don’t get scared by “an API” if you’re not familiar! It just means a bunch of functions so that you can access in a consistent way.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<section id="the-tips" class="level2">
+<h2 class="anchored" data-anchor-id="the-tips">The Tips</h2>
+<ol type="1">
+<li><a href="../../2019/01/19/upgrading-to-r-1-excitement-skills/">Excitement &gt;&gt; Skills</a></li>
+<li><a href="../../2019/01/23/upgrading-to-r-2-failure-s-coming-get-ready/">Failure’s Coming, Get Ready</a></li>
+<li><a href="../../2019/02/20/upgrading-to-r-3-be-the-data-engineer-they-need/">You are the Data Engineer your Team Needs</a></li>
+<li>It Takes a Team to Write a Package</li>
+<li>Git: Sometimes the Right Thing isn’t the Easiest</li>
+<li>Have you met my Friend RMarkdown?</li>
+<li>Don’t Get Too Excited Just Yet</li>
 </ol>
+<p>I plan to write a blog post on each of these, plus an extra about how I put together these tips and the accompanying plots.</p>
+
+
 </section>
 </main> <!-- /main -->
 <script type="application/javascript">

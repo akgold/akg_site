@@ -2,22 +2,27 @@
 listing:
   id: blog
   contents: posts
-  sort: "date-desc"
+  sort: "date desc"
   feed: true
   sort-ui: false
   filter-ui: false
+  table-hover: true
+  date-format: yyyy-MM-dd
 ---
 
-This is my website, with links to past and ongoing work.
+# Major Writing Projects
 
-::: {.callout-note icon="false"}
-## [📕DevOps 4 Data Science📕](https://akgold.github.io/do4ds/)
+## [Essay: Managing the First Year](/mfy.html)
 
-Work on this book project, with CRC Press, is currently ongoing. You can read and/or review the current state of work by clicking the link above.
-:::
+An essay about the (many) lessons I learned in my first year of managing a data science team.
+
+## [📕🏗DevOps 4 Data Science🏗📕](https://akgold.github.io/do4ds/)
+
+An book on lessons for Data Scientists from DevOps, how to manage your own server-based data science platform, and how to work with IT at your organization.
+
+Very much a work in progress. Expected completion of rough draft: June 2022.
 
 # Blog Posts
 
 ::: {#blog}
 :::
-

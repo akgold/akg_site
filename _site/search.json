@@ -194,5 +194,54 @@
     "title": "R Packages for Experts, not Wizards",
     "section": "Make Your Packages Experts, not Wizards",
     "text": "Make Your Packages Experts, not Wizards\nThere’s a reason that so many stories of Wizards include dark endings, evil omens, and fallen mages. Wizardry is ineherently disconnected from others, and it’s all about being clever.\nIn the land of R packages, being expert is so much more valuable than being clever – doubly so if you can provide expertise and value to others on your team, and the number one way to do that is to get your teammates involved in the package creation process the whole way along."
+  },
+  {
+    "objectID": "index.html#managing-the-first-year",
+    "href": "index.html#managing-the-first-year",
+    "title": "Alex K Gold",
+    "section": "Managing the First Year",
+    "text": "Managing the First Year\nMy essay about the (many) lessons I learned in my first year of managing a data science team."
+  },
+  {
+    "objectID": "posts/2019-10-17-production-shiny-w-pins/index.html",
+    "href": "posts/2019-10-17-production-shiny-w-pins/index.html",
+    "title": "RViews: Production Shiny Apps with Pins",
+    "section": "",
+    "text": "RViews Post"
+  },
+  {
+    "objectID": "posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html#upgrading-to-r",
+    "href": "posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html#upgrading-to-r",
+    "title": "Upgrading to R: RStudio Conf 2019",
+    "section": "Upgrading to R",
+    "text": "Upgrading to R\nSo many data scientists have had the same experience - walking onto a team where something other than R or Python was the language of choice. Unless that other language was Julia or Scala, this was almost certainly a disappointing moment. But it doesn’t have a be a reason to run screaming for the hills.\nI’ve now worked on several teams that have successfully transitioned from Excel or Stata to R. These transitions, while sometimes painful, were definitely worth it. Along the way, I learned a few tips and made a lot of mistakes. I decided I’d try to share as much as possible to help anyone else in the same boat. These lessons will be particularly applicable to someone leading a data science team that’s transitioning. Some will also be relevant if you’re a junior staffer trying to push change, but not all.\nIn thinking about the transitions I’ve been part of, here are tips that might’ve helped me if I’d known them when I started. Links will be added as the posts go live.\nEdit: I seem to have fallen behind on these; maybe I’ll finish someday…"
+  },
+  {
+    "objectID": "posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html#the-tips",
+    "href": "posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html#the-tips",
+    "title": "Upgrading to R: RStudio Conf 2019",
+    "section": "The Tips",
+    "text": "The Tips\n\nExcitement >> Skills\nFailure’s Coming, Get Ready\nYou are the Data Engineer your Team Needs\nIt Takes a Team to Write a Package\nGit: Sometimes the Right Thing isn’t the Easiest\nHave you met my Friend RMarkdown?\nDon’t Get Too Excited Just Yet\n\nI plan to write a blog post on each of these, plus an extra about how I put together these tips and the accompanying plots."
+  },
+  {
+    "objectID": "index.html#devops-4-data-science",
+    "href": "index.html#devops-4-data-science",
+    "title": "Alex K Gold",
+    "section": "📕🏗DevOps 4 Data Science🏗📕",
+    "text": "📕🏗DevOps 4 Data Science🏗📕\nAn ongoing book project on lessons for Data Scientists from DevOps, how to manage your own server-based data science platform, and how to work with IT at your organization.\nVery much a work in progress."
+  },
+  {
+    "objectID": "index.html#essay-managing-the-first-year",
+    "href": "index.html#essay-managing-the-first-year",
+    "title": "Alex K Gold",
+    "section": "Essay: Managing the First Year",
+    "text": "Essay: Managing the First Year\nAn essay about the (many) lessons I learned in my first year of managing a data science team."
+  },
+  {
+    "objectID": "index.html#blog-posts",
+    "href": "index.html#blog-posts",
+    "title": "Alex K Gold",
+    "section": "Blog Posts",
+    "text": "Blog Posts\n\n\n\n\n\n\nR Packages for Experts, not Wizards\n\n\nWrite internal R packages for your team that disseminate expertise, not cleverness.\n\n\n\n\n\n\n2020-12-01\n\n\n\n\n\n\n\n\nRViews: Production Shiny Apps with Pins\n\n\nUse pins to create production shiny apps.\n\n\n\n\n\n\n2019-10-16\n\n\n\n\n\n\n\n\nRViews: 3 Big Data Strategies for R\n\n\nThree strategies for using big data in R\n\n\n\n\n\n\n2019-07-06\n\n\n\n\n\n\n\n\nUpgrading to R #3: Be the Data Engineer you Need\n\n\nBe the data engineer of your dreams.\n\n\n\n\n\n\n2019-02-19\n\n\n\n\n\n\n\n\nUpgrading to R #2: Failure’s Coming, Get Ready!\n\n\nPrep in advance for things to be hard.\n\n\n\n\n\n\n2019-01-22\n\n\n\n\n\n\n\n\nUpgrading to R #1: Excitement >> Skills\n\n\nGetting the team excited matters more than initial skill level\n\n\n\n\n\n\n2019-01-19\n\n\n\n\n\n\n\n\nUpgrading to R: RStudio Conf 2019\n\n\nUpgrading a team to R.\n\n\n\n\n\n\n2019-01-19\n\n\n\n\n\n\n\n\nCustom fonts in ggplot2\n\n\nUse custom fonts in ggplots\n\n\n\n\n\n\n2017-08-27\n\n\n\n\n\n\n\n\nRStats NYC 2017\n\n\nWrite up of NYR 2017\n\n\n\n\n\n\n2017-04-22\n\n\n\n\n\n\nNo matching items"
   }
 ]
