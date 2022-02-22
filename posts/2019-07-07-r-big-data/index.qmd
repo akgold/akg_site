@@ -1,0 +1,7 @@
+---
+title: "RViews: 3 Big Data Strategies for R"
+description: "Three strategies for using big data in R"
+date: 2019-07-07
+---
+
+[RViews Post](https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/)

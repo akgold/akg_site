@@ -1,0 +1,7 @@
+---
+title: "RViews: Production Shiny Apps with Pins"
+description: Use pins to create production shiny apps.
+date: 2019-10-17
+---
+
+[RViews Post](https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/)

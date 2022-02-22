@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Alex K Gold"
+  twitter-card:
+    creator: "@alexkgold"
+  opengraph: true
+  google-analytics: "UA-133127514-1"
+  repo-url: https://github.com/akgold/akg_site
+  repo-actions: [edit, issue]
+  navbar:
+    background: primary
+    left:
+      - text: About
+        href: about.qmd
+      - text: Speaking
+        href: speaking.qmd
+    right:
+
+      - icon: fab fa-twitter
+        href: https://twitter.com/alexkgold
+      - icon: fab fa-github
+        href: https://github.com/akgold/
+      - icon: fab fa-linkedin-in
+        href: https://www.linkedin.com/in/alexkgold/
+
+format:
+  html:
+    theme:
+      - flatly
+      - styles.scss
+    toc: true
+
+editor: visual
+

@@ -5,36 +5,52 @@ on:
 
 name: rendersite
 
+env:
+  RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/all/latest
+  RENV_PATHS_ROOT: ~/.local/share/renv
+
 jobs:
   build-site:
     name: build-site
     runs-on: ubuntu-18.04
-    env:
-      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@v1
         with:
           r-version: '4.0.3'
-      - uses: r-lib/actions/setup-pandoc@v1
-      - name: Cache packages
-        uses: actions/cache@v1
+      - uses: quarto-dev/quarto-actions/install-quarto@v1
+      - run: |
+          quarto --version
+      - name: Set RENV_PATHS_ROOT
+        shell: bash
+        run: |
+          echo "RENV_PATHS_ROOT=${{ runner.temp }}/renv" >> $GITHUB_ENV
+      - name: Install and activate renv
+        run: |
+          install.packages("renv")
+          renv::activate()
+        shell: Rscript {0}
+      - name: Get R version
+        id: get-version
+        run: |
+          cat("##[set-output name=r-version;]", R.Version()$version.string, sep = "")
+        shell: Rscript {0}
+      - name: Restore Renv package cache
+        uses: actions/cache@v2
         with:
           path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
+          key: ${{ runner.os }}-${{ steps.get-version.outputs.r-version }}-${{ inputs.cache-version }}-${{ hashFiles('renv.lock') }}
+          restore-keys: ${{ runner.os }}-${{ steps.get-version.outputs.r-version }}-${{inputs.cache-version }}-
       - name: Restore packages
         shell: Rscript {0}
         run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore(repos = "https://packagemanager.rstudio.com/all/__linux__/bionic/latest")
-      - name: Build Site
-        run: Rscript -e 'rmarkdown::render_site(encoding = "UTF-8")'
-      - uses: actions/upload-artifact@v1
+          renv::restore()
+      - name: Render Book
+        run: Rscript -e 'quarto::quarto_render()'
+      - uses: actions/upload-artifact@v2
         with:
           name: _site
-          path: _site/
+          path: _site
 
   checkout-and-deploy:
    runs-on: ubuntu-latest
