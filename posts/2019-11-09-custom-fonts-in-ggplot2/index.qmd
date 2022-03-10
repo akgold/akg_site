@@ -41,4 +41,3 @@ $Arial
 Now, when you want to use a font in `ggplot`, it's as easy as calling `theme(family = 'Arial')`.
 
 Note that if you're on a Mac, you won't get the default Microsoft Office fonts, so if you're trying to convince people that you can switch from Powerpoint by making Excel-like plot styles, you'll need to add the fonts manually. Luckily, it's really easy to do through the font book utility on your Mac (just type `Font` into spotlight), and [this blog post](http://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac).
-

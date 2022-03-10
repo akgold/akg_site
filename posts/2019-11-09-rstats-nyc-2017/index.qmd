@@ -29,9 +29,8 @@ Many of the speakers shared some great nuggets of insight into doing data scienc
 -   Automating Excel workflows can be a first step towards bringing `R` to a team.
 -   Agile development tells user stories as an empathy hack.
 
-```{=html}
 <!-- -->
-```
+
     As a ______
     I want ______
     So I can ______ 

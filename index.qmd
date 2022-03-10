@@ -12,15 +12,13 @@ listing:
 
 # Major Writing Projects
 
-## [Essay: Managing the First Year](/mfy.html)
-
-An essay about the (many) lessons I learned in my first year of managing a data science team.
-
-## [📕🏗DevOps 4 Data Science🏗📕](https://akgold.github.io/do4ds/)
-
-An book on lessons for Data Scientists from DevOps, how to manage your own server-based data science platform, and how to work with IT at your organization.
-
-Very much a work in progress. Expected completion of rough draft: June 2022.
++-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ## [Essay: Managing the First Year](/mfy.html)                                                | ## [📕🏗DevOps 4 Data Science🏗📕](https://akgold.github.io/do4ds/)                                                                                            |
+|                                                                                               |                                                                                                                                                              |
+| An essay about the (many) lessons I learned in my first year of managing a data science team. | An book on lessons for Data Scientists from DevOps, how to manage your own server-based data science platform, and how to work with IT at your organization. |
+|                                                                                               |                                                                                                                                                              |
+|                                                                                               | Very much a work in progress. Expected completion of rough draft: June 2022.                                                                                 |
++-----------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 # Blog Posts
 
