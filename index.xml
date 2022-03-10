@@ -9,11 +9,10 @@
 <link>https://alexkgold.space/index.html</link>
 <atom:link href="https://alexkgold.space/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-0.9.30</generator>
+<generator>quarto-0.9.76</generator>
 <lastBuildDate>Wed, 02 Dec 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>R Packages for Experts, not Wizards</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</link>
   <description><![CDATA[ 
 
@@ -51,21 +50,19 @@
 
 
 </section>
-<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>If only I’d remembered the end of that story, where Moses’s return isn’t exactly greeted with enthusiasm.↩︎</p></li>
 <li id="fn2"><p>Every team has this person, and they are amazing. They also are all-too-often undervalued, because their skills aren’t as “technical” as the coding wizards. That is false.↩︎</p></li>
 </ol>
-</section>
- ]]></description>
-  <category></category>
+</section></div> ]]></description>
   <guid>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</guid>
   <pubDate>Wed, 02 Dec 2020 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>RViews: Production Shiny Apps with Pins</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</link>
   <description><![CDATA[ 
 
@@ -73,13 +70,11 @@
 
 
  ]]></description>
-  <category></category>
   <guid>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</guid>
   <pubDate>Thu, 17 Oct 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>RViews: 3 Big Data Strategies for R</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</link>
   <description><![CDATA[ 
 
@@ -87,13 +82,11 @@
 
 
  ]]></description>
-  <category></category>
   <guid>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</guid>
   <pubDate>Sun, 07 Jul 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #3: Be the Data Engineer you Need</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</link>
   <description><![CDATA[ 
 
@@ -123,21 +116,19 @@
 
 
 </section>
-<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Or honetly, use cases that really need those systems. Postgres will get you pretty far.↩︎</p></li>
 <li id="fn2"><p>Don’t get scared by “an API” if you’re not familiar! It just means a bunch of functions so that you can access in a consistent way.↩︎</p></li>
 </ol>
-</section>
- ]]></description>
-  <category></category>
+</section></div> ]]></description>
   <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</guid>
   <pubDate>Wed, 20 Feb 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</link>
   <description><![CDATA[ 
 
@@ -204,22 +195,20 @@
 
 
 </section>
-<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>To be precise, whether the difference between the metric and the threshold was statistically significant, which we didn’t have the data to compute ourselves.↩︎</p></li>
 <li id="fn2"><p>Especially if you’re the team lead, but really no matter what.↩︎</p></li>
 <li id="fn3"><p>Or more likely 999 year-olds. <strong>Missing data should never have numeric codes</strong>, amirite?!?↩︎</p></li>
 </ol>
-</section>
- ]]></description>
-  <category></category>
+</section></div> ]]></description>
   <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</guid>
   <pubDate>Wed, 23 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #1: Excitement >> Skills</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</link>
   <description><![CDATA[ 
 
@@ -253,20 +242,18 @@
 
 
 </section>
-<section class="footnotes footnotes-end-of-document"><h2>Footnotes</h2>
+
+<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>This presentation by <a href="https://twitter.com/milesmcbain?lang=en">MilesMcBain</a> on the magic of R packages was FANTASTIC - one of my favorites from RStudio::conf(2019).↩︎</p></li>
 </ol>
-</section>
- ]]></description>
-  <category></category>
+</section></div> ]]></description>
   <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</guid>
   <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R: RStudio Conf 2019</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</link>
   <description><![CDATA[ 
 
@@ -295,13 +282,11 @@
 
 </section>
  ]]></description>
-  <category></category>
   <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</guid>
   <pubDate>Sat, 19 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Custom fonts in ggplot2</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</link>
   <description><![CDATA[ 
 
@@ -323,13 +308,13 @@
 <span id="cb1-7"><span class="sc" style="color: #5E5E5E;">$</span>mono</span>
 <span id="cb1-8">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Courier New"</span></span>
 <span id="cb1-9"></span>
-<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: null;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #677623;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
 <span id="cb1-11">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Agency FB"</span></span>
 <span id="cb1-12"></span>
 <span id="cb1-13"><span class="sc" style="color: #5E5E5E;">$</span>Algerian</span>
 <span id="cb1-14">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Algerian"</span></span>
 <span id="cb1-15"></span>
-<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: null;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #677623;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
 <span id="cb1-17">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial Black"</span></span>
 <span id="cb1-18"></span>
 <span id="cb1-19"><span class="sc" style="color: #5E5E5E;">$</span>Arial</span>
@@ -340,13 +325,11 @@
 
 
  ]]></description>
-  <category></category>
   <guid>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</guid>
   <pubDate>Mon, 28 Aug 2017 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>RStats NYC 2017</title>
-  <dc:creator></dc:creator>
   <link>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</link>
   <description><![CDATA[ 
 
@@ -509,7 +492,6 @@ So I can ______ </code></pre>
 
 </section>
  ]]></description>
-  <category></category>
   <guid>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</guid>
   <pubDate>Sun, 23 Apr 2017 00:00:00 GMT</pubDate>
 </item>

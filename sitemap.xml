@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexkgold.space/about.html</loc>
-    <lastmod>2022-02-22T15:40:28.032Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/mfy.html</loc>
-    <lastmod>2022-02-22T15:40:28.976Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/speaking.html</loc>
-    <lastmod>2022-02-22T15:40:30.692Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/index.html</loc>
-    <lastmod>2022-02-22T15:40:31.112Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</loc>
-    <lastmod>2022-02-22T15:40:31.576Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</loc>
-    <lastmod>2022-02-22T15:40:31.792Z</lastmod>
-  </url>
-  <url>
     <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</loc>
-    <lastmod>2022-02-22T15:40:32.032Z</lastmod>
+    <lastmod>2022-03-10T14:20:59.551Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</loc>
-    <lastmod>2022-02-22T15:40:32.300Z</lastmod>
+    <lastmod>2022-03-10T14:21:00.396Z</lastmod>
   </url>
   <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</loc>
-    <lastmod>2022-02-22T15:40:32.628Z</lastmod>
+    <loc>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</loc>
+    <lastmod>2022-03-10T14:21:00.960Z</lastmod>
   </url>
   <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</loc>
-    <lastmod>2022-02-22T15:40:32.888Z</lastmod>
+    <loc>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</loc>
+    <lastmod>2022-03-10T14:21:01.280Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</loc>
-    <lastmod>2022-02-22T15:40:33.116Z</lastmod>
+    <lastmod>2022-03-10T14:21:01.564Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</loc>
-    <lastmod>2022-02-22T15:40:33.436Z</lastmod>
+    <lastmod>2022-03-10T14:21:01.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</loc>
+    <lastmod>2022-03-10T14:21:02.260Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</loc>
-    <lastmod>2022-02-22T15:40:33.704Z</lastmod>
+    <lastmod>2022-03-10T14:21:02.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</loc>
+    <lastmod>2022-03-10T14:21:02.948Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/mfy.html</loc>
+    <lastmod>2022-03-10T14:21:03.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/about.html</loc>
+    <lastmod>2022-03-10T14:21:03.916Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/speaking.html</loc>
+    <lastmod>2022-03-10T14:21:06.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/index.html</loc>
+    <lastmod>2022-03-10T14:21:06.472Z</lastmod>
   </url>
 </urlset>
