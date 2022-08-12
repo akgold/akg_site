@@ -9,12 +9,13 @@
 <link>https://alexkgold.space/index.html</link>
 <atom:link href="https://alexkgold.space/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-0.9.76</generator>
+<generator>quarto-1.0.38</generator>
 <lastBuildDate>Wed, 02 Dec 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>R Packages for Experts, not Wizards</title>
   <link>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</link>
   <description><![CDATA[ 
+
 
 
 <p>I, like so many other R aficionados, love writing R packages for my team. They’re a great way to get everyone on the same page and to ensure everyone has access to the same resources. But I’ve also (more than once) lovingly crafted an R package only to find that…no one used it.</p>
@@ -51,6 +52,7 @@
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
@@ -66,7 +68,10 @@
   <link>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</link>
   <description><![CDATA[ 
 
+
+
 <p><a href="https://rviews.rstudio.com/2019/10/17/deploying-data-with-pins/">RViews Post</a></p>
+
 
 
  ]]></description>
@@ -78,7 +83,10 @@
   <link>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</link>
   <description><![CDATA[ 
 
+
+
 <p><a href="https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/">RViews Post</a></p>
+
 
 
  ]]></description>
@@ -89,6 +97,7 @@
   <title>Upgrading to R #3: Be the Data Engineer you Need</title>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</link>
   <description><![CDATA[ 
+
 
 
 <p>When I first went to data conferences, I assumed that EVERYONE else was pulling data from a supercomputer-backed Spark cluster, immaculately maintained by an army of data engineers. Needless to say, that was not my data infrastructure.</p>
@@ -117,6 +126,7 @@
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
@@ -131,6 +141,7 @@
   <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</link>
   <description><![CDATA[ 
+
 
 
 <p>As a new manager working with my team of data scientists, upgrading to R meant doing something new, and something hard. As I should’ve known, new + hard is a great recipe for mistakes and failures. I learned a lot from those mistakes - lessons that I couldn’t have anticipated ahead of time. I’ll share my surprising (and less surprising) things I learned from one particular big failure in this blog post.</p>
@@ -196,6 +207,7 @@
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
@@ -211,6 +223,7 @@
   <title>Upgrading to R #1: Excitement >> Skills</title>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</link>
   <description><![CDATA[ 
+
 
 
 <p><em>This is the first in a series of posts sharing some insights on upgrading to R. See the <a href="../../2019/01/19/upgrading-to-r-at-rstudio-conf-2019/">index post</a> for others.</em></p>
@@ -243,6 +256,7 @@
 
 </section>
 
+
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
@@ -256,6 +270,7 @@
   <title>Upgrading to R: RStudio Conf 2019</title>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</link>
   <description><![CDATA[ 
+
 
 
 <p>A few months ago, I was beyond thrilled to be chosen to give an e-poster at RStudio::conf(2019) on the topic of <em>Upgrading to R</em>. I had such a blast talking to people who are trying to get their team to use more R, sharing some of the lessons I’ve learned over the last few years. My slides are available <a href="https://akgold.github.io/rsconf2019/">online</a>, but I’d also like to share some of the things I spoke with people about, and a little on how I made the slides.</p>
@@ -281,6 +296,7 @@
 
 
 </section>
+
  ]]></description>
   <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</guid>
   <pubDate>Sat, 19 Jan 2019 00:00:00 GMT</pubDate>
@@ -289,6 +305,8 @@
   <title>Custom fonts in ggplot2</title>
   <link>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</link>
   <description><![CDATA[ 
+
+
 
 <p>A lot of things are great and easy to do in <code>ggplot2</code>…but putting new fonts in can be a pain in the butt. I had to do this last week, so I decided to write down what I did (as much for me as for anyone else).</p>
 <ol type="1">
@@ -308,13 +326,13 @@
 <span id="cb1-7"><span class="sc" style="color: #5E5E5E;">$</span>mono</span>
 <span id="cb1-8">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Courier New"</span></span>
 <span id="cb1-9"></span>
-<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #677623;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
 <span id="cb1-11">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Agency FB"</span></span>
 <span id="cb1-12"></span>
 <span id="cb1-13"><span class="sc" style="color: #5E5E5E;">$</span>Algerian</span>
 <span id="cb1-14">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Algerian"</span></span>
 <span id="cb1-15"></span>
-<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #677623;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
+<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
 <span id="cb1-17">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial Black"</span></span>
 <span id="cb1-18"></span>
 <span id="cb1-19"><span class="sc" style="color: #5E5E5E;">$</span>Arial</span>
@@ -322,6 +340,7 @@
 <span id="cb1-21">...</span></code></pre></div>
 <p>Now, when you want to use a font in <code>ggplot</code>, it’s as easy as calling <code>theme(family = 'Arial')</code>.</p>
 <p>Note that if you’re on a Mac, you won’t get the default Microsoft Office fonts, so if you’re trying to convince people that you can switch from Powerpoint by making Excel-like plot styles, you’ll need to add the fonts manually. Luckily, it’s really easy to do through the font book utility on your Mac (just type <code>Font</code> into spotlight), and <a href="http://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac">this blog post</a>.</p>
+
 
 
  ]]></description>
@@ -332,6 +351,7 @@
   <title>RStats NYC 2017</title>
   <link>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</link>
   <description><![CDATA[ 
+
 
 
 <p>Friday and Saturday of this weekend was the 2017 <a href="http://www.rstats.nyc/">RStatsNYC</a> conference. With the small exception of remarkably uncomfortable chairs, the conference was fantastic (and great food!). There was a remarkable variety in what the speakers covered – from deep thoughts on the ethics and philosophy of doing data science, to some super useful RStudio tips and tricks and everything in between. I decided to take my notes from the two days and post below in case there’s things anyone else might find useful.</p>
@@ -374,7 +394,7 @@ So I can ______ </code></pre>
 <li>Three important elements in live tweet of event: conference hashtag <code>#rstatsnyc</code>, <span class="citation" data-cites="speaker">@speaker</span> (put . first so it’s viewable publicly), always include a pic.</li>
 <li>They can have one of a few purposes: intro person/topic, spread insight, link to resource, spread positivity!</li>
 </ul>
-<p><em>Live tweet: conference hashtag, <span class="citation" data-cites="speaker">@speaker</span>, picture, positivity</em> {{&lt; tweet 855792361527541760 &gt;}}</p>
+<p><em>Live tweet: conference hashtag, <span class="citation" data-cites="speaker">@speaker</span>, picture, positivity</em> </p>
 </section>
 <section id="how-to-hackathon" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-hackathon">How to Hackathon</h3>
@@ -491,6 +511,7 @@ So I can ______ </code></pre>
 
 
 </section>
+
  ]]></description>
   <guid>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</guid>
   <pubDate>Sun, 23 Apr 2017 00:00:00 GMT</pubDate>

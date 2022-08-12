@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.76">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="description" content="Thoughts on being a new data science manager.">
-  <title>Alex K Gold - Managing the First Year</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-  </style>
 
-  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-  <script src="site_libs/quarto-nav/headroom.min.js"></script>
-  <script src="site_libs/clipboard/clipboard.min.js"></script>
-  <meta name="quarto:offset" content="./">
-  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-  <script src="site_libs/quarto-search/fuse.min.js"></script>
-  <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <script src="site_libs/quarto-html/quarto.js"></script>
-  <script src="site_libs/quarto-html/popper.min.js"></script>
-  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="site_libs/quarto-html/anchor.min.js"></script>
-  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
-  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <script id="quarto-search-options" type="application/json">{
-    "location": "navbar",
-    "copy-button": false,
-    "collapse-after": 2,
-    "panel-placement": "end",
-    "type": "overlay",
-    "limit": 20,
-    "language": {
-      "search-no-results-text": "No results",
-      "search-matching-documents-text": "matching documents",
-      "search-copy-link-title": "Copy link to search",
-      "search-hide-matches-text": "Hide additional matches",
-      "search-more-match-text": "more match in this document",
-      "search-more-matches-text": "more matches in this document",
-      "search-clear-button-title": "Clear",
-      "search-detached-cancel-button-title": "Cancel",
-      "search-submit-button-title": "Submit"
-    }
-  }</script>
-  
-  <script type="text/javascript">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
 
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-133127514-1', 'auto');
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-  ga('send', {
-    hitType: 'pageview',
-    'anonymizeIp': true,
-  });
-  </script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+<meta name="description" content="Thoughts on being a new data science manager.">
+
+<title>Alex K Gold - Managing the First Year</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-133127514-1', 'auto');
+
+ga('send', {
+  hitType: 'pageview',
+  'anonymizeIp': true,
+});
+</script>
+
+
 <meta name="twitter:title" content="Alex K Gold - Managing the First Year">
 <meta name="twitter:description" content="Thoughts on being a new data science manager.">
 <meta name="twitter:creator" content="@alexkgold">
 <meta name="twitter:card" content="summary">
 </head>
-<body>
+
+<body class="nav-fixed">
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -119,38 +125,57 @@
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc">
-<h2 id="toc-title">On this page</h2>
-<ul>
-<li><a href="#managing-the-first-year" class="nav-link active" data-scroll-target="#managing-the-first-year">Managing the first year</a>
-<ul class="collapse">
-<li><a href="#my-definition-of-management" class="nav-link" data-scroll-target="#my-definition-of-management">My definition of management</a></li>
-<li><a href="#management-was-hard" class="nav-link" data-scroll-target="#management-was-hard">Management was hard</a></li>
-<li><a href="#management-was-just-a-bunch-of-roles-smashed-together" class="nav-link" data-scroll-target="#management-was-just-a-bunch-of-roles-smashed-together">Management was just a bunch of roles smashed together</a>
-<ul class="collapse">
-<li><a href="#meetings-were-my-main-tool" class="nav-link" data-scroll-target="#meetings-were-my-main-tool">Meetings were my main tool</a></li>
-</ul></li>
-<li><a href="#my-words-carried-a-lot-of-power" class="nav-link" data-scroll-target="#my-words-carried-a-lot-of-power">My words carried a lot of power</a></li>
-<li><a href="#some-challenges-i-could-identify-but-couldnt-solve" class="nav-link" data-scroll-target="#some-challenges-i-could-identify-but-couldnt-solve">Some challenges I could identify, but couldn’t solve</a>
-<ul class="collapse">
-<li><a href="#i-was-stuck-in-between" class="nav-link" data-scroll-target="#i-was-stuck-in-between">I was stuck in-between</a></li>
-<li><a href="#resource-management-was-particularly-hard" class="nav-link" data-scroll-target="#resource-management-was-particularly-hard">Resource management was particularly hard</a></li>
-<li><a href="#mentoring-was-different" class="nav-link" data-scroll-target="#mentoring-was-different">Mentoring was different</a></li>
-</ul></li>
-<li><a href="#i-loved-management" class="nav-link" data-scroll-target="#i-loved-management">I loved management</a></li>
-</ul></li>
-<li><a href="#appendix-book-recommendations" class="nav-link" data-scroll-target="#appendix-book-recommendations">Appendix: Book Recommendations</a>
-<ul class="collapse">
-<li><a href="#theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
-<li><a href="#practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
-</ul></li>
-</ul>
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#managing-the-first-year" id="toc-managing-the-first-year" class="nav-link active" data-scroll-target="#managing-the-first-year">Managing the first year</a>
+  <ul class="collapse">
+  <li><a href="#my-definition-of-management" id="toc-my-definition-of-management" class="nav-link" data-scroll-target="#my-definition-of-management">My definition of management</a></li>
+  <li><a href="#management-was-hard" id="toc-management-was-hard" class="nav-link" data-scroll-target="#management-was-hard">Management was hard</a></li>
+  <li><a href="#management-was-just-a-bunch-of-roles-smashed-together" id="toc-management-was-just-a-bunch-of-roles-smashed-together" class="nav-link" data-scroll-target="#management-was-just-a-bunch-of-roles-smashed-together">Management was just a bunch of roles smashed together</a>
+  <ul class="collapse">
+  <li><a href="#meetings-were-my-main-tool" id="toc-meetings-were-my-main-tool" class="nav-link" data-scroll-target="#meetings-were-my-main-tool">Meetings were my main tool</a></li>
+  </ul></li>
+  <li><a href="#my-words-carried-a-lot-of-power" id="toc-my-words-carried-a-lot-of-power" class="nav-link" data-scroll-target="#my-words-carried-a-lot-of-power">My words carried a lot of power</a></li>
+  <li><a href="#some-challenges-i-could-identify-but-couldnt-solve" id="toc-some-challenges-i-could-identify-but-couldnt-solve" class="nav-link" data-scroll-target="#some-challenges-i-could-identify-but-couldnt-solve">Some challenges I could identify, but couldn’t solve</a>
+  <ul class="collapse">
+  <li><a href="#i-was-stuck-in-between" id="toc-i-was-stuck-in-between" class="nav-link" data-scroll-target="#i-was-stuck-in-between">I was stuck in-between</a></li>
+  <li><a href="#resource-management-was-particularly-hard" id="toc-resource-management-was-particularly-hard" class="nav-link" data-scroll-target="#resource-management-was-particularly-hard">Resource management was particularly hard</a></li>
+  <li><a href="#mentoring-was-different" id="toc-mentoring-was-different" class="nav-link" data-scroll-target="#mentoring-was-different">Mentoring was different</a></li>
+  </ul></li>
+  <li><a href="#i-loved-management" id="toc-i-loved-management" class="nav-link" data-scroll-target="#i-loved-management">I loved management</a></li>
+  </ul></li>
+  <li><a href="#appendix-book-recommendations" id="toc-appendix-book-recommendations" class="nav-link" data-scroll-target="#appendix-book-recommendations">Appendix: Book Recommendations</a>
+  <ul class="collapse">
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a></li>
+  <li><a href="#practice" id="toc-practice" class="nav-link" data-scroll-target="#practice">Practice</a></li>
+  </ul></li>
+  </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/mfy.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
-<header id="title-block-header" class="quarto-title-block default">
 
-<div class="quarto-title"><h1 class="title display-7">Managing the First Year</h1><div class="quarto-description"><p>Thoughts on being a new data science manager.</p></div></div></header>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Managing the First Year</h1>
+</div>
+
+<div>
+  <div class="description">
+    Thoughts on being a new data science manager.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
 
 <p>My first managerial role came by surprise.</p>
 <p>I had just started as a data scientist at a large consulting firm, and my manager was out for my first week with a sprained ankle. I spent that week getting to know the three other folks on the team, thinking I was the new senior data scientist. I was excited to get my hands dirty.</p>
@@ -357,10 +382,13 @@
 <p><strong>Radical Candor (2017)</strong></p>
 <p>Kim Scott’s book on how to provide direct and meaningful feedback to direct reports across a wide range of topics and venues. As a new manager, providing feedback was one of the strangest and hardest things to learn.</p>
 <p>Even more so than other managerial tasks, giving feedback is almost entirely craft, so reading about it is sorta useful at best. I think this is one of the best treatments I’ve read.</p>
+<p><strong>Crucial Conversations (2011)</strong></p>
+<p>This is one I’ve only read recently, but really wish I had read during that first year as a manager. This book gets into the specific skills and tactics for managing yourself in order to manage difficult (crucial) conversations. It will have positive impacts on your ability to manage yourself and your relationships with others – even beyond work.</p>
 
 
 </section>
 </section>
+
 
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
@@ -373,8 +401,26 @@
 <li id="fn5" role="doc-endnote"><p>I am keenly aware of the danger of speaking ill of others writing, given my own limitations as a writer. But if it can be useful to you, maybe it’s worth it.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
-<script type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -394,7 +440,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.blur();
     // flash "checked"
     button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
     setTimeout(function() {
+      button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
@@ -450,6 +499,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 </body></html>

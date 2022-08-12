@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html",
+      "/posts/2019-10-17-production-shiny-w-pins/index.html",
+      "/posts/2019-07-07-r-big-data/index.html",
+      "/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html",
+      "/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html",
+      "/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html",
+      "/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html",
+      "/posts/2019-11-09-custom-fonts-in-ggplot2/index.html",
+      "/posts/2019-11-09-rstats-nyc-2017/index.html"
+    ]
+  }
+]

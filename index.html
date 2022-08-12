@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-0.9.76">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Alex K Gold</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-  </style>
 
-  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-  <script src="site_libs/quarto-nav/headroom.min.js"></script>
-  <script src="site_libs/clipboard/clipboard.min.js"></script>
-  <meta name="quarto:offset" content="./">
-  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-  <script src="site_libs/quarto-search/fuse.min.js"></script>
-  <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <script src="site_libs/quarto-listing/list.min.js"></script>
-  <script src="site_libs/quarto-listing/quarto-listing.js"></script>
-  <script src="site_libs/quarto-html/quarto.js"></script>
-  <script src="site_libs/quarto-html/popper.min.js"></script>
-  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="site_libs/quarto-html/anchor.min.js"></script>
-  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
-  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <script id="quarto-search-options" type="application/json">{
-    "location": "navbar",
-    "copy-button": false,
-    "collapse-after": 2,
-    "panel-placement": "end",
-    "type": "overlay",
-    "limit": 20,
-    "language": {
-      "search-no-results-text": "No results",
-      "search-matching-documents-text": "matching documents",
-      "search-copy-link-title": "Copy link to search",
-      "search-hide-matches-text": "Hide additional matches",
-      "search-more-match-text": "more match in this document",
-      "search-more-matches-text": "more matches in this document",
-      "search-clear-button-title": "Clear",
-      "search-detached-cancel-button-title": "Cancel",
-      "search-submit-button-title": "Submit"
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Alex K Gold</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
     }
-  }</script>
-  <script>
 
-    window.document.addEventListener("DOMContentLoaded", function (_event) {
-      const listingTargetEl = window.document.querySelector('#listing-blog .list');
-      if (!listingTargetEl) {
-        // No listing discovered, do not attach.
-        return; 
-      }
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-description"],
+    };
 
-      const options = {
-        valueNames: ['listing-date','listing-title','listing-author','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-        
-        searchColumns: ["listing-date","listing-title","listing-author","listing-description"],
-      };
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
 
-      window['quarto-listings'] = window['quarto-listings'] || {};
-      window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
-
-      if (window['quarto-listing-loaded']) {
-        window['quarto-listing-loaded']();
-      }
-    });
-    </script>
-  
-  <script type="text/javascript">
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-133127514-1', 'auto');
-
-  ga('send', {
-    hitType: 'pageview',
-    'anonymizeIp': true,
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
   });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
+
+<script type="text/javascript">
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-133127514-1', 'auto');
+
+ga('send', {
+  hitType: 'pageview',
+  'anonymizeIp': true,
+});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
 <link rel="alternate" type="application/rss+xml" title="Alex K Gold" href="index.xml"><meta name="twitter:title" content="Alex K Gold">
 <meta name="twitter:creator" content="@alexkgold">
 <meta name="twitter:card" content="summary">
 </head>
-<body>
+
+<body class="nav-fixed">
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -142,15 +155,18 @@
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc">
-<h2 id="toc-title">On this page</h2>
-<ul>
-<li><a href="#major-writing-projects" class="nav-link active" data-scroll-target="#major-writing-projects">Major Writing Projects</a></li>
-<li><a href="#blog-posts" class="nav-link" data-scroll-target="#blog-posts">Blog Posts</a></li>
-</ul>
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#major-writing-projects" id="toc-major-writing-projects" class="nav-link active" data-scroll-target="#major-writing-projects">Major Writing Projects</a></li>
+  <li><a href="#blog-posts" id="toc-blog-posts" class="nav-link" data-scroll-target="#blog-posts">Blog Posts</a></li>
+  </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/akgold/akg_site/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/akgold/akg_site/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
+
+
 
 <section id="major-writing-projects" class="level1">
 <h1>Major Writing Projects</h1>
@@ -168,9 +184,9 @@ An essay about the (many) lessons I learned in my first year of managing a data 
 </section>
 <section id="blog-posts" class="level1">
 <h1>Blog Posts</h1>
-<div id="listing-blog" class="quarto-listing">
+<div id="listing-blog" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1606867200000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="3.8">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1606867200000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="3.8">
 <div class="body">
 <a href="./posts/2020-12-02-practical-package-patterns/practical-package-patterns.html">
 <h3 class="no-anchor listing-title" data-anchor-id="blog-posts">
@@ -187,12 +203,12 @@ R Packages for Experts, not Wizards
 <div class="metadata">
 <a href="./posts/2020-12-02-practical-package-patterns/practical-package-patterns.html">
 <div class="listing-date">
-2020-12-02
+yyyy-12-We
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1571270400000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="0.01">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1571270400000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="0.01">
 <div class="body">
 <a href="./posts/2019-10-17-production-shiny-w-pins/index.html">
 <h3 class="no-anchor listing-title">
@@ -209,12 +225,12 @@ RViews: Production Shiny Apps with Pins
 <div class="metadata">
 <a href="./posts/2019-10-17-production-shiny-w-pins/index.html">
 <div class="listing-date">
-2019-10-17
+yyyy-10-Th
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1562457600000" data-listing-file-modified-sort="1646921855652" data-listing-reading-time-sort="0.01">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1562457600000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="0.01">
 <div class="body">
 <a href="./posts/2019-07-07-r-big-data/index.html">
 <h3 class="no-anchor listing-title">
@@ -231,12 +247,12 @@ RViews: 3 Big Data Strategies for R
 <div class="metadata">
 <a href="./posts/2019-07-07-r-big-data/index.html">
 <div class="listing-date">
-2019-07-07
+yyyy-07-Su
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1550620800000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="4.475">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1550620800000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="4.475">
 <div class="body">
 <a href="./posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html">
 <h3 class="no-anchor listing-title">
@@ -253,12 +269,12 @@ Upgrading to R #3: Be the Data Engineer you Need
 <div class="metadata">
 <a href="./posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html">
 <div class="listing-date">
-2019-02-20
+yyyy-02-We
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1548201600000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="10.105">
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1548201600000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="10.105">
 <div class="body">
 <a href="./posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html">
 <h3 class="no-anchor listing-title">
@@ -275,12 +291,12 @@ Upgrading to R #2: Failure’s Coming, Get Ready!
 <div class="metadata">
 <a href="./posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html">
 <div class="listing-date">
-2019-01-23
+yyyy-01-We
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1547942400000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="5.56">
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1547942400000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="5.56">
 <div class="body">
 <a href="./posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html">
 <h3 class="no-anchor listing-title">
@@ -297,12 +313,12 @@ Upgrading to R #1: Excitement &gt;&gt; Skills
 <div class="metadata">
 <a href="./posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html">
 <div class="listing-date">
-2019-01-20
+yyyy-01-Su
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1547856000000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="1.725">
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1547856000000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="1.725">
 <div class="body">
 <a href="./posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html">
 <h3 class="no-anchor listing-title">
@@ -319,12 +335,12 @@ Upgrading to R: RStudio Conf 2019
 <div class="metadata">
 <a href="./posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html">
 <div class="listing-date">
-2019-01-19
+yyyy-01-Sa
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1503878400000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="0.995">
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1503878400000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="0.995">
 <div class="body">
 <a href="./posts/2019-11-09-custom-fonts-in-ggplot2/index.html">
 <h3 class="no-anchor listing-title">
@@ -341,12 +357,12 @@ Custom fonts in ggplot2
 <div class="metadata">
 <a href="./posts/2019-11-09-custom-fonts-in-ggplot2/index.html">
 <div class="listing-date">
-2017-08-28
+yyyy-08-Mo
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1492905600000" data-listing-file-modified-sort="1646921855656" data-listing-reading-time-sort="7.69">
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1492905600000" data-listing-file-modified-sort="1660310625036" data-listing-reading-time-sort="7.69">
 <div class="body">
 <a href="./posts/2019-11-09-rstats-nyc-2017/index.html">
 <h3 class="no-anchor listing-title">
@@ -363,7 +379,7 @@ RStats NYC 2017
 <div class="metadata">
 <a href="./posts/2019-11-09-rstats-nyc-2017/index.html">
 <div class="listing-date">
-2017-04-23
+yyyy-04-Su
 </div>
 </a>
 </div>
@@ -377,9 +393,28 @@ No matching items
 
 
 </section>
+
 </main> <!-- /main -->
-<script type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -399,7 +434,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.blur();
     // flash "checked"
     button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
     setTimeout(function() {
+      button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
@@ -455,6 +493,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 </body></html>
