@@ -24,6 +24,9 @@ website:
       - icon: fab fa-linkedin-in
         href: https://www.linkedin.com/in/alexkgold/
 
+execute:
+  freeze: auto
+
 format:
   html:
     theme:
