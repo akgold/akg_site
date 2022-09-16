@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -72,8 +77,8 @@ ga('send', {
 <script src="site_libs/react-17.0.0/react.min.js"></script>
 <script src="site_libs/react-17.0.0/react-dom.min.js"></script>
 <script src="site_libs/reactwidget-1.0.0/react-tools.js"></script>
-<script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
-<script src="site_libs/reactable-binding-0.2.3/reactable.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/reactable-binding-0.3.0/reactable.js"></script>
 
 
 <meta name="twitter:title" content="Alex K Gold - Recent Speaking">
@@ -88,9 +93,11 @@ ga('send', {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Alex K Gold</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -154,8 +161,8 @@ ga('send', {
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-796d3e2bbb4c6502a7df" class="reactable html-widget" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-796d3e2bbb4c6502a7df">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Date":["2021-12-09","2021-07-07","2021-02-17","2020-12-03","2020-07-28","2020-06-17","2020-03-28","2020-01-03","2019-11-14","2019-09-17","2019-09-17","2019-06-12","2019-05-21"],"Title":["<a href=https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing>DCR: Reliably Reproducible R-Tifacts<\/a>","<a href=https://docs.google.com/presentation/d/1a7YvEsknIcOAUJGskjW-jooW-A4ochg12k7iS5WpwAs/edit?usp=sharing>UseR 2021: Reliably Reproducible Product Packages<\/a>","<a href=NA>RStudio Webinar: Managing Packages for Open Source Data Science<\/a>","<a href=https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing>DCR: Powerful Package Patterns<\/a>","<a href=https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing>RStudio Webinar: Growing a Remote Data Science Team<\/a>","<a href=https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit>e-RUM: Design Patterns for Big Shiny Apps<\/a>","<a href=https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing>DC SatRDays: Break Up Shiny Apps<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf>RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins<\/a>","<a href=https://speakerdeck.com/akgold/r-and-big-data-databases>Big Data London 2019: Big Data and R: Databases<\/a>","<a href=https://speakerdeck.com/akgold/love-for-linear-models>DC Data Science Meetup: Love for Linear Models<\/a>","<a href=https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science>Webinar: Reproducible Data Science<\/a>","<a href=https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark>Big Data Toronto 2019: Big Data and R, Spark<\/a>","<a href=https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering>Data Scientists Doing Software Engineering<\/a>"],"Code":[null,null,null,null,null,"<a href=https://github.com/akgold/erum-big-shiny>Code<\/a>","<a href=github.com/akgold/shiny_break_up_satrday>Code<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment>Code<\/a>","<a href=https://github.com/akgold/bdl_2019>Code<\/a>",null,"<a href=https://github.com/akgold/2019-09-17_john_deere_webinar>Code<\/a>","<a href=https://github.com/akgold/big_data_2019>Code<\/a>",null],"Video":["<a href=https://youtu.be/-6TlzhRA9vA>Video<\/a>",null,"<a href=https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/>Video<\/a>",null,"<a href=https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/>Video<\/a>","<a href=https://youtu.be/NwVOvfpGq4o>Video<\/a>",null,"<a href=https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/>Video<\/a>","<a href=https://www.youtube.com/watch?v=GQcEnlz3jrI>Video<\/a>",null,null,null,null]},"columns":[{"accessor":"Date","name":"Date","type":"character","minWidth":25},{"accessor":"Title","name":"Title","type":["glue","character"],"html":true},{"accessor":"Code","name":"Code","type":"character","html":true,"maxWidth":60},{"accessor":"Video","name":"Video","type":"character","html":true,"maxWidth":65}],"defaultPageSize":50,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"336ca8fcacf3ce2933737cb3a9c45e1e","key":"336ca8fcacf3ce2933737cb3a9c45e1e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-743bd853611a193311cf" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-743bd853611a193311cf">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"Date":["2021-12-09","2021-07-07","2021-02-17","2020-12-03","2020-07-28","2020-06-17","2020-03-28","2020-01-03","2019-11-14","2019-09-17","2019-09-17","2019-06-12","2019-05-21"],"Title":["<a href=https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing>DCR: Reliably Reproducible R-Tifacts<\/a>","<a href=https://docs.google.com/presentation/d/1a7YvEsknIcOAUJGskjW-jooW-A4ochg12k7iS5WpwAs/edit?usp=sharing>UseR 2021: Reliably Reproducible Product Packages<\/a>","<a href=NA>RStudio Webinar: Managing Packages for Open Source Data Science<\/a>","<a href=https://docs.google.com/presentation/d/1eJFTvWB1svlSdUsv_-3h2-665VnCMz8Cya7MlOjTnwQ/edit?usp=sharing>DCR: Powerful Package Patterns<\/a>","<a href=https://docs.google.com/presentation/d/15rHvguWGVQ6elrw9G2CnJOasKvBS1TliEEDA931ZSVs/edit?usp=sharing>RStudio Webinar: Growing a Remote Data Science Team<\/a>","<a href=https://docs.google.com/presentation/d/1mAAU0sw7GIVwOeGVsvdZCWA86mHhu-GZgkjYgreqmBk/edit>e-RUM: Design Patterns for Big Shiny Apps<\/a>","<a href=https://docs.google.com/presentation/d/1PJT0LfTAMz_6GCyLxMnPDAWqKmzWJKCOfcXosH-jEVk/edit?usp=sharing>DC SatRDays: Break Up Shiny Apps<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf>RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins<\/a>","<a href=https://speakerdeck.com/akgold/r-and-big-data-databases>Big Data London 2019: Big Data and R: Databases<\/a>","<a href=https://speakerdeck.com/akgold/love-for-linear-models>DC Data Science Meetup: Love for Linear Models<\/a>","<a href=https://speakerdeck.com/akgold/2019-09-17-creating-reproducible-data-science>Webinar: Reproducible Data Science<\/a>","<a href=https://speakerdeck.com/akgold/2019-06-12-big-data-toronto-spark>Big Data Toronto 2019: Big Data and R, Spark<\/a>","<a href=https://speakerdeck.com/akgold/2019-05-21-data-scientists-and-software-engineering>Data Scientists Doing Software Engineering<\/a>"],"Code":[null,null,null,null,null,"<a href=https://github.com/akgold/erum-big-shiny>Code<\/a>","<a href=github.com/akgold/shiny_break_up_satrday>Code<\/a>","<a href=https://github.com/akgold/rsconf2020-deployment>Code<\/a>","<a href=https://github.com/akgold/bdl_2019>Code<\/a>",null,"<a href=https://github.com/akgold/2019-09-17_john_deere_webinar>Code<\/a>","<a href=https://github.com/akgold/big_data_2019>Code<\/a>",null],"Video":["<a href=https://youtu.be/-6TlzhRA9vA>Video<\/a>",null,"<a href=https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/>Video<\/a>",null,"<a href=https://rstudio.com/resources/webinars/enabling-remote-data-science-teams/>Video<\/a>","<a href=https://youtu.be/NwVOvfpGq4o>Video<\/a>",null,"<a href=https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/>Video<\/a>","<a href=https://www.youtube.com/watch?v=GQcEnlz3jrI>Video<\/a>",null,null,null,null]},"columns":[{"accessor":"Date","name":"Date","type":"character","minWidth":25},{"accessor":"Title","name":"Title","type":["glue","character"],"html":true},{"accessor":"Code","name":"Code","type":"character","html":true,"maxWidth":60},{"accessor":"Video","name":"Video","type":"character","html":true,"maxWidth":65}],"defaultPageSize":50,"paginationType":"numbers","showPageInfo":true,"minRows":1,"dataKey":"336ca8fcacf3ce2933737cb3a9c45e1e"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Selected slides are available at <a href="https://speakerdeck.com/akgold">speakerdeck</a>.</p>
@@ -233,7 +240,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);

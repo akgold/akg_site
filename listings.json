@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2022-09-16-phd-dropout/index.html",
       "/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html",
       "/posts/2019-10-17-production-shiny-w-pins/index.html",
       "/posts/2019-07-07-r-big-data/index.html",

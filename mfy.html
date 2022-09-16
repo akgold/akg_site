@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.38">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -82,9 +87,11 @@ ga('send', {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Alex K Gold</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -124,7 +131,7 @@ ga('send', {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -191,7 +198,7 @@ ga('send', {
 <p>As I started, I really didn’t have a clear idea of what management was. I’d had a few good managers over the years – and more bad ones – but didn’t really understand why the good ones had been good and the bad ones bad.</p>
 <p>So, I did what I do best — read some books. I read management books, biographies of managers, deep dives on companies that seemed to have figured something great out.</p>
 <aside>
-<p>Recommendations on my favorites at <a href="#book-recs">the bottom</a>.</p>
+Recommendations on my favorites at <a href="#book-recs">the bottom</a>.
 </aside>
 <p>Most of those books were bad (or at least too long by half), but some were good. I developed a reasonably coherent mental model of what managing is.</p>
 <p>And yet – I found myself on my honeymoon in Split, Croatia, known for its old-world charm and stunning azure waters. My wife and I were staying in a single-room flat, so humorously small that the bathroom was just a glass-enclosed corner of the room, privacy provided solely by a gauzy purple curtain.</p>
@@ -295,7 +302,7 @@ ga('send', {
 <p>In the meetings I ran, I found it was important to make clear <em>why we were there</em> and actually focus on that why in the meeting. Sometimes the tactics from books were helpful…but it constantly varied meeting to meeting and I struggled to taxonomize the meetings or tactics.</p>
 <p>Keeping the focus on what we were there to do never went wrong.</p>
 <aside>
-<p>Having meetings (or parts of meetings) for frivolous fun or to get to know each other is really important – doubly so for remote teams. Just make clear that’s what they’re for!</p>
+Having meetings (or parts of meetings) for frivolous fun or to get to know each other is really important – doubly so for remote teams. Just make clear that’s what they’re for!
 </aside>
 <p>The one kind of meeting that is <em>always bad</em> is the group brainstorm with more than about four people. Groups that large don’t do good exploratory thinking. Skip them, write a memo ahead of time, and debate options at the meeting.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 </section>
@@ -390,15 +397,15 @@ ga('send', {
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1" role="doc-endnote"><p>If you or your team is trying to learn git, I strongly recommend <a href="https://happygitwithr.com/">Happy Git with R</a> as a resource. Good luck, git is super awesome once you get it, but it’s a doozy.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>There are some great strategies to create an environment where team members can give feedback to team leaders. These are really important…but it’s pretty hard to get there, and as a manager I was flying blind most of the time.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>Writing is also an important tool as a manager. I’ve found writing really useful for me to work out my thoughts on something – or to get feedback from particular people. I’ve generally found it less useful as a way to convey information.</p>
+<li id="fn1"><p>If you or your team is trying to learn git, I strongly recommend <a href="https://happygitwithr.com/">Happy Git with R</a> as a resource. Good luck, git is super awesome once you get it, but it’s a doozy.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>There are some great strategies to create an environment where team members can give feedback to team leaders. These are really important…but it’s pretty hard to get there, and as a manager I was flying blind most of the time.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Writing is also an important tool as a manager. I’ve found writing really useful for me to work out my thoughts on something – or to get feedback from particular people. I’ve generally found it less useful as a way to convey information.</p>
 <p>Makes you wonder who this essay is really for…<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>The section on feedback in <a href="#book-recs">Radical Candor</a> particularly influenced my thinking on this front.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>I am keenly aware of the danger of speaking ill of others writing, given my own limitations as a writer. But if it can be useful to you, maybe it’s worth it.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The section on feedback in <a href="#book-recs">Radical Candor</a> particularly influenced my thinking on this front.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>I am keenly aware of the danger of speaking ill of others writing, given my own limitations as a writer. But if it can be useful to you, maybe it’s worth it.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -470,7 +477,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
