@@ -55,11 +55,8 @@ So, I did what I do best --- read some books. I read management books,
 biographies of managers, deep dives on companies that seemed to have
 figured something great out.
 
-<aside>
-
-Recommendations on my favorites at [the bottom](#book-recs).
-
-</aside>
+<aside>Recommendations on my favorites at [the
+bottom](#book-recs).</aside>
 
 Most of those books were bad (or at least too long by half), but some
 were good. I developed a reasonably coherent mental model of what
@@ -411,13 +408,9 @@ meeting and I struggled to taxonomize the meetings or tactics.
 
 Keeping the focus on what we were there to do never went wrong.
 
-<aside>
-
-Having meetings (or parts of meetings) for frivolous fun or to get to
-know each other is really important -- doubly so for remote teams. Just
-make clear that's what they're for!
-
-</aside>
+<aside>Having meetings (or parts of meetings) for frivolous fun or to
+get to know each other is really important -- doubly so for remote
+teams. Just make clear that's what they're for!</aside>
 
 The one kind of meeting that is *always bad* is the group brainstorm
 with more than about four people. Groups that large don't do good
@@ -690,4 +683,3 @@ that first year as a manager. This book gets into the specific skills
 and tactics for managing yourself in order to manage difficult (crucial)
 conversations. It will have positive impacts on your ability to manage
 yourself and your relationships with others -- even beyond work.
-

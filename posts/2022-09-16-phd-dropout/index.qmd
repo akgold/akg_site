@@ -1,0 +1,179 @@
+---
+title: "I left a PhD Program, maybe you should too!"
+description: "A personal essay on leaving a PhD program"
+date: 2022-09-16
+---
+
+In the summer of 2012, I arrived at the little yellow house I'd be sharing with two other members of the entering cohort at Duke's Economics PhD program.
+
+Fresh off a two-year stint working as a Research Assistant the Brookings Institution -- surrounded by very smart people with PhDs, I showed up thrilled at the idea of pushing the boundaries of the field, learning new depths of econometrics and statistics, and bonding with the other hopefuls in my program.
+
+Little did I know that in just over a year, I'd be packing my stuff into my family's minivan and heading back to DC to spend the fall giving Segway tours of the monuments. When I showed up at that little house in Durham, I would've been shocked if someone had told me that I'd be leaving --- or that a decade, five organizations, and many jobs jobs later, I have never once regretted that decision.
+
+I don't think *everyone* should quit their PhD, but I think the optimal dropout rate is far higher than observed (you know I got a masters in econ because I say words like *optimal* with a straight face). And whether or not you drop out, you should spend at least a little time considering it.
+
+Some people might argue that it's been a decade (A DECADE!) since I dropped out and this advice isn't really relevant for people today. Maybe that's right. 🤷🏼
+
+All I know is that I first outlined this essay in 2015 when I was only 2 years out of grad school. I'm embarrassed to say that seven years of development led to marginally tighter writing, but no changes to the reasons I dropped out or my clarity that it was the right choice.
+
+So, here's why I dropped out and why I don't regret it.
+
+As with all advice, your mileage may vary.
+
+## A PhD is a terrible insurance plan
+
+If academia is the only place you'll be happy working in the future, this essay isn't for you. The only path to academia is through a PhD program, so fare thee well!
+
+That wasn't me.
+
+When I started grad school, the *only* thing I knew was that I *didn't* want to go into academia. I loved the first two years I worked at Brookings and thought maybe I wanted to go back and do more think tank work. Or go into government. Really, I wanted to work in *The West Wing* (the TV show where eight people run the entire government, not the physical building as it actually functions).
+
+------------------------------------------------------------------------
+
+Here's a moment that captures why I didn't want to go into academia.
+
+I was at a dinner where a professor was discussing his work on the "production technology of education" -- aka teaching.
+
+He talked about why his work was interesting --- new exciting methodological techniques, exciting new data all the time, and plentiful publishing opportunities in general and special-purpose journals.
+
+Nowhere in his extended pitch did he mention that there were opportunities to understand teaching and education to the aim of actually improving teaching and student experience in school.
+
+🙄
+
+------------------------------------------------------------------------
+
+By the spring of my first year, I'd spent months unhappy with my classes and I knew I was struggling socially and mental health-wise.[^1] I had even floated the idea of leaving with close friends and family.
+
+[^1]: I am actually deeply grateful for grad school for 2 reasons. One, I read the book [Starting Strength](https://startingstrength.com/) by Mark Rippetoe and started lifting weights. Two, I also did a ton of therapy -- individual and group -- at steeply discounted student rates.
+
+    Everyone should drop out of grad school, lift weights, and do therapy. Strong recommend.
+
+The exact moment my future PhD went poof was when I spent 15 minutes just to see what my job prospects might look like if I left. In just those few minutes, I found *dozens* of jobs I wanted that I seemed reasonably qualified for, all of which seemed vastly preferable to another minute in grad school.
+
+It struck me that I was getting a PhD as insurance against someday wanting a job for which I needed a PhD.
+
+I'm delighted at where my career has taken me...and I've yet to run into a job where I needed a PhD. At this point, I'm pretty sure it isn't going to happen. A masters in economics got me my first job after grad school, and as many people will tell you, then it's just about job experience.
+
+An important caveat for me to add: My identity -- a cis, straight, white man -- has almost certainly has made it easier for me to be perceived as competent even without a PhD. I can't speak to any other experience because this is the only one I have, but people with marginalized identities may find explicit credentialing more important for opening doors than I have.
+
+## I was wrong that this was the end of learning
+
+I am, and have always been, deeply nerdy.
+
+Learning new things has always brought me great joy, and my assumption was that an economics PhD program would be the Jedi Temple of learning opportunities.
+
+I didn't find that to be the case. Instead, I found first year economics classes to be a bizarre and terrible mashup of grueling and boring. I was repeatedly assured that it gets better after first year and much better after finishing classes. I didn't stay long enough to test that hypothesis.
+
+But even in the midst of what felt like the thousandth problem set doing really, really hard 8th grade algebra, I was worried that leaving would mean the end of learning.
+
+I couldn't have been more wrong.
+
+That's the big secret of graduate school --- it's not a teaching mechanism, it's a forcing mechanism. In graduate school you're forced to spend long (long, long, long) hours a week researching and learning about something new.
+
+That's not a bad thing! I believe strongly in having forcing mechanisms to do important, hard things. But rest assured, if you're the kind of person who started a PhD and are worried about leaving because you might stop learning, it won't be a problem.
+
+I was right that leaving grad school meant the end of a particular kind of school-based learning. It definitely meant the end of knowing -- with numeric precision -- how my learning compared to others. If you, like me, have always been a good student, the end of grades can be the scariest change of all.
+
+And the shape of professional learning is very different from PhD learning.
+
+PhD learning is extremely deep, but very narrow. You'll learn a lot about your discipline and sub-discipline and sub-sub-discipline, but the working world allows (and demands) that you take a broader focus.
+
+For some people this is a drawback. For me it was a benefit.
+
+Since I left grad school, I've worked at five different organizations in three different fields (not counting my time as a Segway tour guide). I've had to spend a lot of time answering emails, doing busywork, and other things that don't really promote learning.
+
+But I've also learned about so many different things, following one to another in a pattern that -- at least to me -- feels like a random walk of learning cool shit.
+
+Just to name a few of the different things I've been able to explore intellectually: the workings of the American retirement system, machine learning and predictive modeling, data visualization and dashboarding, the mechanics of bond funding for sports stadiums, political advertising, R, Python, and SQL, how servers and networking work, and business leadership and management.
+
+Some of these things I could've learned in a classroom.
+
+But a lot, I couldn't. I learned how to operate in an organization --- how to figure out how to get things done in the face of institutional inertia. I've learned how small, medium, and very, very large institutions try to implement changes.
+
+All to say --- I have not stopped learning since I left grad school.
+
+Not for a minute.
+
+## I care that my work matters
+
+An unprovable claim that I nonetheless completely believe: getting a PhD in 2020 is harder and less rewarding than it might've been in 1920 or 1970, because the amount of codified prior knowledge is so much greater.
+
+This means that you've got to learn more to get to cool new stuff and that specialization is narrower and contributions are smaller.[^2]
+
+[^2]: I think rising length to finish PhDs probably supports this hypothesis, although I doubt that's the only cause.
+
+By the time you get to a dissertation topic, there are probably only a handful of people who are deep enough to actually care about your topic.
+
+In many fields, academic writing involves a relatively small handful of people writing on a topic, citing each other, piling counterargument atop counterargument in successive papers, and devoted to a tiny slice of the field. In fact, there are reasonable estimates that [*no one ever cites* 32% of articles in the Social Sciences](https://www.straitstimes.com/opinion/prof-no-one-is-reading-you). The percentage is higher in the humanities.
+
+I found the thought that basically no one would care about my work deeply frustrating.
+
+Just the other day (now several years ago), I had a client say that their hospital system was already looking into opening new clinics based on market research my team had done. I thought that was cool, and a great change of pace compared to dreaming of a few people someday reading the tome I'd written.
+
+## I work best on teams
+
+Many people work best in teams. I certainly do.
+
+My greatest joy in grad school was the little study group I managed to find. By the end of the year, each of us was capable of high-fidelity recreations of the others' Chewbacca-like cries of anguish when a proof turned out to be faulty.
+
+But in the years since I left, that group scattered. After first year, people split into different specialty classes in second year and then into different specialties and eventually to writing their dissertations solo.
+
+Most academics are teams of one, and though many papers are co-authored these days, dissertations generally are not.
+
+I definitely do my best work getting to talk through a problem with my peers --- I'm an out-loud thinker. Though it's mostly supposition on my part, I think I would've really struggled with how much I could bring to my advisor to discuss and how much I just had to puzzle out on my own.
+
+On the contrary, I've never worked on anything but a team since leaving grad school.
+
+Most non-academic teams are highly multidisciplinary, because they have to be. While you might be the only person with your particular skills on the team, you'll probably be in league with a half-dozen other people who add important domain knowledge, technical know-how, or management skills to the team.
+
+## I love teaching, coaching, and mentoring
+
+I knew I didn't want to be a *research* academic, but I did love teaching.
+
+I thought, "maybe I do want to become a college professor, the teaching kind." I'd had some professors in college who were such astoundingly good teachers that I thought maybe I wanted to do the same (looking at you, Mary-Jane Rubenstein and Gil Skillman).
+
+I thought that staying in an academic setting was my best opportunity to get to keep teaching and mentoring. I had no real understanding that teaching and mentoring could happen in a professional context.[^3]
+
+[^3]: Despite the fact that I had great mentors in my first two bosses before grad school. Thanks Adam Thomas and Scott Winship!
+
+    It just didn't really click that I could do the same and find it rewarding in a teacher-y way.
+
+------------------------------------------------------------------------
+
+And I had some REALLY bad teaching in grad school.
+
+The most gobsmacking moment of my PhD program was when our professor told us that everyone had missed a question on an exam -- *and that the problem was our exam preparation*.
+
+Every single student had missed a question on his exam.
+
+Every single bright-eyed PhD first year and overachieving Masters student had missed a question --- and that it was our fault for not studying right.
+
+At the risk of killing the point by over-explaining it, every entering PhD students has a little bit of Chidi from The Good Place in them --- a little entranced by a future of offices brimming with books they've actually ready, long walks full of deep discussion with brilliant coworkers, and dreams of discovering something new about the world every day.
+
+The notion that he had taught us the material and that we'd just studied wrong was so ridiculous that I am still shocked it was said aloud a decade on.
+
+------------------------------------------------------------------------
+
+I won't say that I've never encountered bad or toxic management since leaving grad school. I have.
+
+But if you like coaching, teaching, and mentoring, there are so many incredible opportunities to do that outside academia.
+
+And from what I hear, teaching in academia ain't so hot these days.
+
+It's true, I've never gotten to didactically lecture a class, cloud of chalk blooming as I deliver a brilliant lecture. But I get to develop deep relationships with my colleagues and occasionally help them figure out a thing or two about a topic I really like.
+
+It has been wonderful. In fact, I like it so much that after a few years of technical work I'm now full-time "in management". I love it. So much so that I started and finished an essay about [my first year managing a data science team](https://alexkgold.space/mfy) in the time it took me just to polish this one.
+
+## Maybe you shouldn't drop out, but you should think about it
+
+If you're getting a PhD in the natural or social sciences, you probably have a good-paying job waiting for you at the end of grad school. It might seem like grad school is a no-risk path. You're probably right.
+
+There are people who like - or love -- grad school. You lucked out with an advisor who's awesome and friends who you love. In that case, your opportunity cost is low. Yes, you probably could be earning more money by leaving, but life is about so much more than that.
+
+On the other hand, if you -- like me -- find yourself miserable every single day of grad school, I'd encourage you to think hard about leaving. There are almost certainly other paths that you can find equally rewarding -- intellectually, financially, and spiritually.
+
+I was incredibly lucky. When I raised the idea of leaving with my parents and my girlfriend, they were open to the idea that I should drop out and happy to expend emotional energy talking about it for the nearly six months it took me to decide.
+
+You may not be so lucky.
+
+If you need a little push, tweet at me. I'm always happy to tell someone that they, yes they, should drop out.
