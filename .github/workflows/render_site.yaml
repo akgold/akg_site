@@ -9,7 +9,7 @@ env:
 
 jobs:
   build-site:
-    name: Render-Book
+    name: Render-Site
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -24,7 +24,7 @@ jobs:
         env:
           RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.rstudio.com/all/latest
 
-      - name: Render Book
+      - name: Render Site
         run: |
           quarto render .
       - uses: actions/upload-artifact@v3
