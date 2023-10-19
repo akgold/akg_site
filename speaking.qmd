@@ -28,7 +28,8 @@ bind_cols(
     "2020-01-03", "RStudio::conf(2020): Deploying End-to-End Data Science with Shiny, Plumber, and Pins", "https://github.com/akgold/rsconf2020-deployment/blob/master/RStudio%20Conf%202020%20Talk.pdf", "https://github.com/akgold/rsconf2020-deployment",
     "2021-02-17", "RStudio Webinar: Managing Packages for Open Source Data Science", NA, NA,
     "2021-07-07", "UseR 2021: Reliably Reproducible Product Packages", "https://docs.google.com/presentation/d/1a7YvEsknIcOAUJGskjW-jooW-A4ochg12k7iS5WpwAs/edit?usp=sharing", NA,
-    "2021-12-09", "DCR: Reliably Reproducible R-Tifacts", "https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing", NA
+    "2021-12-09", "DCR: Reliably Reproducible R-Tifacts", "https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing", NA, 
+    "2023-10-19", "DCR: Learn to Love Logging", "https://docs.google.com/presentation/d/1XUFEecBqusYyF4nDfDxSOVUjYjnb4BCtULYg6mZgRQ0/edit#slide=id.p1", NA
   ), 
   tibble::tribble(
     ~Video, 
@@ -44,7 +45,8 @@ bind_cols(
     "https://rstudio.com/resources/rstudioconf-2020/deploying-end-to-end-data-science-with-shiny-plumber-and-pins/", 
     "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/", 
     NA, 
-    "https://youtu.be/-6TlzhRA9vA"
+    "https://youtu.be/-6TlzhRA9vA",
+    NA
   )
 ) %>%
   dplyr::transmute(
@@ -78,3 +80,4 @@ bind_cols(
 Selected slides are available at [speakerdeck](https://speakerdeck.com/akgold).
 
 Generally, my presentations involve demoing R code, which is available on [GitHub](https://github.com/akgold/).
+
