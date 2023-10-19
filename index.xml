@@ -9,7 +9,7 @@
 <link>https://alexkgold.space/index.html</link>
 <atom:link href="https://alexkgold.space/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.1.251</generator>
+<generator>quarto-1.3.450</generator>
 <lastBuildDate>Fri, 16 Sep 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>I left a PhD Program, maybe you should too!</title>
@@ -338,7 +338,7 @@
   <pubDate>Wed, 23 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>Upgrading to R #1: Excitement >> Skills</title>
+  <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
   <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</link>
   <description><![CDATA[ 
 
@@ -435,26 +435,80 @@
 <li>Fonts are loaded!</li>
 </ol>
 <p>Now, when you type <code>windowsFonts()</code> in windows or , you’ll get a list of all available fonts:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="sc" style="color: #5E5E5E;">$</span>serif</span>
-<span id="cb1-2">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Times New Roman"</span></span>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>serif</span>
+<span id="cb1-2">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"TT Times New Roman"</span></span>
 <span id="cb1-3"></span>
-<span id="cb1-4"><span class="sc" style="color: #5E5E5E;">$</span>sans</span>
-<span id="cb1-5">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Arial"</span></span>
+<span id="cb1-4"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>sans</span>
+<span id="cb1-5">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"TT Arial"</span></span>
 <span id="cb1-6"></span>
-<span id="cb1-7"><span class="sc" style="color: #5E5E5E;">$</span>mono</span>
-<span id="cb1-8">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"TT Courier New"</span></span>
+<span id="cb1-7"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>mono</span>
+<span id="cb1-8">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"TT Courier New"</span></span>
 <span id="cb1-9"></span>
-<span id="cb1-10"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">Agency FB</span><span class="st" style="color: #20794D;">`</span></span>
-<span id="cb1-11">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Agency FB"</span></span>
+<span id="cb1-10"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Agency FB</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb1-11">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Agency FB"</span></span>
 <span id="cb1-12"></span>
-<span id="cb1-13"><span class="sc" style="color: #5E5E5E;">$</span>Algerian</span>
-<span id="cb1-14">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Algerian"</span></span>
+<span id="cb1-13"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Algerian</span>
+<span id="cb1-14">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Algerian"</span></span>
 <span id="cb1-15"></span>
-<span id="cb1-16"><span class="sc" style="color: #5E5E5E;">$</span><span class="st" style="color: #20794D;">`</span><span class="at" style="color: #657422;">Arial Black</span><span class="st" style="color: #20794D;">`</span></span>
-<span id="cb1-17">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial Black"</span></span>
+<span id="cb1-16"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Arial Black</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb1-17">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Arial Black"</span></span>
 <span id="cb1-18"></span>
-<span id="cb1-19"><span class="sc" style="color: #5E5E5E;">$</span>Arial</span>
-<span id="cb1-20">[<span class="dv" style="color: #AD0000;">1</span>] <span class="st" style="color: #20794D;">"Arial"</span></span>
+<span id="cb1-19"><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Arial</span>
+<span id="cb1-20">[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Arial"</span></span>
 <span id="cb1-21">...</span></code></pre></div>
 <p>Now, when you want to use a font in <code>ggplot</code>, it’s as easy as calling <code>theme(family = 'Arial')</code>.</p>
 <p>Note that if you’re on a Mac, you won’t get the default Microsoft Office fonts, so if you’re trying to convince people that you can switch from Powerpoint by making Excel-like plot styles, you’ll need to add the fonts manually. Luckily, it’s really easy to do through the font book utility on your Mac (just type <code>Font</code> into spotlight), and <a href="http://www.rmtweb.co.uk/calibri-and-cambria-fonts-for-mac">this blog post</a>.</p>

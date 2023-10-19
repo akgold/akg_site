@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexkgold.space/about.html</loc>
-    <lastmod>2022-09-24T13:18:36.606Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/speaking.html</loc>
-    <lastmod>2022-09-24T13:18:37.430Z</lastmod>
-  </url>
-  <url>
     <loc>https://alexkgold.space/index.html</loc>
-    <lastmod>2022-09-24T13:18:37.942Z</lastmod>
+    <lastmod>2023-10-19T15:36:32.688Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/mfy.html</loc>
-    <lastmod>2022-09-24T13:18:38.650Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</loc>
-    <lastmod>2022-09-24T13:18:39.110Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</loc>
-    <lastmod>2022-09-24T13:18:39.458Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</loc>
-    <lastmod>2022-09-24T13:18:39.742Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</loc>
-    <lastmod>2022-09-24T13:18:40.034Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</loc>
-    <lastmod>2022-09-24T13:18:40.414Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</loc>
-    <lastmod>2022-09-24T13:18:40.682Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</loc>
-    <lastmod>2022-09-24T13:18:41.026Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</loc>
-    <lastmod>2022-09-24T13:18:41.342Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexkgold.space/posts/2022-09-16-phd-dropout/index.html</loc>
-    <lastmod>2022-09-24T13:18:41.782Z</lastmod>
+    <lastmod>2023-10-19T15:36:30.212Z</lastmod>
   </url>
   <url>
     <loc>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</loc>
-    <lastmod>2022-09-24T13:18:42.154Z</lastmod>
+    <lastmod>2023-10-19T15:36:28.724Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</loc>
+    <lastmod>2023-10-19T15:36:27.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</loc>
+    <lastmod>2023-10-19T15:36:27.016Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2022-09-16-phd-dropout/index.html</loc>
+    <lastmod>2023-10-19T15:36:26.276Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</loc>
+    <lastmod>2023-10-19T15:36:25.024Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</loc>
+    <lastmod>2023-10-19T15:36:24.176Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</loc>
+    <lastmod>2023-10-19T15:36:25.580Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</loc>
+    <lastmod>2023-10-19T15:36:26.712Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</loc>
+    <lastmod>2023-10-19T15:36:27.372Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</loc>
+    <lastmod>2023-10-19T15:36:28.064Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/about.html</loc>
+    <lastmod>2023-10-19T15:36:29.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexkgold.space/speaking.html</loc>
+    <lastmod>2023-10-19T15:36:31.896Z</lastmod>
   </url>
 </urlset>
