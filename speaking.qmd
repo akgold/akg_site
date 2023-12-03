@@ -80,4 +80,3 @@ bind_cols(
 Selected slides are available at [speakerdeck](https://speakerdeck.com/akgold).
 
 Generally, my presentations involve demoing R code, which is available on [GitHub](https://github.com/akgold/).
-

@@ -12,10 +12,9 @@ website:
   navbar:
     background: primary
     left:
-      - text: About
-        href: about.qmd
-      - text: Speaking
-        href: speaking.qmd
+      - about.qmd
+      - mfy.qmd
+      - speaking.qmd
     right:
       - icon: fab fa-twitter
         href: https://twitter.com/alexkgold

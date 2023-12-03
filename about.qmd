@@ -17,32 +17,25 @@ about:
      href: https://www.linkedin.com/in/alexkgold/
 ---
 
-Alex leads the Solutions Engineering team at RStudio.
+Alex leads the Solutions Engineering and Support teams at Posit (formerly RStudio).
 
-Outside of work, Alex is a life-long martial arts enthusiast (Tang Soo Do, Small Circle Jujitsu, and Tai Chi). He also loves handstands (calisthenics exercise), and is very into home improvement.
+Outside of work, Alex is a life-long martial arts enthusiast (Tang Soo Do, Small Circle Jujitsu, and Tai Chi). He also loves handstands (calisthenics exercise), and is very into home improvement.\
 
-# Career Sketch
-
-+-----------------------------------------------------+---------------+
-| **RStudio Solutions Engineering**                   | **2019 -**    |
-+-----------------------------------------------------+---------------+
-| Data Science + Data Science Manager                 | 2016 - 2019   |
-|                                                     |               |
-| *Analyst Institute, Booz Allen Hamilton*            |               |
-+-----------------------------------------------------+---------------+
-| Think Tank Times II                                 | 2013 - 2016   |
-|                                                     |               |
-| *Bipartisan Policy Center, Brookings Institution*   |               |
-+-----------------------------------------------------+---------------+
-| Grad School (PhD Dropout/MA)                        | 2012 - 2013   |
-|                                                     |               |
-| *Duke University, Economics*                        |               |
-+-----------------------------------------------------+---------------+
-| Think Tank Times I                                  | 2010 - 2012   |
-|                                                     |               |
-| *Brookings Institution*                             |               |
-+-----------------------------------------------------+---------------+
-| Undergrad (BA)                                      | 2006 - 2010   |
-|                                                     |               |
-| *Wesleyan University, Math + Econ Major*            |               |
-+-----------------------------------------------------+---------------+
+```{mermaid}
+timeline
+        title Alex Career Sketch
+        section 2006-2010
+          Undergrad : Wesleyan University (CT) : Math/Econ
+        section 2010-2012
+          Think Tank Times I : Brookings Institution Center on Children and Families
+        section 2012-2013
+          Grad School : Duke University (NC) : MA Economics <br> PhD Dropout
+        section 2013-2016
+          Think Tank Times II : Bipartisan Policy Center : Brookings Institution
+        section 2016-2019
+          Data Science + Data Science Management : Analyst Institute : Booz Allen Hamilton
+        section 2019-2020
+          Solutions Engineering : RStudio
+        section 2020-Present
+          Management and Leadership : Solutions Engineering, Partners, and Support : Posit (RStudio)
+```
