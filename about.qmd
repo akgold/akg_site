@@ -19,23 +19,61 @@ about:
 
 Alex leads the Solutions Engineering and Support teams at Posit (formerly RStudio).
 
-Outside of work, Alex is a life-long martial arts enthusiast (Tang Soo Do, Small Circle Jujitsu, and Tai Chi). He also loves handstands (calisthenics exercise), and is very into home improvement.\
+Outside of work, Alex is a life-long martial arts enthusiast (Tang Soo Do, Small Circle Jujitsu, and Tai Chi). He also loves handstands (calisthenics exercise), and is very into home improvement.
 
-```{mermaid}
-timeline
-        title Alex Career Sketch
-        section 2006-2010
-          Undergrad : Wesleyan University (CT) : Math/Econ
-        section 2010-2012
-          Think Tank Times I : Brookings Institution Center on Children and Families
-        section 2012-2013
-          Grad School : Duke University (NC) : MA Economics <br> PhD Dropout
-        section 2013-2016
-          Think Tank Times II : Bipartisan Policy Center : Brookings Institution
-        section 2016-2019
-          Data Science + Data Science Management : Analyst Institute : Booz Allen Hamilton
-        section 2019-2020
-          Solutions Engineering : RStudio
-        section 2020-Present
-          Management and Leadership : Solutions Engineering, Partners, and Support : Posit (RStudio)
+```{r}
+#| echo: false
+
+library(ggplot2)
+
+pd <- tibble::tribble(
+  ~min_date, ~max_date, ~category, ~thing, ~color,
+  "2006-01-01", "2010-01-01", "job", "BA, Wesleyan University (CT)", "#CAFFD0", 
+    "2006-01-01", "2010-01-01", "period", "Undergrad", "#CAFFD0", 
+  "2010-01-01", "2012-01-01", "job", "Brookings Institution Center on Children and Families", "#3E7CB1",
+  "2010-01-01", "2012-01-01", "period", "Think Tank Times I", "#3E7CB1",
+  "2012-01-01", "2013-01-01", "period", "Grad School", "#E2B4BD",
+    "2012-01-01", "2013-01-01", "job", "MA, Duke University, PhD Dropout", "#E2B4BD",
+  "2013-01-01", "2016-01-01", "period", "Think Tank Times II", "#B33951", 
+  "2013-01-01", "2015-01-01", "job", "Bipartisan Policy Center", "#B33951", 
+  "2015-01-01", "2016-01-01", "job", "Brookings Institution", "#B33951", 
+  "2016-01-01", "2019-01-01", "period", "Data Science + Management", "#FCAA67", 
+  "2016-01-01", "2017-01-01", "job", "Analyst Institute", "#FCAA67", 
+  "2017-01-01", "2019-01-01", "job", "Booz Allen Hamilton", "#FCAA67", 
+  "2019-01-01", "2020-01-01", "period", "Solutions Engineering", "#C6B9CD", 
+  "2019-01-01", "2020-01-01", "job", "Solutions Engineer at RStudio", "#C6B9CD",
+  "2020-01-01", "2024-01-01", "period", "Management", "#CEA07E",
+    "2020-01-01", "2024-01-01", "job", "Posit (RStudio)", "#CEA07E"
+) |>
+  dplyr::rowwise() |>
+  dplyr::mutate(
+    min_date = lubridate::ymd(min_date), 
+    max_date = lubridate::ymd(max_date),
+    mid_date = mean.Date(c(min_date, max_date)),
+    thing = stringr::str_wrap(thing, 40), 
+    ymin = ifelse(category == "job", 0, 2),
+    ymax = ifelse(category == "period", 2, 4),
+    ytext = ifelse(category == "period", 1, 3)
+    ) 
+
+pd |>
+  ggplot(aes(xmin = min_date, xmax=max_date)) +
+  geom_rect(aes(ymin = ymin, ymax = ymax, fill = color, color = color)) +
+  geom_text(aes(x = mid_date, y = ytext, label = thing)) +
+  coord_flip() +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    axis.title.y = element_blank(), 
+    axis.ticks.x = element_blank(), 
+    axis.title.x = element_blank(), 
+    axis.text.x = element_blank(), 
+    panel.grid.major.x = element_blank(), 
+    panel.grid.minor.x = element_blank(), 
+    panel.grid.minor.y = element_blank()
+    ) +
+  scale_x_date(date_labels = "%Y", date_breaks = "2 year") +
+  scale_fill_identity() +
+  scale_color_identity()
 ```
+
