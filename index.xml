@@ -6,15 +6,16 @@
       version="2.0">
 <channel>
 <title>Alex K Gold</title>
-<link>https://alexkgold.space/index.html</link>
+<link>https://alexkgold.space/</link>
 <atom:link href="https://alexkgold.space/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.5.57</generator>
 <lastBuildDate>Fri, 16 Sep 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>I left a PhD Program, maybe you should too!</title>
-  <link>https://alexkgold.space/posts/2022-09-16-phd-dropout/index.html</link>
+  <link>https://alexkgold.space/posts/2022-09-16-phd-dropout/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -126,13 +127,14 @@
 <p>It just didn’t really click that I could do the same and find it rewarding in a teacher-y way.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://alexkgold.space/posts/2022-09-16-phd-dropout/index.html</guid>
+  <guid>https://alexkgold.space/posts/2022-09-16-phd-dropout/</guid>
   <pubDate>Fri, 16 Sep 2022 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>R Packages for Experts, not Wizards</title>
   <link>https://alexkgold.space/posts/2020-12-02-practical-package-patterns/practical-package-patterns.html</link>
   <description><![CDATA[ 
+
 
 
 
@@ -183,8 +185,9 @@
 </item>
 <item>
   <title>RViews: Production Shiny Apps with Pins</title>
-  <link>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</link>
+  <link>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -193,13 +196,14 @@
 
 
  ]]></description>
-  <guid>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-10-17-production-shiny-w-pins/</guid>
   <pubDate>Thu, 17 Oct 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>RViews: 3 Big Data Strategies for R</title>
-  <link>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</link>
+  <link>https://alexkgold.space/posts/2019-07-07-r-big-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -208,13 +212,14 @@
 
 
  ]]></description>
-  <guid>https://alexkgold.space/posts/2019-07-07-r-big-data/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-07-07-r-big-data/</guid>
   <pubDate>Sun, 07 Jul 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #3: Be the Data Engineer you Need</title>
-  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -227,7 +232,11 @@
 <p>A data scientist who combines data science knowledge with expertise on the data’s provenance and the data-generating process is <em>way</em> more likely to make a good catch or identify a clever new feature for modeling than a better modeler with little understanding of the specifics of the data.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index_files/figure-html/csvs-1.gif" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index_files/figure-html/csvs-1.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>So yes, become the data engineer for your data because you need it, but also to make yourself a better data scientist. It won’t kill you.</p>
@@ -252,13 +261,14 @@
 <li id="fn2"><p>Don’t get scared by “an API” if you’re not familiar! It just means a bunch of functions so that you can access in a consistent way.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-3-be-the-data-engineer-you-need/</guid>
   <pubDate>Wed, 20 Feb 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #2: Failure’s Coming, Get Ready!</title>
-  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -266,7 +276,11 @@
 <p>To start, here’s an animation I made that describes <em>Alex’s big goof-up</em>:</p>
 <div class="cell" data-messge="false">
 <div class="cell-output-display">
-<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/fail-1.gif" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/fail-1.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p><strong>TL;DR:</strong> my team was working hard onboarding themselves to R, a mistake made it to a client, and I overreacted with new policies that burned a lot of my team’s goodwill. Regaining the team’s trust required eating some words, retracting some policies, and a bunch of all-team discussions to figure out how to do better in the future.</p>
@@ -277,7 +291,11 @@
 <p>Here’s something like the plot we were making:</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<div>
+<figure class="figure">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Among the context I should’ve shared was that we couldn’t derive the color coding of the data points ourselves.<sup>1</sup> Since I’d neglected make sure my teammate really understood what we were doing, my teammate just computed the color themselves (metric &gt; threshold -&gt; green, red otherwise). This totally reasonable choice, which resulted in mistakes the client noticed, could’ve totally been avoided had I spent a few more minutes <strong>sharing more context</strong>.</p>
@@ -334,13 +352,14 @@
 <li id="fn3"><p>Or more likely 999 year-olds. <strong>Missing data should never have numeric codes</strong>, amirite?!?↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-2-failures-coming-get-ready/</guid>
   <pubDate>Wed, 23 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R #1: Excitement &gt;&gt; Skills</title>
-  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -350,7 +369,11 @@
 <p>Here’s my totally subjective estimate of some important factors:</p>
 <div class="cell" data-messge="false">
 <div class="cell-output-display">
-<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index_files/figure-html/skills-1.gif" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index_files/figure-html/skills-1.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <section id="wired-teams-enthusiasm-for-learning-r" class="level2">
@@ -381,13 +404,14 @@
 <li id="fn1"><p>This presentation by <a href="https://twitter.com/milesmcbain?lang=en">MilesMcBain</a> on the magic of R packages was FANTASTIC - one of my favorites from RStudio::conf(2019).↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-1-excitement-skills/</guid>
   <pubDate>Sun, 20 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Upgrading to R: RStudio Conf 2019</title>
-  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -416,13 +440,14 @@
 </section>
 
  ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-upgrading-to-r-rstudio-conf-2019/</guid>
   <pubDate>Sat, 19 Jan 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Custom fonts in ggplot2</title>
-  <link>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -516,13 +541,14 @@ font-style: inherit;">"Arial"</span></span>
 
 
  ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-custom-fonts-in-ggplot2/</guid>
   <pubDate>Mon, 28 Aug 2017 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>RStats NYC 2017</title>
-  <link>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</link>
+  <link>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -566,7 +592,7 @@ So I can ______ </code></pre>
 <li>Three important elements in live tweet of event: conference hashtag <code>#rstatsnyc</code>, <span class="citation" data-cites="speaker">@speaker</span> (put . first so it’s viewable publicly), always include a pic.</li>
 <li>They can have one of a few purposes: intro person/topic, spread insight, link to resource, spread positivity!</li>
 </ul>
-<p><em>Live tweet: conference hashtag, <span class="citation" data-cites="speaker">@speaker</span>, picture, positivity</em> </p>
+<p><em>Live tweet: conference hashtag, <span class="citation" data-cites="speaker">@speaker</span>, picture, positivity</em> {{&lt; tweet 855792361527541760 &gt;}}</p>
 </section>
 <section id="how-to-hackathon" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-hackathon">How to Hackathon</h3>
@@ -685,7 +711,7 @@ So I can ______ </code></pre>
 </section>
 
  ]]></description>
-  <guid>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/index.html</guid>
+  <guid>https://alexkgold.space/posts/2019-11-09-rstats-nyc-2017/</guid>
   <pubDate>Sun, 23 Apr 2017 00:00:00 GMT</pubDate>
 </item>
 </channel>
