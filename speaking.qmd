@@ -29,7 +29,8 @@ bind_cols(
     "2021-02-17", "RStudio Webinar: Managing Packages for Open Source Data Science", NA, NA,
     "2021-07-07", "UseR 2021: Reliably Reproducible Product Packages", "https://docs.google.com/presentation/d/1a7YvEsknIcOAUJGskjW-jooW-A4ochg12k7iS5WpwAs/edit?usp=sharing", NA,
     "2021-12-09", "DCR: Reliably Reproducible R-Tifacts", "https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing", NA, 
-    "2023-10-19", "DCR: Learn to Love Logging", "https://docs.google.com/presentation/d/1XUFEecBqusYyF4nDfDxSOVUjYjnb4BCtULYg6mZgRQ0/edit#slide=id.p1", NA
+    "2023-10-19", "DCR: Learn to Love Logging", "https://docs.google.com/presentation/d/1XUFEecBqusYyF4nDfDxSOVUjYjnb4BCtULYg6mZgRQ0/edit#slide=id.p1", NA,
+    "2024-09-05", "Posit Data Science Hangout", NA, NA
   ), 
   tibble::tribble(
     ~Video, 
@@ -46,7 +47,8 @@ bind_cols(
     "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/", 
     NA, 
     "https://youtu.be/-6TlzhRA9vA",
-    "https://www.youtube.com/watch?v=WB1Ob_2ccG8&list=PLlzRFZmxVl9SMqlb4nCaeKonHRyGZfrn9&index=8"
+    "https://www.youtube.com/watch?v=WB1Ob_2ccG8&list=PLlzRFZmxVl9SMqlb4nCaeKonHRyGZfrn9&index=8", 
+    "https://youtu.be/9Nqfyv9Qyr4?feature=shared"
   )
 ) %>%
   dplyr::transmute(
