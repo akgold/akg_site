@@ -46,7 +46,7 @@ bind_cols(
     "https://rstudio.com/resources/webinars/managing-packages-for-open-source-data-science/", 
     NA, 
     "https://youtu.be/-6TlzhRA9vA",
-    NA
+    "https://www.youtube.com/watch?v=WB1Ob_2ccG8&list=PLlzRFZmxVl9SMqlb4nCaeKonHRyGZfrn9&index=8"
   )
 ) %>%
   dplyr::transmute(
