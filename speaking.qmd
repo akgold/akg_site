@@ -31,7 +31,8 @@ bind_cols(
     "2021-12-09", "DCR: Reliably Reproducible R-Tifacts", "https://docs.google.com/presentation/d/1NvL11GwM_B17BfFf8Xhg8VNT0cQx9Kzpy5_C3MJ6zo0/edit?usp=sharing", NA, 
     "2023-10-19", "DCR: Learn to Love Logging", "https://docs.google.com/presentation/d/1XUFEecBqusYyF4nDfDxSOVUjYjnb4BCtULYg6mZgRQ0/edit#slide=id.p1", NA,
     "2024-09-05", "Posit Data Science Hangout", "https://youtu.be/9Nqfyv9Qyr4?feature=shared", NA, 
-    "2024-10-22", "Ken's Nearest Neighbors Podcast", "https://lnkd.in/gcgseF2Y", NA
+    "2024-10-22", "Ken's Nearest Neighbors Podcast", "https://lnkd.in/gcgseF2Y", NA,
+    "2024-10-30", "R Gov: Everything You Never Wanted to Know About Auth", "https://www.youtube.com/watch?v=GyWoiaAgsbU", NA
   ), 
   tibble::tribble(
     ~Video, 
@@ -50,7 +51,8 @@ bind_cols(
     "https://youtu.be/-6TlzhRA9vA",
     "https://www.youtube.com/watch?v=WB1Ob_2ccG8&list=PLlzRFZmxVl9SMqlb4nCaeKonHRyGZfrn9&index=8", 
     "https://youtu.be/9Nqfyv9Qyr4?feature=shared", 
-    "https://lnkd.in/gcgseF2Y"
+    "https://lnkd.in/gcgseF2Y", 
+    "https://www.youtube.com/watch?v=GyWoiaAgsbU"
   )
 ) %>%
   dplyr::transmute(
